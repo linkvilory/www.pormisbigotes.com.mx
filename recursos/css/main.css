@@ -28,6 +28,55 @@
 }
 
 /*
+ * Toolbar
+ */
+
+.toolbar{
+	width: 250px;
+	height: 50px;
+	position: fixed;
+	right: 10px;
+	top: 20px;
+}
+
+.toolbar-container{
+	width: 100%;
+	height: 100%;
+}
+
+.toolbar-container .globo{
+	float: left;
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	color:#fff;
+}
+
+/*
+ * Omitir boton
+ */
+
+.omitir{
+	width: 200px;
+	height: 20px;
+	position: fixed;
+	right: 20px;
+	bottom: 5px;
+}
+.omitir-container{
+	width: 100%;
+	height: 100%;
+}
+.omitir-container a{
+	color:#fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+.omitir-container a:hover, .omitir-container a:focus, .omitir-container a:active{
+	color:#fff;
+}
+
+/*
  * Seccion de Trailer y Explorar
  */
 
@@ -88,9 +137,14 @@
 	height: 100%;
 	background: transparent;
 	cursor:pointer;
+	text-decoration: none;
 }
 .container .explorar a:hover{
 	background: #e3e3e3;
+	text-decoration: none;
+}
+.container .explorar a:hover, .container .explorar a:focus, .container .explorar a:active{
+	color:#fff;
 }
 .container .explorar-container{
 	top:50%;
@@ -137,4 +191,31 @@
     line-height: 50px;
     margin: auto;
     cursor:pointer;
+}
+
+/*
+ * Seccion formulario pagina encuesta.html 
+ */
+
+.formulario{
+	width: 400px;
+	margin: 80px auto 0;
+	color: #fff;
+} 
+
+.formulario table{
+	border-collapse: separate;
+    border-spacing: 5px 20px;
+}
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.preguntas{
+	font-size: 18px;
+    text-align: left;
+}
+.alinearCentro{
+	text-align: center;
 }
