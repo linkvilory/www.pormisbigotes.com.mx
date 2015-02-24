@@ -8,6 +8,10 @@ $(function(){
 		$(".youtube").show();
 	})
 
+	$("#explorar").click(function(){
+		window.location = "./encuesta.html";
+	});
+
 	/*
 	 * Toogle Menu
 	 */
@@ -51,6 +55,11 @@ $(function(){
 			}
 		});
 
+		if(respuestaUno == "" || respuestaDos == "" || respuestaTres == ""){
+			alert("Debe de seleccionar la respuesta a las preguntas.");
+			return;
+		}
+
 		$.ajax({
 			type: "POST",
 			url: "send.php",
@@ -62,7 +71,7 @@ $(function(){
 		})
 		.done(function( msg ) {
 			alert( "Gracias por sus comentarios!");
-			window.location = "./inicio.html"
+			window.location = "./inicio.html";
 		});
 	});
 	
