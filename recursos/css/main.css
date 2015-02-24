@@ -7,10 +7,9 @@ html, body {
     position: relative;
 }
 body{
-	background-color: #000;
+	  background-color: #000;
     background-repeat: no-repeat;
     color: #fff;
-    font-size: 62.5%;
     margin: 0;
     min-height: 100% !important;
     padding: 0;
@@ -61,6 +60,7 @@ body{
 	position: fixed;
 	top:15px;
 	left:50px;
+  cursor: pointer;
 }
 
 .menu{
@@ -218,20 +218,16 @@ body{
 	left:50%;
 	position:relative;
 }
-.containerDefault .trailer a span {
-    color: #fff;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100px;
-    top: -25px;
-    left: -50px;
-    position:relative;
+.containerDefault .trailer a .buttonTrailer{
+  width: 330px;
+  height: 140px;
+  display: block;
+  background-image: url('images/sprites/big-btns.png');
+  background-position: 0 0;
+  position:relative;
+  top: -70px;
+  left: -165px;
 }
-
 
 .containerDefault .explorar{
 	background-image: url("images/bg/verde.jpg");
@@ -253,18 +249,15 @@ body{
 	left:50%;
 	position:relative;
 }
-.containerDefault .explorar a span {
-    color: #fff;
+.containerDefault .explorar .buttonExplorar{
+  background-image: url("images/sprites/big-btns.png");
+    background-position: 0 -165px;
     display: block;
-    height: 50px;
-    line-height: 50px;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100px;
-    top: -25px;
-    left: -50px;
-    position:relative;
+    height: 140px;
+    left: -165px;
+    position: relative;
+    top: -70px;
+    width: 330px;
 }
 
 /*
@@ -380,6 +373,18 @@ section {
     height:550px;
     width: 100%;
  } 
+ .sinopsis-container{
+    margin: auto;
+    padding: 35px 0 0;
+    text-align: center;
+    width: 900px;
+ }
+  .sinopsis-container .title{
+    font-size: 35px;
+  }
+  .sinopsis-container p{
+    font-size: 25px;
+  }
   .seccionGaleriaEstaticaParteUno{
  	width:100%;
  	height:550px;
@@ -435,7 +440,26 @@ section {
     min-height: 350px;
     height:550px;
     width: 100%;
- } 
+ }
+  .premios-container{
+    margin: auto;
+    padding: 35px 0 0;
+    text-align: center;
+    width: 900px;
+ }
+ .premios-container .campana{
+  background-image: url("images/sprites/big-btns.png");
+    background-position: -89px -500px;
+    display: block;
+    height: 165px;
+    width: 150px;
+ }
+  .premios-container table{
+  width: 100%;
+ }
+  .premios-container table td{
+  vertical-align: middle;
+ }
   .seccionCreditos{
  	  background-image: url("images/bg/seccionTrece.jpg");
     background-position: center center;
@@ -446,6 +470,20 @@ section {
     height:550px;
     width: 100%;
  } 
+ .creditos-container{
+    margin: auto;
+    padding: 35px 0 0;
+    text-align: center;
+    width: 900px;
+ }
+ .creditos-container table{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+ }
+  .creditos-container table p{
+  line-height: 25px;
+ }
   .patrocinadores{
  	  background-image: url("images/bg/footer.jpg");
     background-position: center center;
