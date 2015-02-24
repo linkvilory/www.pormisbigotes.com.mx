@@ -28,6 +28,53 @@
 }
 
 /*
+ * Boton Menu
+ */
+.botonMenu{
+	width:100px;
+	height: 40px;
+	background: red;
+	color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	z-index: 99;
+	position: fixed;
+	top:15px;
+	left:50px;
+}
+
+.menu{
+	width:200px;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	opacity: 0.8;
+	top:0;
+	display:block;
+}
+.menu.hide{
+	display:none;
+}
+.menu-container{
+	margin: 100px 15px 0;
+	color: #fff;
+}
+.menu-container ul .enlace.trailer{
+	padding: 50px 0;
+}
+.menu-container ul .enlace{
+	padding: 10px 0;
+}
+.menu-container ul .enlace a{
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+.menu-container ul .enlace a:hover, .menu-container ul .enlace a:active, .menu-container ul .enlace a:focus{
+	color: #fff;
+}
+/*
  * Toolbar
  */
 
@@ -176,6 +223,8 @@
 	display: none;
 	background: #333;
 	position:fixed;
+	z-index: 9999;
+	top:0;
 } 
 
 .close-container{
@@ -219,3 +268,94 @@
 .alinearCentro{
 	text-align: center;
 }
+
+.grupoUno, .grupoDos, .grupoTres{
+	width:100px;
+	height:40px;
+	background: #444;
+	color:#fff;
+}
+
+.grupoUno.selected, .grupoDos.selected, .grupoTres.selected{
+	background: #fff;
+	color:#000;
+}
+
+/*
+ * Seccion principal de la pagina
+ */
+
+ /* Seccion de bienvenida */
+
+ .seccionBienvenida{
+ 	width:100%;
+ 	height:550px;
+ 	background: #111;
+ }
+  .seccionNoticias{
+ 	width:100%;
+ 	height:550px;
+ 	background: #222;
+ }
+  .seccionSinopsis{
+ 	width:100%;
+ 	height:550px;
+ 	background: #333;
+ } 
+  .seccionGaleriaEstaticaParteUno{
+ 	width:100%;
+ 	height:550px;
+ 	background: #444;
+ } 
+  .seccionConocelos{
+ 	width:100%;
+ 	height:550px;
+ 	background: #555;
+ }  
+  .seccionConocelosMore{
+ 	width:100%;
+ 	height:550px;
+ 	background: #555;
+ 	display:none;
+ }  
+  .seccionGaleriaEstaticaParteDos{
+ 	width:100%;
+ 	height:550px;
+ 	background: #666;
+ } 
+  .seccionGaleriaEstaticaParteTres{
+ 	width:100%;
+ 	height:550px;
+ 	background: #777;
+ } 
+  .seccionGaleria{
+ 	width:100%;
+ 	height:550px;
+ 	background: #888;
+ } 
+  .seccionDetras{
+ 	width:100%;
+ 	height:550px;
+ 	background: #999;
+ } 
+  .seccionDetrasMore{
+ 	width:100%;
+ 	height:550px;
+ 	background: #999;
+ 	display: none;
+ } 
+  .seccionPremios{
+ 	width:100%;
+ 	height:550px;
+ 	background: #aaa;
+ } 
+  .seccionCreditos{
+ 	width:100%;
+ 	height:550px;
+ 	background: #a1a1a1;
+ } 
+  .patrocinadores{
+ 	width:100%;
+ 	height:150px;
+ 	background: #000;
+ } 
