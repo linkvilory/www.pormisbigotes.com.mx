@@ -1,11 +1,11 @@
 $(function(){
 
 	$("#closeYoutubePlayer").click(function (){
-		$(".youtube").hide();
+		$(".container-fluid.fullscreen").hide();
 	});
 
 	$("#showYoutubePlayer").click(function (){
-		$(".youtube").show();
+		$(".container-fluid.fullscreen").show();
 	})
 
 	$("#explorar").click(function(){
