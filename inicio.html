@@ -5,8 +5,8 @@
 		<title>www.pormisbigotes.com.mx</title>
 
 		<!-- Carga de archivos Css -->
-			<link type="text/css" rel="stylesheet" href="./recursos/css/reset.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/main.css"/>
+			<link type="text/css" rel="stylesheet" href="./recursos/css/bootstrap.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/responsiveslides.css"/>
 		<!-- End archivos Css-->
 
@@ -21,8 +21,7 @@
 	<!-- Pagina Principal del sitio www.pormisbigotes.com.mx -->	
 
 	<div class="logo">
-		<div class="logo-container">
-		</div>
+		<img class="logo-container img-responsive" src="recursos/images/logo-por-mis-bigotes.png"/>
 	</div>
 
 	<div id="toogleMenu" class="botonMenu">
@@ -108,13 +107,41 @@
 		
 	</section>
 	<section id="seccionGaleriaEstaticaParteDos" class="seccionGaleriaEstaticaParteDos">
-		
+		<div class="">
+			<div class="">
+				<img class="img-responsive" src="recursos/images/galeriaParte2.jpg"/>
+			</div>
+		</div>
 	</section>
 	<section id="seccionGaleriaEstaticaParteTres" class="seccionGaleriaEstaticaParteTres">
-		
+		<div class="">
+			<div class="">
+				<img class="img-responsive" src="recursos/images/galeriaParte3.jpg"/>
+			</div>
+		</div>
 	</section>
 	<section id="seccionGaleria" class="seccionGaleria">
-		
+		<div class="">
+			<div class="">
+				<img class="img-responsive" src="recursos/images/galeriaIntro.jpg"/>
+			</div>
+		</div>
+
+
+		<ul id="rslidesGaleria" class="galeria hidden">
+		  <li>
+		  	<img class="" src="recursos/images/galeria/1.jpg"/>
+		  </li>
+		  <li>
+		  	<img class="" src="recursos/images/galeria/2.jpg"/>
+		  </li>
+		  <li>
+		  	<img class="" src="recursos/images/galeria/3.jpg"/>
+		  </li>
+		  <li>
+		  	<img class="" src="recursos/images/galeria/4.jpg"/>
+		  </li>
+		</ul>
 	</section>
 	<section id="seccionDetras" class="seccionDetras">
 		<h1>DETRÁS DE LOS BIGOTES</h1>
@@ -127,7 +154,7 @@
 	</section>
 	<section id="seccionPremios" class="seccionPremios">
 		<div class="premios-container">
-			<ul id="rslidesPremios" class="rslides">
+			<ul id="rslidesPremios" class="premios">
 			  <li>
 			  	<div>
 			  		<table>
@@ -151,17 +178,65 @@
 			  </li>
 			  <li>
 			  	<div>
-			  		<h1>Noticia 2</h1>
+			  		<table>
+			  			<tr>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  				<td>
+			  					<h1>Noticia 2</h1>
+						  		<h2>Descripción</h2>
+						  		<input class="botonVerNota" type="button" value="VER NOTA"/>
+			  				</td>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  			</tr>
+			  		</table>
 			  	</div>
 			  </li>
 			  <li>
 			  	<div>
-			  		<h1>Noticia 3</h1>
+			  		<table>
+			  			<tr>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  				<td>
+			  					<h1>Noticias 3</h1>
+						  		<h2>Descripción</h2>
+						  		<input class="botonVerNota" type="button" value="VER NOTA"/>
+			  				</td>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  			</tr>
+			  		</table>
 			  	</div>
 			  </li>
 			  <li>
 			  	<div>
-			  		<h1>Noticia 4</h1>
+			  		<table>
+			  			<tr>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  				<td>
+			  					<h1>Noticias 4</h1>
+						  		<h2>Descripción</h2>
+						  		<input class="botonVerNota" type="button" value="VER NOTA"/>
+			  				</td>
+			  				<td width="20%">
+			  					<div class="campana">
+			  					</div>
+			  				</td>
+			  			</tr>
+			  		</table>
 			  	</div>
 			  </li>
 			</ul>
@@ -291,10 +366,12 @@
 	<!-- End Toolbar -->
 
 	<!-- Youtube -->
-	<div class="youtube">
-		<iframe id="ytplayer" type="text/html" width="100%" height="90%" src="http://www.youtube.com/embed/rGvm4FvHbIw?autoplay=1" frameborder="0"></iframe>
-		<div class="close-container">
-			<div><a id="closeYoutubePlayer">Close</a></div>
+	<div class="container-fluid fullscreen">
+		<div class="col-md-12 youtube">
+			<iframe id="ytplayer" type="text/html" width="100%" height="90%" src="http://www.youtube.com/embed/rGvm4FvHbIw" frameborder="0"></iframe>
+		</div>
+		<div class="col-md-12 youtubeClose">
+			<div><a id="closeYoutubePlayer">Cerrar</a></div>
 		</div>
 	</div>
 	<!-- End Youtbe -->
@@ -306,6 +383,7 @@
 
 
 	<!-- Carga de archivos Js -->
+		<script src="./recursos/js/bootstrap.min.js"></script>
 		<script src="./recursos/js/main.js"></script>
 		<script src="./recursos/js/responsiveslides.min.js"></script>
 	<!-- End archivos Js -->
