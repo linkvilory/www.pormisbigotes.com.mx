@@ -13,6 +13,7 @@ body{
     margin: 0;
     min-height: 100% !important;
     padding: 0;
+    font-family: 'bigotesmedium';
 }
 /*
  * Seccion de Logo 
@@ -29,12 +30,8 @@ body{
     z-index: 10;
 }
 .logo-container{
-	background-image: url("images/logo-por-mis-bigotes.png");
-    display: block;
-    height: 100%;
     left: -150px;
     position: relative;
-    width: 100%;
 }
 .logo span{
 	color: #fff;
@@ -49,16 +46,20 @@ body{
  * Boton Menu
  */
 .botonMenu{
-	width:100px;
-	height: 40px;
-	background: red;
-	color: #fff;
-	border-radius: 10px;
-	text-align: center;
-	line-height: 42px;
+  background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85px;
+	line-height: 32px;
 	z-index: 99;
 	position: fixed;
-	top:15px;
+	top:30px;
 	left:50px;
   cursor: pointer;
 }
@@ -81,15 +82,17 @@ body{
 	color: #fff;
 }
 .menu-container ul .enlace.trailer{
-	padding: 50px 0;
+	padding: 60px 0;
 }
 .menu-container ul .enlace{
-	padding: 10px 0;
+	padding: 12px 0;
 }
 .menu-container ul .enlace a{
 	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px -1px #000;
 }
 .menu-container ul .enlace a:hover, .menu-container ul .enlace a:active, .menu-container ul .enlace a:focus{
 	color: #fff;
@@ -156,20 +159,22 @@ body{
  */
 
 .omitir{
-	width: 200px;
-	height: 20px;
-	position: fixed;
-	right: 20px;
-	bottom: 5px;
+	bottom: 20px;
+    height: 20px;
+    position: fixed;
+    right: 80px;
+    width: 200px;
 }
 .omitir-container{
 	width: 100%;
 	height: 100%;
 }
 .omitir-container a{
-	color:#fff;
-	font-size: 18px;
-	text-decoration: none;
+	color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-shadow: 1px -1px #000;
 }
 .omitir-container a:hover, .omitir-container a:focus, .omitir-container a:active{
 	color:#fff;
@@ -178,6 +183,15 @@ body{
 /*
  * Seccion de Trailer y Explorar
  */
+
+ .container{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url('images/bg/verde.jpg');
+  position:fixed;
+}
+
 .containerDefault{
 	width: 100%;
 	height: 100%;
@@ -185,19 +199,13 @@ body{
 	background: #333;
 	position:fixed;
 }
-.container{
-	width: 100%;
-	height: 100%;
-	display: block;
-	background-image: url('images/bg/verde.jpg');
-	position:fixed;
-}
+
 .containerDefault .trailer{
 	width: 50%;
 	height:100%;
 	float: left;
 	background:#000;
-  opacity:0.3;
+  opacity:0.5;
 }
 .containerDefault .trailer:hover{
 	background-image: url('images/gif/gif.gif');
@@ -206,7 +214,7 @@ body{
 	background-position: center;
   opacity:1;
 }
-.containerDefault .trailer a{
+.containerDefault .trailer > div{
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -215,20 +223,16 @@ body{
 }
 .containerDefault .trailer-container{
 	top:50%;
-	width: 100px;
 	height: 50px;
-	left:50%;
 	position:relative;
+  width:100%;
 }
-.containerDefault .trailer a .buttonTrailer{
-  width: 330px;
-  height: 140px;
-  display: block;
-  background-image: url('images/sprites/big-btns.png');
-  background-position: 0 0;
+.containerDefault .trailer .buttonTrailer{
   position:relative;
   top: -70px;
-  left: -165px;
+}
+.containerDefault .trailer .buttonTrailer img{
+  margin: auto;
 }
 
 .containerDefault .explorar{
@@ -246,22 +250,16 @@ body{
 }
 .containerDefault .explorar-container{
 	top:50%;
-	width: 100px;
 	height: 50px;
-	left:50%;
 	position:relative;
 }
 .containerDefault .explorar .buttonExplorar{
-  background-image: url("images/sprites/big-btns.png");
-    background-position: 0 -165px;
-    display: block;
-    height: 140px;
-    left: -165px;
     position: relative;
     top: -70px;
-    width: 330px;
 }
-
+.containerDefault .explorar .buttonExplorar img{
+  margin: auto;
+}
 /*
  * Seccion de Youtube
  */
@@ -295,7 +293,7 @@ body{
  */
 
 .formulario{
-	width: 400px;
+	width: 500px;
 	margin: 150px auto 0;
 	color: #fff;
 } 
@@ -305,13 +303,23 @@ body{
     border-spacing: 5px 20px;
 }
 .titulo {
-    font-size: 30px;
+    display: block;
+    font-family: "bigotesbold" !important;
+    font-size: 36px;
+    font-weight: 900;
     text-align: center;
+    text-shadow: 1px -1px #000;
     text-transform: uppercase;
+    width: 100%;
 }
 .preguntas{
-	font-size: 18px;
-    text-align: left;
+  display: block;
+    font-family: "bigotesdemibold";
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    width: 100%;
 }
 .alinearCentro{
 	text-align: center;
@@ -319,26 +327,32 @@ body{
 
 .grupoUno, .grupoDos, .grupoTres{
 	background: none repeat scroll 0 0 #fff;
-    border: 1px solid #000;
-    color: green;
+    border: 1px solid #002601;
+    border-radius: 5px;
+    color: #002601;
+    font-size: 16px;
+    font-weight: lighter;
     height: 30px;
-    width: 110px;
+    width: 150px;
 }
-
+.smallerButton{
+  width:70px;
+}
 .grupoUno.selected, .grupoDos.selected, .grupoTres.selected{
-	background: none repeat scroll 0 0 green;
+	   background: none repeat scroll 0 0 #09481c;
     color: #fff;
 }
 .botonEntrar{
 	background: none repeat scroll 0 0 red;
     border: 0 none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
-    height: 40px;
-    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
     text-align: center;
     text-transform: uppercase;
-    width: 100px;
+    width: 85px;
 }
 /*
  * Seccion principal de la pagina
@@ -349,7 +363,46 @@ section {
     position: relative;
     width: 100%;
 }
-
+.botonMas{
+  background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 32px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+}
+.botonVerNota{
+  background: none repeat scroll 0 0 white;
+    border: 1px solid #000048;
+    border-radius: 5px;
+    color: #000048;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 30px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+}
+.botonDescargarKit{
+  background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 30px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 240px;
+}
 .seccionBienvenida {
     background-image: url("images/bg/seccionUno.jpg");
     background-position: center center;
@@ -359,6 +412,14 @@ section {
     min-height: 350px;
     height:650px;
     width: 100%;
+}
+.seccionBienvenida > h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 150px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
   .seccionNoticias{
  	  background-image: url("images/bg/seccionDos.jpg");
@@ -375,7 +436,15 @@ section {
     padding: 35px 0 0;
     text-align: center;
     width: 900px;
- } 
+ }
+.noticias-container> h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 150px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
  .noticias-container table{
     width: 100%;
     text-align: center;
@@ -396,11 +465,24 @@ section {
     text-align: center;
     width: 900px;
  }
-  .sinopsis-container .title{
-    font-size: 35px;
-  }
+ .sinopsis-container> h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
   .sinopsis-container p{
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+  }
+  .sinopsis-container p b{
+    font-size: 40px;
+    font-weight: 900;
   }
   .seccionGaleriaEstaticaParteUno{
  	background-image: url("images/bg/seccionCuatro.jpg");
@@ -421,7 +503,15 @@ section {
     min-height: 350px;
     height:650px;
     width: 100%;
- }  
+ } 
+ .seccionConocelos> h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
   .seccionConocelosMore{
  	width:100%;
  	height:650px;
@@ -468,6 +558,14 @@ section {
     height:650px;
     width: 100%;
  } 
+ .seccionDetras> h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
   .seccionDetrasMore{
  	  background-image: url("images/bg/seccionOnce.jpg");
     background-position: center center;
@@ -484,9 +582,9 @@ section {
     background-position: center center;
     background-repeat: repeat;
     background-size: 100% auto;
-    max-height: 800px;
-    min-height: 350px;
-    height:650px;
+    max-height: 360px;
+    min-height: 360px;
+    height:360px;
     width: 100%;
  }
   .premios-container{
@@ -508,29 +606,55 @@ section {
   .premios-container table td{
   vertical-align: middle;
  }
+ .premios-container h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+ .premios-container h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+
   .seccionCreditos{
  	  background-image: url("images/bg/seccionTrece.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    max-height: 800px;
+    max-height: 540px;
     min-height: 350px;
-    height:650px;
+    height:540px;
     width: 100%;
  } 
  .creditos-container{
     margin: auto;
-    padding: 35px 0 0;
+    padding: 50px 0 0;
     text-align: center;
     width: 900px;
  }
- .creditos-container table{
+ .creditos-container > table{
   width: 100%;
-  text-align: center;
-  font-size: 15px;
+  border-collapse: separate;
+    border-spacing: 5px 20px;
  }
   .creditos-container table p{
-  line-height: 25px;
+  font-size: 14px;
+    font-weight: lighter;
+    line-height: 25px;
+    text-shadow: 1px -1px #000;
+ }
+ .creditos-container table p b{
+  font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    text-shadow: 1px -1px #000;
  }
   .patrocinadores{
  	  background-image: url("images/bg/footer.jpg");
@@ -663,5 +787,76 @@ section {
          url('font/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .containerDefault .trailer-container{
+    top:50%;
+    height: 50px;
+    left:50%;
+    position:relative;
+    width:100%;
+  }
+  .containerDefault .trailer .buttonTrailer{
+    position:relative;
+    top: -70px;
+    left: -165px;
+  }
+
+  .containerDefault .explorar-container{
+    top:50%;
+    height: 50px;
+    left:50%;
+    position:relative;
+    width:100%;
+  }
+  .containerDefault .explorar .buttonExplorar{
+    position:relative;
+    top: -70px;
+    left: -165px;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+  .containerDefault .trailer-container{
+    top:50%;
+    height: 50px;
+    left:50%;
+    position:relative;
+    width:100%;
+  }
+  .containerDefault .trailer .buttonTrailer{
+    position:relative;
+    top: -70px;
+    left: -165px;
+  }
+
+  .containerDefault .explorar-container{
+    top:50%;
+    height: 50px;
+    left:50%;
+    position:relative;
+    width:100%;
+  }
+  .containerDefault .explorar .buttonExplorar{
+    position:relative;
+    top: -70px;
+    left: -165px;
+  }
 
 }
