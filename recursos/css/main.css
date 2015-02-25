@@ -404,13 +404,19 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    max-height: 800px;
-    min-height: 350px;
-    height:650px;
     width: 100%;
 }
-.seccionBienvenida > h1 {
-    font-size: 40px;
+.bienvenida-container{
+  position: relative;
+}
+.bienvenida-container-inner{
+  position: absolute!important;
+}
+.seccionBienvenida img{
+  margin: auto;
+}
+.bienvenida-container-inner > h1 {
+    font-size: 36px;
     font-weight: 900;
     margin-top: 150px;
     padding: 5px 0;
@@ -450,21 +456,16 @@ section {
     background-position: center center;
     background-repeat: repeat;
     background-size: 100% auto;
-    max-height: 800px;
-    min-height: 350px;
-    height:650px;
     width: 100%;
  } 
  .sinopsis-container{
     margin: auto;
-    padding: 35px 0 0;
+    padding: 20px 0 0;
     text-align: center;
-    width: 900px;
  }
  .sinopsis-container> h1 {
     font-size: 40px;
     font-weight: 900;
-    margin-top: 50px;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
@@ -485,11 +486,11 @@ section {
     background-position: center center;
     background-repeat: repeat;
     background-size: 100% auto;
-    max-height: 800px;
-    min-height: 350px;
-    height:650px;
     width: 100%;
  } 
+ .seccionGaleriaEstaticaParteUno img{
+  margin: auto;
+ }
   .seccionConocelos{
   background-image: url("images/bg/verde.jpg");
     background-position: center center;
@@ -578,23 +579,23 @@ section {
     background-position: center center;
     background-repeat: repeat;
     background-size: 100% auto;
-    max-height: 360px;
-    min-height: 360px;
-    height:360px;
     width: 100%;
  }
   .premios-container{
     margin: auto;
-    padding: 35px 0 0;
+    padding: 20px 0 0;
     text-align: center;
-    width: 900px;
  }
+  .premios-container .campana-container{
+    display: none;
+  }
  .premios-container .campana{
   background-image: url("images/sprites/big-btns.png");
     background-position: -89px -500px;
     display: block;
     height: 165px;
     width: 150px;
+    margin:auto;
  }
   .premios-container table{
   width: 100%;
@@ -624,30 +625,31 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    max-height: 540px;
-    min-height: 350px;
-    height:540px;
     width: 100%;
  } 
- .creditos-container{
-    margin: auto;
-    padding: 50px 0 0;
-    text-align: center;
-    width: 900px;
+ .seccionCreditos img{
+  margin: auto;
  }
- .creditos-container > table{
+ .creditos-container{
+  position: relative;
+}
+.creditos-container-inner{
+  position: absolute!important;
+}
+ .creditos-container-inner > table{
   width: 100%;
   border-collapse: separate;
     border-spacing: 5px 20px;
+    text-align:center;
  }
-  .creditos-container table p{
+  .creditos-container-inner table p{
   font-size: 14px;
     font-weight: lighter;
     line-height: 25px;
     text-shadow: 1px -1px #000;
     margin:0px;
  }
- .creditos-container table p b{
+ .creditos-container-inner table p b{
   font-size: 16px;
     font-weight: 900;
     line-height: 25px;
@@ -658,64 +660,18 @@ section {
     background-position: center center;
     background-repeat: repeat;
     background-size: auto;
-    max-height: 150px;
-    min-height: 150px;
-    height:150px;
+    max-height: 130px;
+    min-height: 130px;
+    height:130px;
     width: 100%;
  } 
  .patrocinadores-container{
     margin: auto;
-    padding: 35px 0 0;
-    text-align: center;
-    width: 900px;
  }
- .patrocinador{
-  float:left;
-  margin:0 15px;
- }
-  .patrocinador.uno{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: 0 -32px;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 110px;
- }
-  .patrocinador.dos{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: -185px -32px;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 130px;
- }
-  .patrocinador.tres{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: -365px -32px;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 160px;
- }
-  .patrocinador.cuatro{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: -604px -26px;
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 80px;
- }
-  .patrocinador.cinco{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: -794px -23px;
-    background-repeat: no-repeat;
-    height: 55px;
-    width: 90px;
- }
-  .patrocinador.seis{
-    background-image: url("images/bg/patrocinadores.png");
-    background-position: -955px -6px;
-    background-repeat: no-repeat;
-    height: 85px;
-    width: 148px;
- }
-
+ .patrocinadores-container img {
+    float: left;
+    margin: 15px;
+}
 
  /*
   * Fuentes para el sitio web
@@ -862,6 +818,11 @@ section {
     margin: auto;
   }
 
+
+
+  .premios-container .campana-container{
+    display: block;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -945,6 +906,11 @@ section {
     margin: auto;
   }
 
+
+
+  .premios-container .campana-container{
+    display: block;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -1030,4 +996,8 @@ section {
   }
   
 
+
+  .premios-container .campana-container{
+    display: block;
+  }
 }
