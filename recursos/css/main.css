@@ -406,12 +406,14 @@ section {
   font-weight: bold;
   height: 30px;
   line-height: 32px;
-  margin: auto;
+  margin: 20px auto;
   text-align: center;
   text-transform: uppercase;
   width: 126px;
 }
-
+.botonMas:hover{
+  cursor: pointer;
+}
 .botonVerNota {
   background: none repeat scroll 0 0 white;
   border: 1px solid #000048;
@@ -425,7 +427,9 @@ section {
   text-transform: uppercase;
   width: 126px;
 }
-
+.botonVerNota:hover{
+  cursor:pointer;
+}
 .botonDescargarKit {
   background: none repeat scroll 0 0 transparent;
   border: 1px solid #fff;
@@ -439,7 +443,9 @@ section {
   text-transform: uppercase;
   width: 240px;
 }
-
+.botonDescargarKit:hover{
+  cursor:pointer;
+}
 .seccionBienvenida {
   background-image: url("images/bg/seccionUno.jpg");
   background-position: center center;
@@ -569,10 +575,15 @@ section {
 }
 
 .seccionConocelosMore {
-  width: 100%;
+  background-image: url("images/bg/verde.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: auto;
+  max-height: 800px;
+  min-height: 350px;
   height: 650px;
-  background: #555;
-  display: none;
+  width: 100%;
+  display:none;
 }
 
 .seccionGaleriaEstaticaParteDos {
@@ -624,6 +635,9 @@ section {
   top: -70px;
   left: -140px;
 }
+.galeria-container-inner .buttonGaleria:hover {
+  cursor:pointer;
+}
 
 .galeria-container-inner .buttonGaleria img {
   margin: auto;
@@ -634,9 +648,6 @@ section {
   background-position: center center;
   background-repeat: repeat;
   background-size: 100% auto;
-  max-height: 800px;
-  min-height: 350px;
-  height: 650px;
   width: 100%;
 }
 
@@ -649,14 +660,71 @@ section {
   text-shadow: 1px -1px #000;
 }
 
+.seccionDetras .img100, .seccionDetrasMore .img100{
+  width: 100%;
+  margin: 5px 2px;
+}
+.seccionDetras .img90, .seccionDetrasMore .img90{
+  width: 90%;
+  margin: 5px 2px;
+}
+.seccionDetras .img80, .seccionDetrasMore .img80{
+  width: 80%;
+  margin: 5px 2px;
+}
+.seccionDetras .img70, .seccionDetrasMore .img70{
+  width: 70%;
+  margin: 5px 2px;
+}
+.seccionDetras .img60, .seccionDetrasMore .img60{
+  width: 60%;
+  margin: 5px 2px;
+}
+.seccionDetras .img50, .seccionDetrasMore .img50{
+  width: 50%;
+  margin: 5px 2px;
+}
+.seccionDetras .img40, .seccionDetrasMore .img40{
+  width: 40%;
+  margin: 5px 2px;
+}
+.seccionDetras .img30, .seccionDetrasMore .img30{
+  width: 30%;
+  margin: 5px 2px;
+}
+.seccionDetras .img20, .seccionDetrasMore .img20{
+  width: 20%;
+  margin: 5px 2px;
+}
+
+.imgGalDos{
+  margin-top: 45px!important;
+}
+.imgGalTres{
+  margin-top: 20px!important;
+}
+
+.imgGalCuatro{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalCinco{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalSeis{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+
 .seccionDetrasMore {
   background-image: url("images/bg/seccionOnce.jpg");
   background-position: center center;
   background-repeat: repeat;
   background-size: 100% auto;
-  max-height: 800px;
-  min-height: 350px;
-  height: 650px;
   width: 100%;
   display: none;
 }
@@ -750,7 +818,7 @@ section {
 }
 
 .creditos-container-inner table p {
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: lighter;
   line-height: 25px;
   text-shadow: 1px -1px #000;
@@ -758,7 +826,6 @@ section {
 }
 
 .creditos-container-inner table p b {
-  font-size: 16px;
   font-weight: 900;
   line-height: 25px;
   text-shadow: 1px -1px #000;

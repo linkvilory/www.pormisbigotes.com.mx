@@ -153,5 +153,15 @@ $(function(){
 		$("#rslidesGaleria").removeClass("hidden");
 	});
 
+
+	$("#masDetras").click(function(){
+		$("#masDetras").hide();
+		$("#seccionDetrasMore").show();
+	});
+
+	$("#masConocelos").click(function(){
+		$("#masConocelos").hide();
+		$("#seccionConocelosMore").show();
+	});
 		
 });
