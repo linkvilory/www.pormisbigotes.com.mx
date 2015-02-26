@@ -582,13 +582,15 @@ section {
 }
 
 .sceneConocelos {
-  min-height: 460px;
+  min-height: 1400px;
   position: relative;
   overflow: hidden;
 }
 
 .sceneConocelos .layer {
   position: absolute;
+  width:199px;
+  height: 300px;
 }
 .sceneConocelos .layer div {
   -webkit-transform: translate3d(0,0,0);
@@ -604,7 +606,9 @@ section {
 
 .layer .pEncabezado{
   display: none;
-  margin: 5px 20px;
+  margin: 0px 28px;
+    position: absolute;
+    z-index: 3;
 }
 .layer .personaje{
   position: absolute;;
@@ -614,7 +618,174 @@ section {
   position: absolute;;
   z-index: 2;
 }
-
+.conoceloContainerUno {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+}
+.conoceloContainerDos {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+}
+.conoceloContainerTres {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.conoceloContainerCuatro {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 100px;
+}
+.conoceloContainerCinco {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+    margin-top: 200px;
+}
+.conoceloContainerSeis {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+    margin-top: 200px;
+}
+.conoceloContainerSiete {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 300px;
+}
+.conoceloContainerOcho {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 300px;
+}
+.conoceloContainerNueve {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+    margin-top: 400px;
+}
+.conoceloContainerDiez {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+    margin-top: 400px;
+}
+.conoceloContainerOnce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 500px;
+}
+.conoceloContainerDoce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 500px;
+}
+.conoceloContainerTrece {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 930px;
+  margin-top: 500px;
+}
+.conoceloContainerCatorce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 210px;
+    margin-top: 600px;
+}
+.conoceloContainerQuince {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 450px;
+    margin-top: 600px;
+}
+.conoceloContainerDiezyseis {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 700px;
+    margin-top: 600px;
+}
+.conoceloContainerDiezysiete {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 930px;
+    margin-top: 600px;
+}
 .seccionConocelosMore {
   background-image: url("images/bg/verde.jpg");
   background-position: center center;
