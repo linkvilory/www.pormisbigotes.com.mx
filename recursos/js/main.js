@@ -163,5 +163,30 @@ $(function(){
 		$("#masConocelos").hide();
 		$("#seccionConocelosMore").show();
 	});
+
+	$("#sceneConocelos").parallax({
+		calibrateX: false,
+  calibrateY: false,
+  invertX: true,
+  invertY: false,
+  limitX: false,
+  limitY: false,
+  scalarX: 40,
+  scalarY: 50,
+  frictionX: 1,
+  frictionY: 1,
+  originX: 0.5,
+  originY: 0.5
+	});
 		
+
+
+	$(".pUno").hover(function() {
+		$(this).css( "opacity", "0" );
+		$(this).prev().prev().css("display", "block");
+		}, function() {
+		$(this).css( "opacity", "1" );
+		$(this).prev().prev().css("display", "none");
+	});
+
 });

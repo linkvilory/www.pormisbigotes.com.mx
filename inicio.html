@@ -67,19 +67,20 @@
 	<section id="seccionNoticias" class="seccionNoticias">
 		<div class="noticias-container">
 			<h1>ÚLTIMAS NOTICIAS</h1>
-			<table>
-				<tr>
-					<td>
-						FACEBOOK
-					</td>
-					<td>
-						TWITTER
-					</td>
-					<td>
-						INSTAGRAM
-					</td>
-				</tr>
-			</table>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4 ">
+						<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fporbigotes&amp;width=100&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:395px;" allowTransparency="true"></iframe>
+					</div>
+					<div class="col-md-4 ">
+						<a class="twitter-timeline"  href="https://twitter.com/PorBigotes" data-widget-id="570979363395739648">Tweets por el @PorBigotes.</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<div class="col-md-4 bgWhite">
+						<iframe src="http://widget.websta.me/in/pormisbigotes/?s=250&w=1&h=1&b=1&bg=FFFFFF&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:275px; height: 275px" ></iframe> <!-- websta - web.stagram.com -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="seccionSinopsis" class="seccionSinopsis">
@@ -108,6 +109,21 @@
 	</section>
 	<section id="seccionConocelos" class="seccionConocelos">
 		<h1>CONÓCELOS</h1>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<ul id="sceneConocelos" class="sceneConocelos">
+				  <li class="layer" data-depth="0.10">
+				  	<img class="pEncabezado" src="recursos/images/titulos/1.png"/>
+				  	<img class="personaje " src="recursos/images/personajes/1.jpg"/>
+				  	<img class="personaje sombra pUno" src="recursos/images/personajes/1-sombra.jpg"/>
+				  	<div class="conoceloContainerUno "></div>
+				  </li>
+				  <li class="layer" data-depth="0.10">
+				  	<div class="conoceloContainerDos "></div>
+				  </li>
+				</ul>
+			</div>
+		</div>
 		<div id="masConocelos" class="botonMas">
 			<span>CARGAR MÁS</span>
 		</div>
@@ -449,8 +465,9 @@
 
 	<!-- Carga de archivos Js -->
 		<script src="./recursos/js/bootstrap.min.js"></script>
-		<script src="./recursos/js/main.js"></script>
 		<script src="./recursos/js/responsiveslides.min.js"></script>
+		<script src="./recursos/js/jquery.parallax.min.js"></script>
+		<script src="./recursos/js/main.js"></script>
 	<!-- End archivos Js -->
 
 	</body>

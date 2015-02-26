@@ -490,13 +490,15 @@ section {
   margin: auto;
   padding: 35px 0 0;
   text-align: center;
-  width: 900px;
+  width: 1000px;
 }
-
+.noticias-container .bgWhite{
+  background:#fff;
+}
 .noticias-container> h1 {
   font-size: 40px;
   font-weight: 900;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 5px 0;
   text-align: center;
   text-shadow: 1px -1px #000;
@@ -559,9 +561,6 @@ section {
   background-position: center center;
   background-repeat: repeat;
   background-size: auto;
-  max-height: 800px;
-  min-height: 350px;
-  height: 650px;
   width: 100%;
 }
 
@@ -574,14 +573,53 @@ section {
   text-shadow: 1px -1px #000;
 }
 
+.sceneConocelos,
+.sceneConocelos .layer {
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sceneConocelos {
+  min-height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sceneConocelos .layer {
+  position: absolute;
+}
+.sceneConocelos .layer div {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.layer .pEncabezado{
+  display: none;
+  margin: 5px 20px;
+}
+.layer .personaje{
+  position: absolute;;
+  z-index: 1;
+}
+.layer .personaje.sombra{
+  position: absolute;;
+  z-index: 2;
+}
+
 .seccionConocelosMore {
   background-image: url("images/bg/verde.jpg");
   background-position: center center;
   background-repeat: repeat;
   background-size: auto;
-  max-height: 800px;
-  min-height: 350px;
-  height: 650px;
   width: 100%;
   display:none;
 }
