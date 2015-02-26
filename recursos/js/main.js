@@ -185,7 +185,7 @@ $(function(){
 		$(this).css( "opacity", "0" );
 		$(this).prev().prev().css("display", "block");
 		}, function() {
-		$(this).css( "opacity", "1" );
+		$(this).css( "opacity", "0.5" );
 		$(this).prev().prev().css("display", "none");
 	});
 
