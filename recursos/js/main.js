@@ -127,7 +127,10 @@ $(function(){
 		  before: function(){},   // Function: Before callback
 		  after: function(){}     // Function: After callback
 		});
-/*
+	$("#verGaleria").click(function(){
+
+		$("#galeria-container").hide();
+
 		$("#rslidesGaleria").responsiveSlides({
 		  auto: false,             // Boolean: Animate automatically, true or false
 		  speed: 100,            // Integer: Speed of the transition, in milliseconds
@@ -146,5 +149,9 @@ $(function(){
 		  before: function(){},   // Function: Before callback
 		  after: function(){}     // Function: After callback
 		});
-*/
+		
+		$("#rslidesGaleria").removeClass("hidden");
+	});
+
+		
 });
