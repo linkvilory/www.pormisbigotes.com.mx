@@ -1,0 +1,1048 @@
+/*
+ * Hoja de estilo para la página inicio inicio.html
+ */
+
+/* Se creó un css para la página inicio para evitar cargar más estilos de los que se utiliza y mejorar el performance de la página */ 
+/* El estilo por default es para un dispositivo móvil así que los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
+
+/*
+ * HTML y Body
+ */
+
+html, body {
+	line-height: 1;
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-repeat: no-repeat;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'bigotesmedium';
+}
+
+/*
+ * Seccion del Logo 
+ */
+.logo {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.logo-container {
+    margin: auto;
+    max-width: 150px !important;
+}
+.logo span {
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	width: 100%;
+	display: inline-block;
+}
+/* End Seccion del Logo */
+
+/*
+ * Boton Menu
+ */
+.botonMenu {
+    background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    height: 28px;
+    left: 12px;
+    line-height: 2em;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    top: 12px;
+    width: 60px;
+    z-index: 20;
+}
+.menu {
+    background: none repeat scroll 0 0 #000;
+    display: block;
+    height: 100%;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    z-index: 15;
+}
+.menu.hide {
+  display: none;
+}
+.menu-container {
+    color: #fff;
+    height: 75%;
+    margin: 70px 5% 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.menu-container ul {
+    padding: 0 10px;
+}
+.menu-container ul .enlace.trailer {
+  padding: 5px 0;
+  list-style: outside none none;
+}
+.menu-container ul .enlace {
+    list-style: outside none none;
+    padding: 5px 0;
+}
+.menu-container ul .enlace a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+}
+.menu-container ul .enlace a:hover, .menu-container ul .enlace a:active, .menu-container ul .enlace a:focus {
+  color: #fff;
+}
+/* End Menu */
+
+
+/*
+ * Parte del contenedor de Youtube
+ */
+
+.container-fluid.fullscreen {
+	display: none;
+}
+.container-fluid.fullscreen {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    z-index: 99;
+    background:#000;
+}
+/* End Contenedor de Youtube */
+
+/*
+ * Seccion de Youtube
+ */
+
+.logoYoutube{
+	height: 10%;
+} 
+.logoYoutube img{
+	max-width: 150px;
+	min-width: 100px;
+	margin:auto;
+}
+.youtube {
+	background: none repeat scroll 0 0 #000;
+	height: 70%;
+	top: 0;
+	z-index: 9999;
+}
+.youtubeClose {
+	height: 10%;
+}
+.youtubeClose .cerrarBoton {
+	color: #fff;
+	cursor: pointer;
+	height: 46px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	width: 45px;
+	z-index: 99999;
+}
+.youtubeExplorar{
+	height: 10%;
+}
+.youtubeExplorar .explorarSitioBoton {
+	background: none repeat scroll 0 0 red;
+	border: 0 none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 32px;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 170px;
+	z-index: 99;
+}
+/* Seccion de Youtube */
+
+
+/*
+ * Toolbar
+ */
+.toolbar {
+	display: none;
+}
+/* End Toolbar */
+
+/*
+ * Detras Camaras
+ */
+.seccionDetras {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: table;
+}
+.seccionDetras> h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+.bloqueImagen img {
+    width: 100% !important;
+    margin: 5px 2px !important;
+}
+
+.seccionDetrasMore {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: none;
+}
+.botonMas {
+  	background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 2em;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+}
+.botonMas:hover{
+  cursor: pointer;
+}
+/* Detras Camaras */
+
+/* 
+ * Premios
+ */
+.seccionPremios {
+  background-image: url("images/bg/seccionDoce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+.premios-container {
+  margin: auto;
+  padding: 20px 0 0;
+  text-align: center;
+}
+.premios-container .campana-container {
+  display: none;
+}
+.premios-container .campana {
+  background-image: url("images/sprites/big-btns.png");
+  background-position: -89px -500px;
+  display: block;
+  height: 165px;
+  width: 150px;
+  margin: auto;
+}
+.premios-container table {
+  width: 100%;
+}
+.premios-container table td {
+  vertical-align: middle;
+}
+.premios-container h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+.premios-container h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 10px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+.botonVerNota {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #000048;
+  border-radius: 5px;
+  color: #000048;
+  font-size: 14px;
+  font-weight: lighter;
+  height: 30px;
+  margin: 20px auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 126px;
+}
+.botonVerNota:hover{
+  cursor:pointer;
+}
+.botonDescargarKit {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+  height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 240px;
+}
+.botonDescargarKit:hover{
+  cursor:pointer;
+}
+/* Premios */
+
+/*
+ * Seccion Creditos
+ */
+
+.seccionCreditos {
+  background-image: url("images/bg/seccionTrece.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: auto 100%;
+  width: 100%;
+}
+.creditosDesktop{
+	display: none;
+}
+.creditosMobile{
+	display: block;
+}
+.seccionCreditos img {
+  margin: auto;
+}
+.creditos-container {
+  position: relative;
+}
+.creditos-container-inner > table {
+  text-align: center;
+}
+.creditos-container-inner table {
+  width: 100%;
+}
+.creditos-container-inner table p {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+  margin: 0px;
+}
+.creditos-container-inner table p b {
+  font-weight: 900;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+}
+
+/* Seccion Creditos */ 
+
+/*
+ * Seccion Patrocinadores
+ */
+.patrocinadores {
+  	background-image: url("images/bg/footer.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto auto;
+    display: table;
+    width: 100%;
+}
+.patrocinadores-container {
+}
+.patrocinadores-container .holder {
+  height: 70px;
+  text-align: center;
+}
+.patrocinadores-container img {
+  float: left;
+  margin: 10px 5px;
+}
+/* Patrocinadores */
+
+
+
+/*
+ * Font Style
+ */
+
+@font-face {
+  font-family: 'bigotesbold';
+    src: url('font/webfont/Bigotes-Bold-webfont.eot');
+    src: url('font/webfont/Bigotes-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfont/Bigotes-Bold-webfont.woff2') format('woff2'),
+         url('font/webfont/Bigotes-Bold-webfont.woff') format('woff'),
+         url('font/webfont/Bigotes-Bold-webfont.ttf') format('truetype'),
+         url('font/webfont/Bigotes-Bold-webfont.svg#bigotesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'bigotesdemibold';
+    src: url('font/webfont/Bigotes-DemiBold-webfont.eot');
+    src: url('font/webfont/Bigotes-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfont/Bigotes-DemiBold-webfont.woff2') format('woff2'),
+         url('font/webfont/Bigotes-DemiBold-webfont.woff') format('woff'),
+         url('font/webfont/Bigotes-DemiBold-webfont.ttf') format('truetype'),
+         url('font/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'bigotesheavy';
+    src: url('font/webfont/Bigotes-Heavy-webfont.eot');
+    src: url('font/webfont/Bigotes-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfont/Bigotes-Heavy-webfont.woff2') format('woff2'),
+         url('font/webfont/Bigotes-Heavy-webfont.woff') format('woff'),
+         url('font/webfont/Bigotes-Heavy-webfont.ttf') format('truetype'),
+         url('font/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'bigotesmedium';
+    src: url('font/webfont/Bigotes-Medium-webfont.eot');
+    src: url('font/webfont/Bigotes-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfont/Bigotes-Medium-webfont.woff2') format('woff2'),
+         url('font/webfont/Bigotes-Medium-webfont.woff') format('woff'),
+         url('font/webfont/Bigotes-Medium-webfont.ttf') format('truetype'),
+         url('font/webfont/Bigotes-Medium-webfont.svg#bigotesmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'bigotes_corsivaitalic';
+    src: url('font/webfont-curs/BigotesCorsiva-Italic-webfont.eot');
+    src: url('font/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.woff2') format('woff2'),
+         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.woff') format('woff'),
+         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.ttf') format('truetype'),
+         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End Font Styles */
+
+/* Parte para los mediaqueries */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+/*
+ * Seccion Logo
+ */
+.logo {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    left: 50%;
+    top: 5px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+	width: 200px!important;
+}
+.logo-container {
+    margin: auto;
+    left: -100px;
+	position: relative;
+	max-width: 200px!important;
+}
+
+/* End Logo */ 
+
+/*
+ * Menu
+ */
+.menu {
+    background: none repeat scroll 0 0 #000;
+    display: block;
+    height: 100%;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 15;
+}
+.menu-container {
+    color: #fff;
+    height: 75%;
+    margin: 70px 5% 0;
+    overflow:hidden;
+}
+.menu-container ul .enlace.trailer {
+    list-style: outside none none;
+    padding: 50px 0;
+}
+/* End Menu */
+
+/*
+ * Toolbar
+ */
+.toolbar {
+  	display: block;
+    height: 100px;
+    padding: 22px 0 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 240px;
+    z-index: 25;
+}
+.toolbar-container {
+  width: 100%;
+  height: 100%;
+}
+.toolbar-container .globo, .toolbar-container-facebook .globo, .toolbar-container-twitter .globo {
+  float: left;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+.toolbar-container-facebook {
+    position: absolute;
+    top: 80px;
+    left: -25px;
+    display:none;
+}
+.toolbar-container-twitter {
+    position: absolute;
+    top: 80px;
+    left: 33px;
+    display:none;
+}
+.globo.facebookL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 300px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.twitterL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 228px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.instagramL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 158px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.youtubeL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 87px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.facebook-l {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 0;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.facebook-s {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 45px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.twitter-l {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px -59px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.twitter-s {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 45px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+/* End Toolbar */
+
+/*
+ * Seccion de Contenedor de Youtube
+ */
+.container-fluid.fullscreen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	z-index: 99;
+	background:#000;
+}
+.logoYoutube{
+	height: 10%;
+} 
+.logoYoutube img{
+	max-width: 300px;
+	min-width: 200px;
+}
+.youtube {
+	height: 70%;
+}
+.youtubeClose {
+	height: 10%;
+}
+.youtubeExplorar{
+	height: 10%;
+}
+/* End Seccion de Contenedor de Youtube */
+
+/* SECIONES */
+
+/*
+ * Detras Camaras
+ */
+.seccionDetras {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: table;
+}
+.seccionDetras> h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+.bloqueImagen img {
+    width: 100% !important;
+    margin: 5px 2px !important;
+}
+
+.seccionDetrasMore {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: none;
+}
+.botonMas {
+  	background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 2em;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+}
+.botonMas:hover{
+  cursor: pointer;
+}
+.seccionDetras .img100, .seccionDetrasMore .img100{
+  width: 100%;
+  margin: 5px 2px;
+}
+.seccionDetras .img90, .seccionDetrasMore .img90{
+  width: 90%;
+  margin: 5px 2px;
+}
+.seccionDetras .img80, .seccionDetrasMore .img80{
+  width: 80%;
+  margin: 5px 2px;
+}
+.seccionDetras .img70, .seccionDetrasMore .img70{
+  width: 70%;
+  margin: 5px 2px;
+}
+.seccionDetras .img60, .seccionDetrasMore .img60{
+  width: 60%;
+  margin: 5px 2px;
+}
+.seccionDetras .img50, .seccionDetrasMore .img50{
+  width: 50%;
+  margin: 5px 2px;
+}
+.seccionDetras .img40, .seccionDetrasMore .img40{
+  width: 40%;
+  margin: 5px 2px;
+}
+.seccionDetras .img30, .seccionDetrasMore .img30{
+  width: 30%;
+  margin: 5px 2px;
+}
+.seccionDetras .img20, .seccionDetrasMore .img20{
+  width: 20%;
+  margin: 5px 2px;
+}
+.imgGalDos{
+  margin-top: 45px!important;
+}
+.imgGalTres{
+  margin-top: 20px!important;
+}
+.imgGalCuatro{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalCinco{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalSeis{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+/* Detras Camaras */
+
+/*
+ * Premios
+ */
+.premios-container .campana-container {
+    display: block;
+}
+/* Premios */
+
+/*
+ * Seccion Creditos
+ */
+
+.seccionCreditos {
+  background-image: url("images/bg/seccionTrece.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+.creditosDesktop{
+	display: block;
+}
+.creditosMobile{
+	display: none;
+}
+.seccionCreditos img {
+  margin: auto;
+}
+.creditos-container {
+  position: relative;
+}
+.creditos-container-inner > table {
+  text-align: center;
+}
+.creditos-container-inner table {
+  width: 100%;
+}
+.creditos-container-inner table p {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+  margin: 0px;
+}
+.creditos-container-inner table p b {
+  font-weight: 900;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+}
+
+/* Seccion Creditos */ 
+
+	/* Patrocinadores */
+.patrocinadores-container .holder {
+    height: 58px;
+    text-align: center;
+}
+	/*End Patrocinadores */
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+/*
+ * Seccion Logo
+ */
+.logo {
+	height: 100px;
+	width: 300px!important;
+}
+.logo-container {
+	left: -150px;
+	position: relative;
+	max-width: 300px!important;
+} 
+/* End Logo */ 
+
+/*
+ * Seccion de Contenedor de Youtube
+ */
+.container-fluid.fullscreen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	z-index: 99;
+	background:#000;
+}
+.logoYoutube{
+	height: 15%;
+} 
+.logoYoutube img{
+	max-width: 300px;
+	min-width: 200px;
+}
+.youtube {
+	height: 70%;
+}
+.youtubeClose {
+	height: 15%;
+}
+.youtubeExplorar{
+	height: 15%;
+}
+/* End Seccion de Contenedor de Youtube */
+
+/* SECIONES */
+
+/*
+ * Premios
+ */
+.premios-container .campana-container {
+    display: block;
+}
+/* Premios */
+
+/*
+ * Seccion Creditos
+ */
+
+.seccionCreditos {
+  background-image: url("images/bg/seccionTrece.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+.creditosDesktop{
+	display: block;
+}
+.creditosMobile{
+	display: none;
+}
+.seccionCreditos img {
+  margin: auto;
+}
+.creditos-container {
+  position: relative;
+}
+.creditos-container-inner > table {
+  text-align: center;
+}
+.creditos-container-inner table {
+  width: 100%;
+}
+.creditos-container-inner table p {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+  margin: 0px;
+}
+.creditos-container-inner table p b {
+  font-weight: 900;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+}
+
+/* Seccion Creditos */ 
+
+	/* Patrocinadores */
+.patrocinadores-container .holder {
+    height: 68px;
+    text-align: center;
+}
+	/*End Patrocinadores */
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+/*
+ * Seccion Logo
+ */
+.logo {
+	height: 100px;
+	width: 300px!important;
+}
+.logo-container {
+	left: -150px;
+	position: relative;
+	max-width: 300px!important;
+} 
+/* End Logo */ 
+
+/*
+ * Seccion de Contenedor de Youtube
+ */
+.container-fluid.fullscreen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	z-index: 99;
+	background:#000;
+}
+.logoYoutube{
+	height: 15%;
+} 
+.logoYoutube img{
+	max-width: 300px;
+	min-width: 200px;
+}
+.youtube {
+	height: 70%;
+}
+.youtubeClose {
+	height: 15%;
+}
+.youtubeExplorar{
+	height: 15%;
+}
+/* End Seccion de Contenedor de Youtube */
+
+/* SECIONES */
+
+
+/*
+ * Premios
+ */
+.premios-container .campana-container {
+    display: block;
+}
+/* Premios */
+
+/*
+ * Seccion Creditos
+ */
+
+.seccionCreditos {
+  background-image: url("images/bg/seccionTrece.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+.creditosDesktop{
+	display: block;
+}
+.creditosMobile{
+	display: none;
+}
+.seccionCreditos img {
+  margin: auto;
+}
+.creditos-container {
+  position: relative;
+}
+.creditos-container-inner > table {
+  text-align: center;
+}
+.creditos-container-inner table {
+  width: 100%;
+}
+.creditos-container-inner table p {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+  margin: 0px;
+}
+.creditos-container-inner table p b {
+  font-weight: 900;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+}
+
+/* Seccion Creditos */ 
+
+	/* Patrocinadores */
+.patrocinadores-container .holder {
+    height: 72px;
+    text-align: center;
+}
+	/*End Patrocinadores */
+
+}

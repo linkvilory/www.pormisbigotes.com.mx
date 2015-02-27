@@ -1,8 +1,8 @@
 /*
- * Hoja de estilo para la página principal index.html
+ * Hoja de estilo para la página de encuesta encuesta.html
  */
 
-/* Se creó un css para la página principal para evitar cargar más estilos de los que se utiliza y mejorar el performance de la página */ 
+/* Se creó un css para la página de encuesta para evitar cargar más estilos de los que se utiliza y mejorar el performance de la página */ 
 /* El estilo por default es para un dispositivo móvil así que los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
 
 /*
@@ -215,6 +215,37 @@ body {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+/*
+ * Seccion Logo
+ */
+.logo {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    left: 50%;
+    top: 5px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+    width: 200px!important;
+}
+.logo-container {
+    margin: auto;
+    left: -100px;
+    position: relative;
+    max-width: 200px!important;
+}
+
+/* End Logo */ 
+
+/*
+ * Seccion Formulario
+ */
+.enviarFormulario {
+    margin-top: 100px;
+}
+
 .width25 {
     padding: 0 20px;
     width: 25%;
@@ -236,6 +267,27 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+/*
+ * Seccion Logo
+ */
+.logo {
+    height: 100px;
+    width: 300px!important;
+}
+.logo-container {
+    left: -150px;
+    position: relative;
+    max-width: 300px!important;
+} 
+/* End Logo */ 
+
+/*
+ * Seccion Formulario
+ */
+.enviarFormulario {
+    margin-top: 120px;
+}
+
 .width33 {
     padding: 0 20px;
     text-align: center;
@@ -252,6 +304,27 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+/*
+ * Seccion Logo
+ */
+.logo {
+    height: 100px;
+    width: 300px!important;
+}
+.logo-container {
+    left: -150px;
+    position: relative;
+    max-width: 300px!important;
+} 
+/* End Logo */ 
+
+/*
+ * Seccion Formulario
+ */
+.enviarFormulario {
+    margin-top: 120px;
+}
 
 .width33 {
     padding: 0 20px;

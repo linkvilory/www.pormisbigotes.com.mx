@@ -1,12 +1,28 @@
 $(function(){
 
+	$("#facebookL").click(function(){
+		$("#toolbar-container-facebook").toggleClass("show");
+		$("#toolbar-container-twitter").removeClass("show");
+	});
+	$("#twitterL").click(function(){
+		$("#toolbar-container-twitter").toggleClass("show");
+		$("#toolbar-container-facebook").removeClass("show");
+	});
+	$("#instagramL").click(function(){
+		$("#toolbar-container-twitter").removeClass("show");
+		$("#toolbar-container-facebook").removeClass("show");
+	});
+	$("#youtubeL").click(function(){
+		$("#toolbar-container-twitter").removeClass("show");
+		$("#toolbar-container-facebook").removeClass("show");
+	});
+
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").hide();
 	});
-
 	$("#showYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").show();
-	})
+	});
 
 	/*
 	 * Toogle Menu
@@ -21,8 +37,8 @@ $(function(){
 	  */
 	  $("#rslidesPremios").responsiveSlides({
 		  auto: false,             // Boolean: Animate automatically, true or false
-		  speed: 100,            // Integer: Speed of the transition, in milliseconds
-		  timeout: 2000,          // Integer: Time between slide transitions, in milliseconds
+		  speed: 500,            // Integer: Speed of the transition, in milliseconds
+		  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
 		  pager: true,           // Boolean: Show pager, true or false
 		  nav: false,             // Boolean: Show navigation, true or false
 		  random: false,          // Boolean: Randomize the order of the slides, true or false
@@ -98,5 +114,8 @@ $(function(){
 		$(this).css( "opacity", "0.5" );
 		$(this).prev().prev().css("display", "none");
 	});
+
+
+
 
 });
