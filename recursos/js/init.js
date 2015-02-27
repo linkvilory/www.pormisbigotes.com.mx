@@ -3,7 +3,6 @@ $(function(){
 	$("#irSitioYoutubePlayer").click(function (){
 		window.location = "./encuesta.html";
 	});
-
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").hide();
 	});

@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>www.pormisbigotes.com.mx</title>
+<head>
+    <meta charset="UTF-8">
+    <title>www.pormisbigotes.com.mx</title>
+    <!-- Carga de archivos Css -->
+    <link href="./recursos/css/view.index.html.css" rel="stylesheet" type="text/css">
+    <link href="./recursos/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- End archivos Css-->
+    <!-- Carga de archivos Js -->
+    <script src="./recursos/js/jquery-1.11.2.min.js"></script>
+    <script src="./recursos/js/jquery-ui.min.js"></script>
+    <!-- End archivos js -->
+</head>
 
-		<!-- Carga de archivos Css -->
-			<link type="text/css" rel="stylesheet" href="./recursos/css/main.css"/>
-			<link type="text/css" rel="stylesheet" href="./recursos/css/bootstrap.css"/>
-		<!-- End archivos Css-->
+<body>
+    <!-- Pagina Principal del sitio www.pormisbigotes.com.mx -->
+    <div class="logo"><img class="logo-container img-responsive" src=
+    "recursos/images/logo-por-mis-bigotes.png"></div>
 
-		<!-- Carga de archivos Js -->
-			<script src="./recursos/js/jquery-1.11.2.min.js"></script>
-			<script src="./recursos/js/jquery-ui.min.js"></script>
-		<!-- End archivos js -->
+    <section class="containerDefault">
+        <div class="trailer">
+            <div id="showYoutubePlayer">
+                <div class="trailer-container"><img class=
+                "buttonTrailer img-responsive" src=
+                "recursos/images/btn-vertrailer.png"></div>
+            </div>
+        </div>
 
-	</head>
-	<body>
+        <div class="explorar" id="explorar">
+            <div class="explorar-container"><img class=
+            "buttonExplorar img-responsive" src=
+            "recursos/images/btn-explorar.png"></div>
+        </div>
+    </section>
 
-	<!-- Pagina Principal del sitio www.pormisbigotes.com.mx -->	
+    <div class="container-fluid fullscreen">
+        <div class="col-md-6 col-md-offset-3 logoYoutube"><img class=
+        "img-responsive" src="recursos/images/logo-por-mis-bigotes.png"></div>
 
-	<div class="logo">
-		<img class="logo-container img-responsive" src="recursos/images/logo-por-mis-bigotes.png"/>
-	</div>
+        <div class="col-md-1 youtubeClose"><img class="cerrarBoton" id=
+        "closeYoutubePlayer" src="recursos/images/close.png"></div>
 
-	<section class="containerDefault">
-		<div class="trailer">
-			<div id="showYoutubePlayer">
-				<div class="trailer-container">
-					<img class="buttonTrailer img-responsive" src="recursos/images/btn-vertrailer.png"/>
-				</div>
-			</div>
-		</div>
-		<div id="explorar" class="explorar">
-			<div class="explorar-container">
-				<img class="buttonExplorar img-responsive" src="recursos/images/btn-explorar.png"/>
-			</div>
-		</div>
-	</section>
+        <div class="col-md-8 col-md-offset-2 youtube">
+            <iframe frameborder="0" height="90%" id="ytplayer" name="ytplayer"
+            src="http://www.youtube.com/embed/F-th5y59AH8" width=
+            "100%"></iframe>
+        </div>
 
-	<div class="container-fluid fullscreen">
-		<div class="col-md-6 col-md-offset-3 logoYoutube">
-			<img class="img-responsive" src="recursos/images/logo-por-mis-bigotes.png"/>
-		</div>
-		<div class="col-md-1 youtubeClose">
-			<img class="cerrarBoton" id="closeYoutubePlayer" src="recursos/images/close.png"/>
-		</div>
-		<div class="col-md-8 col-md-offset-2 youtube">
-			<iframe id="ytplayer" type="text/html" width="100%" height="90%" src="http://www.youtube.com/embed/F-th5y59AH8" frameborder="0"></iframe>
-		</div>
-		<div class="col-md-8 col-md-offset-2 youtubeClose">
-			<div class="explorarSitioBoton" id="irSitioYoutubePlayer">EXPLORAR EL SITIO</div>
-		</div>
-	</div>
-
-	<!-- Carga de Google Analytics -->
-
-	<!-- End Google Analytics -->
-
-
-
-	<!-- Carga de archivos Js -->
-		<script src="./recursos/js/bootstrap.min.js"></script>
-		<script src="./recursos/js/init.js"></script>
-	<!-- End archivos Js -->
-
-	</body>
-</html> 
+        <div class="col-md-8 col-md-offset-2 youtubeExplorar">
+            <div class="explorarSitioBoton" id="irSitioYoutubePlayer">EXPLORAR EL SITIO</div>
+        </div>
+    </div>
+    <!-- Carga de Google Analytics -->
+    <!-- End Google Analytics -->
+    <!-- Carga de archivos Js -->
+    <script src="./recursos/js/bootstrap.min.js"></script> <script src="./recursos/js/init.js"></script>
+    <!-- End archivos Js -->
+</body>
+</html>
