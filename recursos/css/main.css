@@ -18,12 +18,14 @@ body {
 .container-fluid.fullscreen {
   display: none;
 }
-.container-fluid.fullscreen {
+  .container-fluid.fullscreen {
     position: fixed;
     width: 100%;
     height: 100%;
     display: none;
     top: 0;
+    z-index: 99;
+    background:#000;
   }
 .separador {
   width: 100%;
@@ -241,6 +243,12 @@ body {
  * Omitir boton
  */
 
+.row.omitir {
+    bottom: 10px;
+    position: fixed;
+    right: 0;
+    width: 250px;
+}
 .omitir-container a {
   color: #fff;
   font-size: 14px;
@@ -348,34 +356,48 @@ body {
 /*
  * Seccion de Youtube
  */
-.youtube {
-  background: none repeat scroll 0 0 #000;
+.logoYoutube{
+  height: 15%;
+} 
+.logoYoutube img{
   height: 90%;
-  top: 0;
-  z-index: 9999;
-}
-
-.youtubeClose {
-  height: 10%;
-  font-size: 2em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.youtubeClose a {
-  color: #fff;
-  display: block;
-  line-height: 50px;
   margin: auto;
-  cursor: pointer;
-  text-decoration: none;
 }
-
-.youtubeClose a:hover, .youtubeClose a:active, .youtubeClose a:focus {
-  color: #fff;
-  text-decoration: none;
+.youtube {
+    background: none repeat scroll 0 0 #000;
+    height: 60%;
+    top: 0;
+    z-index: 9999;
 }
-
+.youtubeClose {
+  height: 15%;
+}
+.youtubeClose .cerrarBoton {
+color: #fff;
+    cursor: pointer;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 45px;
+    z-index: 99999;
+}
+.youtubeClose .explorarSitioBoton {
+background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 32px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 170px;
+    z-index: 99;
+}
 /*
  * Seccion formulario pagina encuesta.html 
  */
@@ -1196,6 +1218,15 @@ section {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
  
+/*
+ * Youtube
+ */
+ .youtube {
+  background: none repeat scroll 0 0 #000;
+  height: 75%;
+  top: 0;
+  z-index: 9999;
+}
 
 
   .containerDefault .trailer {
@@ -1313,12 +1344,24 @@ section {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+/*
+ * Youtube
+ */
+ .youtube {
+  background: none repeat scroll 0 0 #000;
+  height: 75%;
+  top: 0;
+  z-index: 9999;
+}
+
   .container-fluid.fullscreen {
     position: fixed;
     width: 100%;
     height: 100%;
     display: none;
     top: 0;
+    z-index: 99;
+    background:#000;
   }
 
   .containerDefault .trailer {
@@ -1435,7 +1478,15 @@ section {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
  
-
+/*
+ * Youtube
+ */
+ .youtube {
+  background: none repeat scroll 0 0 #000;
+  height: 75%;
+  top: 0;
+  z-index: 9999;
+}
 
   .container-fluid.fullscreen {
     position: fixed;
@@ -1443,6 +1494,8 @@ section {
     height: 100%;
     display: none;
     top: 0;
+    z-index: 99;
+    background:#000;
   }
 
   .containerDefault .trailer {
