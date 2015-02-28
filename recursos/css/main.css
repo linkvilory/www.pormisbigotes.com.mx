@@ -856,14 +856,6 @@ section {
   position: relative;
 }
 
-.creditos-container-inner::-webkit-scrollbar * {
-  background: transparent;
-}
-
-.creditos-container-inner::-webkit-scrollbar-thumb {
-  background: #999 !important;
-}
-
 .creditos-container-inner > table {
   border-collapse: separate;
   border-spacing: 5px 20px;

@@ -121,16 +121,15 @@
 }
 
 .galeria_nav {
-  background: url("images/sprites/arrows.gif") no-repeat scroll left 50% #000;
-  bottom: 0;
-  left: 0;
-  opacity: 0.6;
-  overflow: hidden;
-  position: absolute;
-  text-indent: -9999px;
-  top: 0;
-  width: 38px;
-  z-index: 3;
+    background: url("images/sprites/arrows.png") no-repeat scroll left 50% transparent;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 60px;
+    z-index: 3;
 }
 
 .galeria_nav.next {

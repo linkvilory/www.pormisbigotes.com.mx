@@ -22,7 +22,10 @@ body {
 	padding: 0;
 	font-family: 'bigotesmedium';
 }
-
+.row{
+	margin:0px!important;
+	padding:0px!important;
+}
 /*
  * Seccion del Logo 
  */
@@ -192,6 +195,429 @@ body {
 	display: none;
 }
 /* End Toolbar */
+/*
+ * Primera
+ */
+.seccionBienvenida {
+  background-image: url("images/bg/seccionUno.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.bienvenida-container {
+  position: relative;
+}
+
+.bienvenida-container-inner {
+  position: absolute!important;
+}
+
+.seccionBienvenida img {
+  margin: auto;
+}
+
+.bienvenida-container-inner > h1 {
+	font-size: 2em;
+    font-weight: 900;
+    margin-top: 60px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
+/* Primera */ 
+/*
+ * Noticias
+ */
+.seccionNoticias {
+  background-image: url("images/bg/seccionDos.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  display: table;
+  width: 100%;
+}
+
+.noticias-container {
+  margin: auto;
+  text-align: center;
+}
+.noticias-container .bgWhite{
+  background:#fff;
+}
+.noticias-container> h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+
+.noticias-container table {
+  width: 100%;
+  text-align: center;
+}
+/* Noticias */ 
+
+/*
+ * Sinopsis
+ */
+.seccionSinopsis {
+  background-image: url("images/bg/seccionTres.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: table;
+}
+
+.sinopsis-container {
+  margin: auto;
+  text-align: center;
+}
+
+.sinopsis-container> h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+
+.sinopsis-container p {
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+
+.sinopsis-container p b {
+  font-size: 2.5em;
+  font-weight: 900;
+} 
+/* Sinopsis */
+/*
+ * Conocelos
+ */
+.seccionConocelos {
+  background-image: url("images/bg/verde.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100%;
+  display: table;
+}
+
+.seccionConocelos> h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+
+.sceneConocelos,
+.sceneConocelos .layer {
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sceneConocelos {
+  min-height: 1090px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sceneConocelos .layer {
+  position: absolute;
+  width:199px;
+  height: 300px;
+}
+.sceneConocelos .layer div {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.layer .pEncabezado{
+  display: none;
+  margin: 0px 28px;
+    position: absolute;
+    z-index: 3;
+}
+.layer .personaje{
+  position: absolute;;
+  z-index: 1;
+}
+.layer .personaje.sombra{
+  position: absolute;;
+  z-index: 2;
+  opacity: 0.5;
+}
+.conoceloContainerUno {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+}
+.conoceloContainerDos {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+}
+.conoceloContainerTres {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.conoceloContainerCuatro {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 100px;
+}
+.conoceloContainerCinco {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+    margin-top: 200px;
+}
+.conoceloContainerSeis {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+    margin-top: 200px;
+}
+.conoceloContainerSiete {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 300px;
+}
+.conoceloContainerOcho {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 300px;
+}
+.conoceloContainerNueve {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 310px;
+    margin-top: 400px;
+}
+.conoceloContainerDiez {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 732px;
+    margin-top: 400px;
+}
+.conoceloContainerOnce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 500px;
+}
+.conoceloContainerDoce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 517px;
+  margin-top: 500px;
+}
+.conoceloContainerTrece {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 930px;
+  margin-top: 500px;
+}
+.conoceloContainerCatorce {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 210px;
+    margin-top: 600px;
+}
+.conoceloContainerQuince {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 450px;
+    margin-top: 600px;
+}
+.conoceloContainerDiezyseis {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 700px;
+    margin-top: 600px;
+}
+.conoceloContainerDiezysiete {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  height: 300px;
+  width: 199px;
+  position: absolute;
+  margin-left: 930px;
+    margin-top: 600px;
+}
+.seccionConocelosMore {
+  background-image: url("images/bg/verde.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100%;
+  display:none;
+} 
+/* Conocelos */ 
+/*
+ * Galerias Estaticas
+ */
+.seccionGaleriaEstaticaParteUno {
+  background-image: url("images/bg/seccionCuatro.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.seccionGaleriaEstaticaParteUno img {
+  margin: auto;
+} 
+.seccionGaleriaEstaticaParteDos {
+  background-image: url("images/bg/seccionSeis.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.seccionGaleriaEstaticaParteDos img {
+  margin: auto;
+}
+
+.seccionGaleriaEstaticaParteTres {
+  background-image: url("images/bg/seccionSiete.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.seccionGaleriaEstaticaParteTres img {
+  margin: auto;
+} 
+/* Galerias Estaticas */
+/*
+ * Galeria Slider
+ */
+.seccionGaleria {
+  background-image: url("images/bg/seccionOcho.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.seccionGaleria .col-sm-12.col-md-12{
+	margin: 0px!important;
+	padding: 0px!important;
+}
+.seccionGaleria img {
+  margin: auto;
+}
+.galeria-container-inner {
+	height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+}
+.galeria-container-inner .buttonGaleria {
+	left: -75px;
+    position: relative;
+    top: -40px;
+    width: 150px;
+}
+.galeria-container-inner .buttonGaleria:hover {
+  cursor:pointer;
+}
+.galeria-container-inner .buttonGaleria img {
+  margin: auto;
+} 
+ /* Galeria Slider */
 
 /*
  * Detras Camaras
@@ -654,6 +1080,24 @@ body {
 /* End Seccion de Contenedor de Youtube */
 
 /* SECIONES */
+
+/*
+ * Galeria Slider
+ */
+.galeria-container-inner {
+	height: 150px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+.galeria-container-inner .buttonGaleria {
+	left: -150px;
+    position: relative;
+    top: -75px;
+    width: 300px;
+}
+ /* Galeria Slider */
 
 /*
  * Detras Camaras
