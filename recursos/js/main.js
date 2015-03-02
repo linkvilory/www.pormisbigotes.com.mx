@@ -97,7 +97,7 @@ $(function(){
   invertY: true,
   limitX: false,
   limitY: false,
-  scalarX: 40,
+  scalarX: 10,
   scalarY: 0,
   frictionX: 1,
   frictionY: 1,
