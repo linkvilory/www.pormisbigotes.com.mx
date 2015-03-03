@@ -281,9 +281,7 @@ body {
 }
 
 .bienvenida-container-inner > h1 {
-	font-size: 2em;
-    font-weight: 900;
-    margin-top: 60px;
+	font-weight: 900;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
@@ -300,23 +298,22 @@ body {
   display: table;
   width: 100%;
 }
-
 .noticias-container {
   margin: auto;
   text-align: center;
+  margin-top: 40px;
 }
 .noticias-container .bgWhite{
-  background:#fff;
+  	background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    padding: 0;
 }
 .noticias-container> h1 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-top: 50px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+  	font-weight: 900;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
-
 .noticias-container table {
   width: 100%;
   text-align: center;
@@ -1289,8 +1286,71 @@ body {
 /* End Seccion de Contenedor de Youtube */
 
 /* SECIONES */
+/*
+ * Primera
+ */
+.seccionBienvenida {
+    background-image: url("images/bg/seccionUno.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
+}
+.bienvenida-container-inner {
+    margin-top: 100px;
+} 
+/* Primera */ 
+/*
+ * Noticias
+ */
+.seccionNoticias {
+    background-image: url("images/bg/seccionDos.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    display: table;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
+}
 
-
+/* Noticias */ 
+/*
+ * Sinopsis
+ */
+ .seccionSinopsis {
+    background-image: url("images/bg/seccionTres.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
+}
+.sinopsis-container {
+    margin-top: 40px;
+}
+.sinopsis-container > h1 {
+    font-size: 2em;
+    font-weight: 900;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+.sinopsis-container p {
+    font-size: 1.4em;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    margin: 0;
+} 
 /*
  * Conocelos
  */
@@ -1324,18 +1384,17 @@ body {
 }
 
 .layer .pEncabezado{
-  display: none;
-  margin: 0px 28px;
+  	display: none;
     position: absolute;
-    z-index: 3;
+    z-index: 9998;
 }
 .layer .personaje{
   position: absolute;;
-  z-index: 1;
+  z-index: 8000;
 }
 .layer .personaje.sombra{
   position: absolute;;
-  z-index: 2;
+  z-index: 8001;
   opacity: 0.5;
 }
 .conoceloContainerUno {
@@ -1356,6 +1415,15 @@ body {
     top: 5px;
     z-index: 9999;
 }
+.conoceloContainerUno .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0px -111px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 210px;
+    margin-left: 70px;
+    margin-top: -40px;
+}
 .conoceloContainerDos {
   	height: 394px;
     margin-left: 950px;
@@ -1373,11 +1441,19 @@ body {
     top: 0;
     z-index: 9999;
 }
+.conoceloContainerDos .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0 -228px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerTres {
   	height: 1217px;
     margin-left: 0;
     margin-top: 130px;
-    overflow: hidden;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 457px;
@@ -1390,6 +1466,15 @@ body {
     position: absolute;
     top: 50px;
     z-index: 9999;
+}
+.conoceloContainerTres .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerCuatro {
   	height: 603px;
@@ -1408,6 +1493,15 @@ body {
     top: -5px;
     z-index: 9999;
 }
+.conoceloContainerCuatro .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0 -170px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerCinco {
   	height: 679px;
     margin-left: 210px;
@@ -1424,6 +1518,15 @@ body {
     position: absolute;
     top: -6px;
     z-index: 9999;
+}
+.conoceloContainerCinco .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0 -56px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerSeis {
   	height: 1226px;
@@ -1442,11 +1545,19 @@ body {
     top: 0;
     z-index: 9999;
 }
+.conoceloContainerSeis .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0px -283px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 245px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerSiete {
   	height: 790px;
     margin-left: 520px;
     margin-top: 350px;
-    overflow: hidden;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 437px;
@@ -1459,6 +1570,15 @@ body {
     position: absolute;
     top: 40px;
     z-index: 9999;
+}
+.conoceloContainerSiete .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0 -398px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 135px;
+    margin-top: 0px;
+    width: 210px;
 }
 .conoceloContainerOcho {
   	height: 1044px;
@@ -1477,6 +1597,15 @@ body {
     top: 0;
     z-index: 9999;
 }
+.conoceloContainerOcho .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: 0px -340px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 135px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerNueve {
   	height: 896px;
     margin-left: 0;
@@ -1493,6 +1622,15 @@ body {
     position: absolute;
     top: 0;
     z-index: 9999;
+}
+.conoceloContainerNueve .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px 0;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerDiez {
   	height: 870px;
@@ -1511,6 +1649,15 @@ body {
     top: 0;
     z-index: 9999;
 }
+.conoceloContainerDiez .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px -55px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 85px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerOnce {
   	height: 724px;
     margin-left: 90px;
@@ -1527,6 +1674,15 @@ body {
     position: absolute;
     top: 0px;
     z-index: 9999;
+}
+.conoceloContainerOnce .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px -169px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerDoce {
   	height: 958px;
@@ -1545,6 +1701,15 @@ body {
     top: 0px;
     z-index: 9999;
 }
+.conoceloContainerDoce .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -120px -454px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 265px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerTrece {
   	height: 648px;
     margin-left: 1070px;
@@ -1561,6 +1726,15 @@ body {
     position: absolute;
     top: 0px;
     z-index: 9999;
+}
+.conoceloContainerTrece .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px -112px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerCatorce {
   	height: 561px;
@@ -1579,6 +1753,15 @@ body {
     top: 0px;
     z-index: 9999;
 }
+.conoceloContainerCatorce .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px -226px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: -40px;
+    width: 210px;
+}
 .conoceloContainerQuince {
   	height: 548px;
     margin-left: 567px;
@@ -1595,6 +1778,15 @@ body {
     position: absolute;
     top: 0;
     z-index: 9999;
+}
+.conoceloContainerQuince .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -225px -284px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 65px;
+    margin-top: -40px;
+    width: 210px;
 }
 .conoceloContainerDiezyseis {
   	height: 493px;
@@ -1613,6 +1805,15 @@ body {
     top: 0px;
     z-index: 9999;
 }
+.conoceloContainerDiezyseis .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -212px -338px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 218px;
+    margin-top: -40px;
+    width: 229px;
+}
 .conoceloContainerDiezysiete {
   	height: 647px;
     margin-left: 800px;
@@ -1630,10 +1831,85 @@ body {
     top: 0px;
     z-index: 9999;
 }
+.conoceloContainerDiezysiete .pEncabezado{
+	background-image: url("images/sprites/nombres.png");
+    background-position: -212px -398px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 290px;
+    margin-top: -40px;
+    width: 229px;
+}
 /* Conocelos */
+/* Galerias Estaticas */
+.seccionGaleriaEstaticaParteUno {
+    background-image: url("images/bg/seccionCuatro.jpg");
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
+}
+.seccionGaleriaEstaticaParteDos {
+    background-image: url("images/bg/seccionSeis.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
+}
+.seccionGaleriaEstaticaParteTres {
+    background-image: url("images/bg/seccionSiete.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
+}
+/* Galerias Estaticas*/
+/*
+ * Galeria
+ */
+.seccionGaleria {
+    background-image: url("images/bg/seccionOcho.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
+}
+.seccionGaleria-container .buttonGaleria{
+	margin-top: 225px;
+    cursor: pointer;
+}
+/* Galeria */
 /*
  * Premios
  */
+
+.seccionPremios {
+    background-image: url("images/bg/seccionDoce.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
+}
+.premios-container {
+    margin-top: 100px;
+} 
 .premios-container .campana-container {
     display: block;
 }
@@ -1644,11 +1920,15 @@ body {
  */
 
 .seccionCreditos {
-  background-image: url("images/bg/seccionTrece.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
+    background-image: url("images/bg/seccionTrece.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    width: 100%;
+    display: table;
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
 }
 .creditosDesktop{
 	display: block;
@@ -1662,6 +1942,9 @@ body {
 .creditos-container {
   position: relative;
 }
+.creditos-container-inner {
+    margin-top: 100px;
+}
 .creditos-container-inner > table {
   text-align: center;
 }
@@ -1669,11 +1952,12 @@ body {
   width: 100%;
 }
 .creditos-container-inner table p {
-  font-size: 0.8em;
-  font-weight: lighter;
-  line-height: 25px;
-  text-shadow: 1px -1px #000;
-  margin: 0px;
+  	font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 25px;
+    margin: 0;
+    text-shadow: 1px -1px #000;
+    padding: 4px 0;
 }
 .creditos-container-inner table p b {
   font-weight: 900;
@@ -1684,9 +1968,27 @@ body {
 /* Seccion Creditos */ 
 
 	/* Patrocinadores */
+.patrocinadores{
+	background-image: url("images/bg/footer.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto auto;
+    display: table;
+    height: 230px;
+    max-height: 230px;
+    min-height: 230px;
+    width: 100%;
+}
+.patrocinadores-container {
+    margin-top: 50px;
+}	
 .patrocinadores-container .holder {
-    height: 72px;
     text-align: center;
+    height: 100%;
+}
+.patrocinadores-container img {
+    float: left;
+    margin: 10px 30px;
 }
 	/*End Patrocinadores */
 
