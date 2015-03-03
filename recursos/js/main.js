@@ -91,31 +91,39 @@ $(function(){
 	});
 
 	$("#sceneConocelos").parallax({
-		calibrateX: false,
+		calibrateX: true,
   calibrateY: false,
   invertX: true,
   invertY: true,
   limitX: false,
   limitY: false,
-  scalarX: 10,
+  scalarX: 0,
   scalarY: 0,
-  frictionX: 1,
-  frictionY: 1,
+  frictionX: 0,
+  frictionY: 0,
   originX: 0.5,
   originY: 0.5
 	});
 		
 
 
-	$(".pUno").hover(function() {
-		$(this).css( "opacity", "0" );
-		$(this).prev().prev().css("display", "block");
+	$(".bubbleInfo").hover(function() {
+		$(this).next().next().next().css( "opacity", "0" );
+		$(this).next().css("display", "block");
 		}, function() {
-		$(this).css( "opacity", "0.5" );
-		$(this).prev().prev().css("display", "none");
+		$(this).next().next().next().css( "opacity", "0.5" );
+		$(this).next().css("display", "none");
 	});
 
-
+	$(".bubbleInfo").click(function(){
+		$(".container-fluid.fullscreen.info .infoDetalle h1").html($(this).attr("data-header"));
+		$(".container-fluid.fullscreen.info .infoDetalle img").attr("src", $(this).attr("data-image"));
+		$(".container-fluid.fullscreen.info .infoDetalle p").html($(this).attr("data-detail"));
+		$(".container-fluid.fullscreen.info").show();
+	});
+	$("#cerrarInfoConocelos").click(function(){
+		$(".container-fluid.fullscreen.info").hide();
+	});
 
 
 });

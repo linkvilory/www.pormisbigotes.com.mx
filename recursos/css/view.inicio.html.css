@@ -187,6 +187,68 @@ body {
 }
 /* Seccion de Youtube */
 
+/*
+ * Parte del contenedor de Descripcion de Conocelos
+ */
+
+.container-fluid.fullscreen.info {
+	display: none;
+}
+.container-fluid.fullscreen.info {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    z-index: 99;
+    background:#000;
+}
+
+.infoConocelos{
+	height: 10%;
+} 
+.infoConocelos img{
+	max-width: 150px;
+	min-width: 100px;
+	margin:auto;
+}
+
+.infoDetalle{
+	height: 80%;
+}
+
+.infoDetalle > h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.infoDetalle img{
+	margin: auto;
+}
+.infoDetalle p{
+	text-align: justify;
+}
+
+.regresarConocelos{
+	height: 10%;
+}
+.regresarConocelos .cerrarInfoBoton {
+	background: none repeat scroll 0 0 red;
+	border: 0 none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 32px;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 170px;
+	z-index: 99;
+}
+
+/* End Contenedor de Descripcion de Conocelos */
 
 /*
  * Toolbar
@@ -320,7 +382,18 @@ body {
   text-shadow: 1px -1px #000;
 }
 
-
+.bubbleInfo {
+    background: none repeat scroll 0 0 transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    line-height: 1.25em;
+    text-align: center;
+    width: 40px;
+    font-size: 2em;
+}
 
 .seccionConocelosMore {
   background-image: url("images/bg/verde.jpg");
@@ -1237,8 +1310,6 @@ body {
 
 .sceneConocelos .layer {
   position: absolute;
-  width:199px;
-  height: 300px;
 }
 .sceneConocelos .layer div {
   -webkit-transform: translate3d(0,0,0);
@@ -1270,7 +1341,7 @@ body {
 .conoceloContainerUno {
   	height: 618px;
     margin-left: 476px;
-    overflow: hidden;
+    margin-top: 93px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 335px;
@@ -1278,10 +1349,17 @@ body {
 .conoceloContainerUno .personaje{
 	width: 100%;
 }
+.conoceloContainerUno .bubbleInfo{
+	left: 85px;
+    margin: auto;
+    position: absolute;
+    top: 5px;
+    z-index: 9999;
+}
 .conoceloContainerDos {
   	height: 394px;
     margin-left: 950px;
-    overflow: hidden;
+    margin-top: 110px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 290px;
@@ -1289,10 +1367,16 @@ body {
 .conoceloContainerDos .personaje{
 	width: 100%;
 }
+.conoceloContainerDos .bubbleInfo {
+    left: 160px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerTres {
   	height: 1217px;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 130px;
     overflow: hidden;
     position: absolute;
     transform-origin: 50% 90% 0;
@@ -1301,11 +1385,16 @@ body {
 .conoceloContainerTres .personaje{
 	width: 100%;
 }
+.conoceloContainerTres .bubbleInfo{
+	left: 160px;
+    position: absolute;
+    top: 50px;
+    z-index: 9999;
+}
 .conoceloContainerCuatro {
   	height: 603px;
-    margin-left: 617px;
-    margin-top: 10px;
-    overflow: hidden;
+    margin-left: 605px;
+    margin-top: 110px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 514px;
@@ -1313,11 +1402,16 @@ body {
 .conoceloContainerCuatro .personaje{
 	width: 100%;
 }
+.conoceloContainerCuatro .bubbleInfo {
+    left: 180px;
+    position: absolute;
+    top: -5px;
+    z-index: 9999;
+}
 .conoceloContainerCinco {
   	height: 679px;
     margin-left: 210px;
-    margin-top: 40px;
-    overflow: hidden;
+    margin-top: 140px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 471px;
@@ -1325,11 +1419,16 @@ body {
 .conoceloContainerCinco .personaje{
 	width: 100%;
 }
+.conoceloContainerCinco .bubbleInfo {
+    left: 160px;
+    position: absolute;
+    top: -6px;
+    z-index: 9999;
+}
 .conoceloContainerSeis {
   	height: 1226px;
     margin-left: 900px;
-    margin-top: 18px;
-    overflow: hidden;
+    margin-top: 140px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 645px;
@@ -1337,10 +1436,16 @@ body {
 .conoceloContainerSeis .personaje{
 	width: 100%;
 }
+.conoceloContainerSeis .bubbleInfo {
+    left: 379px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerSiete {
   	height: 790px;
-    margin-left: 510px;
-    margin-top: 243px;
+    margin-left: 520px;
+    margin-top: 350px;
     overflow: hidden;
     position: absolute;
     transform-origin: 50% 90% 0;
@@ -1349,11 +1454,16 @@ body {
 .conoceloContainerSiete .personaje{
 	width: 100%;
 }
+.conoceloContainerSiete .bubbleInfo {
+    left: 140px;
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+}
 .conoceloContainerOcho {
   	height: 1044px;
     margin-left: 985px;
-    margin-top: 300px;
-    overflow: hidden;
+    margin-top: 425px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 520px;
@@ -1361,11 +1471,16 @@ body {
 .conoceloContainerOcho .personaje{
 	width: 100%;
 }
+.conoceloContainerOcho .bubbleInfo {
+    left: 160px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerNueve {
   	height: 896px;
     margin-left: 0;
-    margin-top: 400px;
-    overflow: hidden;
+    margin-top: 500px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 760px;
@@ -1373,11 +1488,16 @@ body {
 .conoceloContainerNueve .personaje{
 	width: 100%;
 }
+.conoceloContainerNueve .bubbleInfo {
+    left: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerDiez {
   	height: 870px;
     margin-left: 770px;
-    margin-top: 430px;
-    overflow: hidden;
+    margin-top: 530px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 474px;
@@ -1385,11 +1505,16 @@ body {
 .conoceloContainerDiez .personaje{
 	width: 100%;
 }
+.conoceloContainerDiez .bubbleInfo {
+    left: 200px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerOnce {
   	height: 724px;
     margin-left: 90px;
-    margin-top: 780px;
-    overflow: hidden;
+    margin-top: 880px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 542px;
@@ -1397,11 +1522,16 @@ body {
 .conoceloContainerOnce .personaje{
 	width: 100%;
 }
+.conoceloContainerOnce .bubbleInfo {
+    left: 145px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
 .conoceloContainerDoce {
   	height: 958px;
     margin-left: 430px;
-    margin-top: 540px;
-    overflow: hidden;
+    margin-top: 640px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 671px;
@@ -1409,11 +1539,16 @@ body {
 .conoceloContainerDoce .personaje{
 	width: 100%;
 }
+.conoceloContainerDoce .bubbleInfo {
+    left: 320px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
 .conoceloContainerTrece {
   	height: 648px;
     margin-left: 1070px;
-    margin-top: 600px;
-    overflow: hidden;
+    margin-top: 700px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 339px;
@@ -1421,11 +1556,16 @@ body {
 .conoceloContainerTrece .personaje{
 	width: 100%;
 }
+.conoceloContainerTrece .bubbleInfo {
+    left: 220px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
 .conoceloContainerCatorce {
   	height: 561px;
     margin-left: 310px;
-    margin-top: 950px;
-    overflow: hidden;
+    margin-top: 1050px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 387px;
@@ -1433,11 +1573,16 @@ body {
 .conoceloContainerCatorce .personaje{
 	width: 100%;
 }
+.conoceloContainerCatorce .bubbleInfo {
+    left: 150px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
 .conoceloContainerQuince {
   	height: 548px;
     margin-left: 567px;
-    margin-top: 950px;
-    overflow: hidden;
+    margin-top: 1050px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 390px;
@@ -1445,11 +1590,16 @@ body {
 .conoceloContainerQuince .personaje{
 	width: 100%;
 }
+.conoceloContainerQuince .bubbleInfo {
+    left: 150px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
 .conoceloContainerDiezyseis {
   	height: 493px;
     margin-left: 680px;
-    margin-top: 1000px;
-    overflow: hidden;
+    margin-top: 1100px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 536px;
@@ -1457,17 +1607,28 @@ body {
 .conoceloContainerDiezyseis .personaje{
 	width: 100%;
 }
+.conoceloContainerDiezyseis .bubbleInfo {
+    left: 340px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
 .conoceloContainerDiezysiete {
   	height: 647px;
     margin-left: 800px;
-    margin-top: 863px;
-    overflow: hidden;
+    margin-top: 963px;
     position: absolute;
     transform-origin: 50% 90% 0;
     width: 698px;
 } 
 .conoceloContainerDiezysiete .personaje{
 	width: 100%;
+}
+.conoceloContainerDiezysiete .bubbleInfo {
+    left: 440px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
 }
 /* Conocelos */
 /*
