@@ -262,18 +262,21 @@ body {
  */
 .seccionBienvenida {
   background-image: url("images/bg/seccionUno.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  width: 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    display: table;
+    height: 500px;
+    width: 100%;
 }
 
 .bienvenida-container {
-  position: relative;
+    position: relative;
 }
 
 .bienvenida-container-inner {
-  position: absolute!important;
+    margin-top: 50px;
+    position: absolute !important;
 }
 
 .seccionBienvenida img {
@@ -298,15 +301,20 @@ body {
   display: table;
   width: 100%;
 }
-.noticias-container {
-  margin: auto;
+.seccionNoticias .noticias-container{
+  margin: 0;
+    padding: 0;
   text-align: center;
   margin-top: 40px;
 }
-.noticias-container .bgWhite{
-  	background: none repeat scroll 0 0 #fff;
-    border-radius: 5px;
+.noticias-container .col-xs-12.col-sm-4.col-md-4.col-lg-4 {
+    margin: 0;
     padding: 0;
+}
+.seccionNoticias .noticias-container iframe {
+    width: 80%!important;
+    background: #fff;
+    border-radius: 5px;
 }
 .noticias-container> h1 {
   	font-weight: 900;
@@ -333,29 +341,29 @@ body {
 }
 
 .sinopsis-container {
-  margin: auto;
+    margin: 0 0 20px 0;
   text-align: center;
 }
-
 .sinopsis-container> h1 {
-  font-size: 2.2em;
-  font-weight: 900;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+  font-size: 1.2em;
+    font-weight: 900;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
 
 .sinopsis-container p {
-  font-size: 1.2em;
-  font-weight: lighter;
-  line-height: 40px;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+  font-size: 0.9em;
+    font-weight: lighter;
+    line-height: 1.2em;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
 
 .sinopsis-container p b {
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 2em;
+    font-weight: 900;
+    line-height: 1.2em;
 } 
 /* Sinopsis */
 /*
@@ -388,12 +396,11 @@ body {
 	display: none;
 }
 .seccionConocelos> h1 {
-  font-size: 40px;
   font-weight: 900;
-  margin-top: 50px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
 
 .bubbleInfo {
@@ -424,37 +431,33 @@ body {
 .seccionGaleriaEstaticaParteUno {
   background-image: url("images/bg/seccionCuatro.jpg");
   background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px;
 }
 
-.seccionGaleriaEstaticaParteUno img {
-  margin: auto;
-} 
 .seccionGaleriaEstaticaParteDos {
   background-image: url("images/bg/seccionSeis.jpg");
   background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-}
-
-.seccionGaleriaEstaticaParteDos img {
-  margin: auto;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px;
 }
 
 .seccionGaleriaEstaticaParteTres {
-  background-image: url("images/bg/seccionSiete.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
+    background-image: url("images/bg/seccionSiete.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px;
 }
 
-.seccionGaleriaEstaticaParteTres img {
-  margin: auto;
-} 
 /* Galerias Estaticas */
 /*
  * Galeria Slider
@@ -462,36 +465,20 @@ body {
 .seccionGaleria {
   background-image: url("images/bg/seccionOcho.jpg");
   background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% 100%;
-  width: 100%;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px;
 }
 .seccionGaleria .col-sm-12.col-md-12{
 	margin: 0px!important;
 	padding: 0px!important;
 }
-.seccionGaleria img {
-  margin: auto;
+.seccionGaleria .buttonGaleria {
+    margin: 75px auto 0;
+    cursor: pointer;
 }
-.galeria-container-inner {
-	height: 80px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 150px;
-}
-.galeria-container-inner .buttonGaleria {
-	left: -75px;
-    position: relative;
-    top: -40px;
-    width: 150px;
-}
-.galeria-container-inner .buttonGaleria:hover {
-  cursor:pointer;
-}
-.galeria-container-inner .buttonGaleria img {
-  margin: auto;
-} 
  /* Galeria Slider */
 
 /*
@@ -506,12 +493,11 @@ body {
   display: table;
 }
 .seccionDetras> h1 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-top: 50px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+font-weight: 900;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
 .bloqueImagen img {
     width: 100% !important;
@@ -647,7 +633,8 @@ body {
 .seccionCreditos img {
   margin: auto;
 }
-.creditos-container {
+.creditos-container-inner {
+    margin: 20px 0;
   position: relative;
 }
 .creditos-container-inner > table {
@@ -657,11 +644,11 @@ body {
   width: 100%;
 }
 .creditos-container-inner table p {
-  font-size: 0.8em;
-  font-weight: lighter;
-  line-height: 25px;
-  text-shadow: 1px -1px #000;
-  margin: 0px;
+    font-size: 0.9em;
+    font-weight: lighter;
+    line-height: 40px;
+    margin: 0;
+    text-shadow: 1px -1px #000;
 }
 .creditos-container-inner table p b {
   font-weight: 900;
@@ -682,10 +669,11 @@ body {
     display: table;
     width: 100%;
 }
-.patrocinadores-container {
-}
 .patrocinadores-container img {
     margin: auto;
+    max-height: 100%;
+    height: 50px;
+    max-width: auto!important;
 }
 /* Patrocinadores */
 

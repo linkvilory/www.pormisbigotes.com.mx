@@ -54,13 +54,13 @@ $(function(){
 		  after: function(){}     // Function: After callback
 		});
 	$("#verGaleria").click(function(){
-
+		$("#seccionGaleria").css("max-height","100px");
 		$("#galeria-container").hide();
 
 		$("#rslidesGaleria").responsiveSlides({
 		  auto: false,             // Boolean: Animate automatically, true or false
-		  speed: 100,            // Integer: Speed of the transition, in milliseconds
-		  timeout: 2000,          // Integer: Time between slide transitions, in milliseconds
+		  speed: 200,            // Integer: Speed of the transition, in milliseconds
+		  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
 		  pager: false,           // Boolean: Show pager, true or false
 		  nav: true,             // Boolean: Show navigation, true or false
 		  random: false,          // Boolean: Randomize the order of the slides, true or false

@@ -705,10 +705,13 @@
 /* Seccion Creditos */ 
 
 	/* Patrocinadores */
-.patrocinadores-container .holder {
-    height: 68px;
-    text-align: center;
+.patrocinadores-container img {
+    margin: auto;
+    max-height: auto!important;
+    height: auto!important;
+    max-width: 100%;
 }
+
 	/*End Patrocinadores */
 
 
