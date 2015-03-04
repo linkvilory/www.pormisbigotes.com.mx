@@ -126,6 +126,12 @@
     /*
      * Conocelos
      */
+    .sceneConocelosTablet{
+        display:none;
+    } 
+    .sceneConocelosMobile{
+  display:none;
+}
     .seccionConocelos-inner{
         overflow: hidden;
     } 

@@ -97,10 +97,10 @@ $(function(){
   invertY: true,
   limitX: false,
   limitY: false,
-  scalarX: 0,
-  scalarY: 0,
-  frictionX: 0,
-  frictionY: 0,
+  scalarX: 20,
+  scalarY: 20,
+  frictionX: 1,
+  frictionY: 1,
   originX: 0.5,
   originY: 0.5
 	});
@@ -116,6 +116,12 @@ $(function(){
 	});
 
 	$(".bubbleInfo").click(function(){
+		$(".container-fluid.fullscreen.info .infoDetalle h1").html($(this).attr("data-header"));
+		$(".container-fluid.fullscreen.info .infoDetalle img").attr("src", $(this).attr("data-image"));
+		$(".container-fluid.fullscreen.info .infoDetalle p").html($(this).attr("data-detail"));
+		$(".container-fluid.fullscreen.info").show();
+	});
+	$(".imageInfo").click(function(){
 		$(".container-fluid.fullscreen.info .infoDetalle h1").html($(this).attr("data-header"));
 		$(".container-fluid.fullscreen.info .infoDetalle img").attr("src", $(this).attr("data-image"));
 		$(".container-fluid.fullscreen.info .infoDetalle p").html($(this).attr("data-detail"));
@@ -137,6 +143,12 @@ $(function(){
 	    }, 900, 'swing', function () {
 	        //window.location.hash = target;
 	    });
+	});
+
+	$(".botonVerNota").click(function(){
+		var url = $(this).attr("data-link");
+		var win = window.open(url, '_blank');
+  		win.focus();
 	});
 
 });

@@ -1,0 +1,403 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+/*
+ * Seccion Logo
+ */
+.logo {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    left: 50%;
+    top: 5px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+	width: 200px!important;
+}
+.logo-container {
+    margin: auto;
+    left: -100px;
+	position: relative;
+	max-width: 200px!important;
+}
+
+/* End Logo */ 
+
+/*
+ * Menu
+ */
+.menu {
+    background: none repeat scroll 0 0 #000;
+    display: block;
+    height: 100%;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 15;
+}
+.menu-container {
+    color: #fff;
+    height: 75%;
+    margin: 70px 5% 0;
+    overflow:hidden;
+}
+.menu-container ul .enlace.trailer {
+    list-style: outside none none;
+    padding: 50px 0;
+}
+/* End Menu */
+
+/*
+ * Toolbar
+ */
+.toolbar {
+  	display: block;
+    height: 100px;
+    padding: 22px 0 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 240px;
+    z-index: 25;
+}
+.toolbar-container {
+  width: 100%;
+  height: 100%;
+}
+.toolbar-container .globo, .toolbar-container-facebook .globo, .toolbar-container-twitter .globo {
+  float: left;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+.toolbar-container-facebook {
+    position: absolute;
+    top: 80px;
+    left: -25px;
+    display:none;
+}
+.toolbar-container-twitter {
+    position: absolute;
+    top: 80px;
+    left: 33px;
+    display:none;
+}
+.globo.facebookL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 300px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.twitterL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 228px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.instagramL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 158px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.youtubeL {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 87px 0;
+  color: #fff;
+  display: block;
+  height: 44px;
+  width: 42px;
+  cursor:pointer;
+}
+.globo.facebook-l {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 0;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.facebook-s {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 45px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.twitter-l {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px -59px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+.globo.twitter-s {
+  background-image: url("images/sprites/follow-share.png");
+    background-position: 185px 45px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 37px;
+    cursor:pointer;
+}
+/* End Toolbar */
+
+/*
+ * Seccion de Contenedor de Youtube
+ */
+.container-fluid.fullscreen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	z-index: 99;
+	background:#000;
+}
+.logoYoutube{
+	height: 10%;
+} 
+.logoYoutube img{
+	max-width: 300px;
+	min-width: 200px;
+}
+.youtube {
+	height: 70%;
+}
+.youtubeClose {
+	height: 10%;
+}
+.youtubeExplorar{
+	height: 10%;
+}
+/* End Seccion de Contenedor de Youtube */
+
+/* SECIONES */
+
+/*
+ * Conocelos
+ */
+.sceneConocelos {
+    display:none;
+}
+.sceneConocelosTablet{
+  display:block;
+}
+.sceneConocelosMobile{
+  display:none;
+}
+.sceneConocelosTablet img{
+  margin: auto;
+    display: block;
+    max-width: 184px;
+    width: 100%;
+} 
+.sceneConocelosTablet .separador{
+  height: 20px;
+}
+/* Conocelos */ 
+/*
+ * Galeria Slider
+ */
+.galeria-container-inner {
+	height: 150px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+.galeria-container-inner .buttonGaleria {
+	left: -150px;
+    position: relative;
+    top: -75px;
+    width: 300px;
+}
+ /* Galeria Slider */
+
+/*
+ * Detras Camaras
+ */
+.seccionDetras {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: table;
+}
+.seccionDetras> h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px -1px #000;
+}
+.bloqueImagen img {
+    width: 100% !important;
+    margin: 5px 2px !important;
+}
+
+.seccionDetrasMore {
+  background-image: url("images/bg/seccionOnce.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+  display: none;
+}
+.botonMas {
+  	background: none repeat scroll 0 0 red;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 2em;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+}
+.botonMas:hover{
+  cursor: pointer;
+}
+.seccionDetras .img100, .seccionDetrasMore .img100{
+  width: 100%;
+  margin: 5px 2px;
+}
+.seccionDetras .img90, .seccionDetrasMore .img90{
+  width: 90%;
+  margin: 5px 2px;
+}
+.seccionDetras .img80, .seccionDetrasMore .img80{
+  width: 80%;
+  margin: 5px 2px;
+}
+.seccionDetras .img70, .seccionDetrasMore .img70{
+  width: 70%;
+  margin: 5px 2px;
+}
+.seccionDetras .img60, .seccionDetrasMore .img60{
+  width: 60%;
+  margin: 5px 2px;
+}
+.seccionDetras .img50, .seccionDetrasMore .img50{
+  width: 50%;
+  margin: 5px 2px;
+}
+.seccionDetras .img40, .seccionDetrasMore .img40{
+  width: 40%;
+  margin: 5px 2px;
+}
+.seccionDetras .img30, .seccionDetrasMore .img30{
+  width: 30%;
+  margin: 5px 2px;
+}
+.seccionDetras .img20, .seccionDetrasMore .img20{
+  width: 20%;
+  margin: 5px 2px;
+}
+.imgGalDos{
+  margin-top: 45px!important;
+}
+.imgGalTres{
+  margin-top: 20px!important;
+}
+.imgGalCuatro{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalCinco{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalSeis{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+/* Detras Camaras */
+
+/*
+ * Premios
+ */
+.premios-container .campana-container {
+    display: block;
+}
+/* Premios */
+
+/*
+ * Seccion Creditos
+ */
+
+.seccionCreditos {
+  background-image: url("images/bg/seccionTrece.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+.creditosDesktop{
+	display: block;
+}
+.creditosMobile{
+	display: none;
+}
+.seccionCreditos img {
+  margin: auto;
+}
+.creditos-container {
+  position: relative;
+}
+.creditos-container-inner > table {
+  text-align: center;
+}
+.creditos-container-inner table {
+  width: 100%;
+}
+.creditos-container-inner table p {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+  margin: 0px;
+}
+.creditos-container-inner table p b {
+  font-weight: 900;
+  line-height: 25px;
+  text-shadow: 1px -1px #000;
+}
+
+/* Seccion Creditos */ 
+
+	/* Patrocinadores */
+.patrocinadores-container .holder {
+    height: 58px;
+    text-align: center;
+}
+	/*End Patrocinadores */
+
+
+}

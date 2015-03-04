@@ -57,6 +57,12 @@
 /*
      * Conocelos
      */
+    .sceneConocelosTablet{
+        display:none;
+    }
+    .sceneConocelosMobile{
+  display:none;
+}
     .seccionConocelos-inner{
         overflow: hidden;
     } 
@@ -69,7 +75,7 @@
 
     .sceneConocelos {
         max-width: 992px;
-    min-height: 1425px;
+    min-height: 1325px;
     position: relative;
     margin: auto;
     }
@@ -132,13 +138,13 @@
     }
 
     .conoceloContainerUno .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -111px;
-        background-repeat:no-repeat;
-        height:50px;
-        width:210px;
-        margin-left:70px;
-        margin-top:-40px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -111px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerDos {
@@ -164,13 +170,13 @@
     }
 
     .conoceloContainerDos .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -228px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:10px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -228px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 0;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerTres {
@@ -196,13 +202,13 @@
     }
 
     .conoceloContainerTres .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 0;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:150px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerCuatro {
@@ -228,13 +234,13 @@
     }
 
     .conoceloContainerCuatro .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -170px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:150px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -170px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 125px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerCinco {
@@ -260,13 +266,13 @@
     }
 
     .conoceloContainerCinco .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -56px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:150px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -56px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 105px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerSeis {
@@ -292,13 +298,13 @@
     }
 
     .conoceloContainerSeis .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -283px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:245px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -283px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 190px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerSiete {
@@ -324,13 +330,13 @@
     }
 
     .conoceloContainerSiete .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -398px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:135px;
-        margin-top:0;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -398px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 85px;
+    margin-top: 0;
+    width: 210px;
     }
 
     .conoceloContainerOcho {
@@ -356,13 +362,13 @@
     }
 
     .conoceloContainerOcho .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:0 -340px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:135px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: 0 -340px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 105px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerNueve {
@@ -388,13 +394,13 @@
     }
 
     .conoceloContainerNueve .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px 0;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:285px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px 0;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 240px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerDiez {
@@ -420,13 +426,13 @@
     }
 
     .conoceloContainerDiez .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px -55px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:85px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px -55px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerOnce {
@@ -452,13 +458,13 @@
     }
 
     .conoceloContainerOnce .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px -169px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:120px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px -169px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 85px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerDoce {
@@ -477,20 +483,20 @@
     }
 
     .conoceloContainerDoce .bubbleInfo {
-        left: 320px;
+        left: 275px;
     position: absolute;
     top: 0;
     z-index: 9999;
     }
 
     .conoceloContainerDoce .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-120px -454px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:265px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -120px -454px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 195px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerTrece {
@@ -509,20 +515,20 @@
     }
 
     .conoceloContainerTrece .bubbleInfo {
-        left: 220px;
+        left: 167px;
     position: absolute;
     top: 0;
     z-index: 9999;
     }
 
     .conoceloContainerTrece .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px -112px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:120px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px -112px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerCatorce {
@@ -548,13 +554,13 @@
     }
 
     .conoceloContainerCatorce .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px -226px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:120px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px -226px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerQuince {
@@ -573,20 +579,20 @@
     }
 
     .conoceloContainerQuince .bubbleInfo {
-        left: 150px;
+        left: 100px;
     position: absolute;
     top: 0;
     z-index: 9999;
     }
 
     .conoceloContainerQuince .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-225px -284px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:65px;
-        margin-top:-40px;
-        width:210px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -225px -284px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: -40px;
+    width: 210px;
     }
 
     .conoceloContainerDiezyseis {
@@ -605,20 +611,20 @@
     }
 
     .conoceloContainerDiezyseis .bubbleInfo {
-        left: 340px;
+        left: 250px;
     position: absolute;
     top: 0;
     z-index: 9999;
     }
 
     .conoceloContainerDiezyseis .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-212px -338px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:218px;
-        margin-top:-40px;
-        width:229px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -212px -338px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 135px;
+    margin-top: -40px;
+    width: 229px;
     }
 
     .conoceloContainerDiezysiete {
@@ -637,20 +643,20 @@
     }
 
     .conoceloContainerDiezysiete .bubbleInfo {
-        left: 440px;
+        left: 330px;
     position: absolute;
     top: 0;
     z-index: 9999;
     }
 
     .conoceloContainerDiezysiete .pEncabezado {
-        background-image:url(images/sprites/nombres.png);
-        background-position:-212px -398px;
-        background-repeat:no-repeat;
-        height:50px;
-        margin-left:290px;
-        margin-top:-40px;
-        width:229px
+        background-image: url("images/sprites/nombres.png");
+    background-position: -212px -398px;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 215px;
+    margin-top: -40px;
+    width: 229px;
     }
 
     /* Conocelos */
