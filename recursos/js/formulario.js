@@ -10,6 +10,9 @@
 		/*
 		 * Obtener todos los valores del formulario
 		 */
+		$(".formAjax").hide();
+		$(".loading").show();
+
 		var respuestaUno = "";
 		var respuestaDos = "";
 		var respuestaTres = "";
@@ -32,6 +35,8 @@
 			}
 		});
 		if(respuestaUno == "" || respuestaDos == "" || respuestaTres == ""){
+			$(".formAjax").show();
+			$(".loading").hide();
 			alert("Debes seleccionar una respuesta para las preguntas.");
 			return;
 		}
@@ -45,9 +50,12 @@
 			}
 		})
 		.done(function( msg ) {
+			$(".formAjax").show();
+			$(".loading").hide();
 			alert( "Gracias por sus comentarios!");
 			window.location = "./inicio.html";
 		});
+		
 	});
 	/*
 	 * Seleccionar solo el boton del grupo seleccionado y deseleccionar los demas

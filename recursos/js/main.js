@@ -18,18 +18,34 @@ $(function(){
 	});
 
 	$("#closeYoutubePlayer").click(function (){
-		$(".container-fluid.fullscreen").hide();
+		$(".container-fluid.fullscreen.you2be").hide();
 	});
 	$("#showYoutubePlayer").click(function (){
-		$(".container-fluid.fullscreen").show();
+		$(".container-fluid.fullscreen.you2be").show();
 	});
 
 	/*
 	 * Toogle Menu
 	 */
 
+
 	 $("#toogleMenu").click(function(){
-	 	$("#menu").toggleClass("hide");
+
+	 	var leftMenu = $('#menu').css("left");
+	 	if(leftMenu == "0px"){
+	 		$('#menu').animate({
+		         left: "-50%",
+		    }, 900, function () {
+		        //window.location.hash = target;
+		    });
+	 	}else{
+	 		$('#menu').animate({
+		         left: "0",
+		    }, 900, function () {
+		        //window.location.hash = target;
+		    });
+	 	}
+	 	
 	 });
 
 	 /*

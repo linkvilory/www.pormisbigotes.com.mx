@@ -32,7 +32,7 @@
 		<span>MENU</span>
 	</div>
 
-	<nav id="menu" class="menu hide">
+	<nav id="menu" class="menu">
 		<div class="menu-container">
 			<ul>
 				<li class="enlace trailer">
@@ -60,36 +60,25 @@
 					<hr>
 				</li>
 				<li class="enlace visible-xs-block">
-					<a href=""><span>Facebook Like</span></a>
+					<div id="facebookMenu" class="facebookMenu"></div>
+					<div id="twitterMenu" class="twitterMenu"></div>
 				</li>
 				<li class="enlace visible-xs-block">
-					<a href=""><span>Facebook Page</span></a>
-				</li>
-				<li class="enlace visible-xs-block">
-					<a href=""><span>Twitter Follow</span></a>
-				</li>
-				<li class="enlace visible-xs-block">
-					<a href=""><span>Twitter Page</span></a>
-				</li>
-				<li class="enlace visible-xs-block">
-					<a href=""><span>Instagram</span></a>
-				</li>
-				<li class="enlace visible-xs-block">
-					<a href=""><span>Youtube</span></a>
+					<div id="instagramMenu" class="instagramMenu"></div>
+					<div id="youtubeMenu" class="youtubeMenu"></div>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<section id="seccionBienvenida" class="seccionBienvenida">
-		<div class="bienvenida-container">
-			<div class="bienvenida-container-inner col-md-8 col-md-offset-2">
-				<h1>BIENVENIDO AL CLUB DE LOS BIGOTES</h1>
-			</div>
+		<div class="bienvenida-container-inner">
+			<h1>BIENVENIDO AL CLUB DE LOS BIGOTES</h1>
 		</div>
 	</section>
 
 	<section id="seccionNoticias" class="seccionNoticias">
+		<div class="cortina"></div>
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 noticias-container">
 			<h1>ÚLTIMAS NOTICIAS</h1>
 
@@ -102,6 +91,8 @@
     				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/wNGRlRiqME/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">Una foto publicada por Belisario Luna (@belisarioluna_)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-12-05T00:18:54+00:00">4 de Dic de 2014 a la(s) 4:18 PST</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 				</div>
 			</div>
 			
@@ -737,57 +728,40 @@
 					</tr>
 					<tr>
 						<td>
-							<p>ELENCO: <b>SANTIAGO TORRES, JESÚS OCHOA, OSVALDO DE LEÓN, EDUARDO ESPAÑA. FERNANDO BECERRIL, GABRIELA ARROYO, LENNY ZUNDEL, DARIO RIPOLL, JOSÉ MONTINI</b></p>
+							<p>ELENCO: <b>SANTIAGO TORRES,</b></p>
+							<p><b>JESÚS OCHOA, OSVALDO DE LEÓN,</b></p>
+							<p><b>EDUARDO ESPAÑA, FERNANDO BECERRIL,</b></p>
+							<p><b>GABRIELA ARROYO, LENNY ZUNDEL,</b></p>
+							<p><b>DARIO RIPOLL, JOSÉ MONTINI</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>PRODUCTORES: <b>MANUEL CARAMÉS Y BARNARD STEELE</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>GERMÁN GUTIÉRREZ, FERNANDA JUÁREZ, ARMANDO SAID FLORES,</b></p>
+							<p>PRODUCTORES: <b>MANUEL CARAMÉS Y <wbr> BARNARD STEELE</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>DIRECTOR DE FOTOGRAFÍA: <b>CHUY CHÁVEZ</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>MARCO VALDÉS, ARMANDO HERNÁNDEZ, ROBERTO BLANDÓN,</b></p>
+							<p>DIRECTOR DE FOTOGRAFÍA:</p>
+							<p><b>CHUY CHÁVEZ</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>DISEÑO DE PRODUCCIÓN: <b>LIZ MEDRANO</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>LUIS FERNANDO PEÑA, JUAN SOLO, LUIS GATICIA,</b></p>
+							<p>DISEÑO DE PRODUCCIÓN:</p>
+							<p><b>LIZ MEDRANO</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>DISEÑO DE VESTUARIO: <b>FITO CRUZ</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>HUGO MACÍAS-MACOTELA, PEDRO DAMÍAN, JAVIER ZARAGOZA,</b></p>
+							<p>DISEÑO DE VESTUARIO:</p>
+							<p><b>FITO CRUZ</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>MUSICALIZACIÓN: <b>ALEJANDRO GIACOMÁN</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>CLAUDIA BOLLAT, ARMANDO ARCHUNDIA, PAULO GALINDO,</b></p>
+							<p>MUSICALIZACIÓN:</p>
+							<p><b>ALEJANDRO GIACOMÁN</b></p>
 						</td>
 					</tr>
 					<tr>
@@ -795,19 +769,10 @@
 							<p>CASTING: <b>RODRIGO RUIZ</b></p>
 						</td>
 					</tr>
-					<tr>	
-						<td>
-							<p><b>LAURA DE ITA, RAQUEL PANKOWSKY, LUIS OROZCO,</b></p>
-						</td>
-					</tr>
 					<tr>
 						<td>
-							<p>DISEÑO DE MAQUILLAJE: <b>RAUL MUÑOZ</b></p>
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<p><b>HÉCTOR BERZUNZA, JUAN FRESE.</b></p>
+							<p>DISEÑO DE MAQUILLAJE:</p>
+							<p><b>RAUL MUÑOZ</b></p>
 						</td>
 					</tr>
 					<tr>
@@ -870,7 +835,7 @@
 
 
 
-	<div class="container-fluid fullscreen">
+	<div class="container-fluid fullscreen you2be">
         <div class="col-md-6 col-md-offset-3 logoYoutube"><img class=
         "img-responsive" src="recursos/images/logo-por-mis-bigotes.png"></div>
 

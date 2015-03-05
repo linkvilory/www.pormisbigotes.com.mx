@@ -38,7 +38,7 @@ body {
     z-index: 10;
 }
 .logo-container {
-    margin: auto;
+    margin-left: auto;
     max-width: 150px !important;
 }
 .logo span {
@@ -73,24 +73,26 @@ body {
     z-index: 20;
 }
 .menu {
-    background: none repeat scroll 0 0 #000;
     display: block;
     height: 100%;
-    opacity: 0.75;
     position: fixed;
     top: 0;
     width: 50%;
+    left: -50%;
     z-index: 15;
-}
-.menu.hide {
-  display: none;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.87) 25%, rgba(0,0,0,0.75) 48%, rgba(0,0,0,0.52) 69%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(25%,rgba(0,0,0,0.87)), color-stop(48%,rgba(0,0,0,0.75)), color-stop(69%,rgba(0,0,0,0.52)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
 }
 .menu-container {
     color: #fff;
-    height: 75%;
     margin: 70px 5% 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    display: table;
 }
 .menu-container ul {
     padding: 0 10px;
@@ -113,6 +115,50 @@ body {
 }
 .menu-container ul .enlace a:hover, .menu-container ul .enlace a:active, .menu-container ul .enlace a:focus {
   color: #fff;
+}
+.facebookMenu {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 300px 0;
+  color: #fff;
+  display: block;
+  float: left;
+    height: 44px;
+    width: 42px;
+    margin: 0 5px 5px 0;
+  cursor:pointer;
+}
+.twitterMenu {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 228px 0;
+  color: #fff;
+  display: block;
+  float: left;
+    height: 44px;
+    width: 42px;
+    margin: 0 5px 5px 0;
+  cursor:pointer;
+}
+.instagramMenu {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 158px 0;
+  color: #fff;
+  display: block;
+  float: left;
+    height: 44px;
+    width: 42px;
+    margin: 0 5px 5px 0;
+  cursor:pointer;
+}
+.youtubeMenu {
+  background-image: url("images/sprites/icons-btns.png");
+  background-position: 87px 0;
+  color: #fff;
+  display: block;
+  float: left;
+    height: 44px;
+    width: 42px;
+    margin: 0 5px 5px 0;
+  cursor:pointer;
 }
 /* End Menu */
 
@@ -213,19 +259,27 @@ body {
 	margin:auto;
 }
 
-.infoDetalle{
-	height: 80%;
+.infoDetalle {
+    height: 80%;
+    overflow-y: scroll;
 }
 
 .infoDetalle > h1 {
+    font-family: "bigotesbold";
+    font-size: 1.5em;
+    letter-spacing: 3px;
     text-align: center;
-    font-size: 2em;
 }
-.infoDetalle img{
-	margin: auto;
+.infoDetalle img {
+    margin: auto;
+    max-width: 300px;
+    width: 150px;
 }
-.infoDetalle p{
-	text-align: justify;
+.infoDetalle p {
+    font-family: "bigotesmedium";
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .regresarConocelos{
@@ -233,19 +287,19 @@ body {
 }
 .regresarConocelos .cerrarInfoBoton {
 	background: none repeat scroll 0 0 red;
-	border: 0 none;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: bold;
-	height: 30px;
-	line-height: 32px;
-	margin: auto;
-	text-align: center;
-	text-transform: uppercase;
-	width: 170px;
-	z-index: 99;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 32px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    z-index: 99;
 }
 
 /* End Contenedor de Descripcion de Conocelos */
@@ -275,8 +329,9 @@ body {
 }
 
 .bienvenida-container-inner {
-    margin-top: 50px;
+    margin-top: 100px;
     position: absolute !important;
+    width: 100%;
 }
 
 .seccionBienvenida img {
@@ -284,40 +339,62 @@ body {
 }
 
 .bienvenida-container-inner > h1 {
-	font-weight: 900;
+    font-size: 1.6em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: auto;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
-} 
+}
 /* Primera */ 
 /*
  * Noticias
  */
 .seccionNoticias {
   background-image: url("images/bg/seccionDos.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  display: table;
-  width: 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    display: table;
+    width: 100%;
+}
+.seccionNoticias .cortina {
+    background-image: url("images/bg/cortina.png");
+    width: 100%;
+    height: 60px;
+    display: table;
+    background-repeat: repeat-x;
+    background-position: top center;
+    position: absolute;
+    z-index: 9999;
+    margin-top: -40px;
 }
 .seccionNoticias .noticias-container{
-  margin: 0;
+  margin: 0 0 20px;
     padding: 0;
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
 }
 .noticias-container .col-xs-12.col-sm-4.col-md-4.col-lg-4 {
     margin: 0;
     padding: 0;
 }
 .seccionNoticias .noticias-container iframe {
-    width: 80%!important;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 5px!important;
+    margin: auto!important;
+    max-width: 250px !important;
 }
-.noticias-container> h1 {
-  	font-weight: 900;
+.seccionNoticias .instagram-media{
+  border-radius: 5px!important;
+    margin: auto!important;
+    max-width: 250px !important;
+}
+.noticias-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 3px;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
@@ -326,6 +403,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 /* Noticias */ 
 
 /*
@@ -333,31 +411,36 @@ body {
  */
 .seccionSinopsis {
   background-image: url("images/bg/seccionTres.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-  display: table;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    display: table;
+    width: 100%;
 }
 
 .sinopsis-container {
     margin: 0 0 20px 0;
   text-align: center;
 }
-.sinopsis-container> h1 {
-  font-size: 1.2em;
+.sinopsis-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
     font-weight: 900;
+    letter-spacing: 3px;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
 }
 
 .sinopsis-container p {
-  font-size: 0.9em;
+  font-family: "bigotesmedium";
+    font-size: 1em;
     font-weight: lighter;
-    line-height: 1.2em;
+    letter-spacing: 2px;
+    line-height: 1.5em;
     text-align: center;
     text-shadow: 1px -1px #000;
+    margin: 0;
 }
 
 .sinopsis-container p b {
@@ -389,14 +472,20 @@ body {
     max-width: 184px;
     width: 100%;
 } 
+.sceneConocelosMobile img:hover {
+    cursor:pointer;
+}
 .sceneConocelosMobile .separador{
   height: 20px;
 }
 .sceneConocelos{
 	display: none;
 }
-.seccionConocelos> h1 {
-  font-weight: 900;
+.seccionConocelos > h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 3px;
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
@@ -492,12 +581,15 @@ body {
   width: 100%;
   display: table;
 }
-.seccionDetras> h1 {
-font-weight: 900;
+.seccionDetras > h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    font-weight: 900;
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
+    letter-spacing: 3px;
 }
 .bloqueImagen img {
     width: 100% !important;
@@ -519,7 +611,7 @@ font-weight: 900;
     color: #fff;
     font-size: 1em;
     font-weight: bold;
-    height: 30px;
+    height: 28px;
     line-height: 2em;
     margin: 20px auto;
     text-align: center;
@@ -536,10 +628,10 @@ font-weight: 900;
  */
 .seccionPremios {
   background-image: url("images/bg/seccionDoce.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    width: 100%;
 }
 .premios-container {
   margin: auto;
@@ -564,49 +656,55 @@ font-weight: 900;
   vertical-align: middle;
 }
 .premios-container h1 {
-  font-size: 28px;
-  font-weight: 900;
-  margin-top: 20px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+    font-family: "bigotesbold";
+    font-size: 1.9em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
-.premios-container h2 {
-  font-size: 32px;
-  font-weight: lighter;
-  margin-top: 10px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
+.premios-container h4 {
+    font-family: "bigotes_corsivaitalic";
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
 }
 .botonVerNota {
-  background: none repeat scroll 0 0 white;
-  border: 1px solid #000048;
-  border-radius: 5px;
-  color: #000048;
-  font-size: 14px;
-  font-weight: lighter;
-  height: 30px;
-  margin: 20px auto 0;
-  text-align: center;
-  text-transform: uppercase;
-  width: 126px;
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #000048;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #000048;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 30px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
 }
 .botonVerNota:hover{
   cursor:pointer;
 }
 .botonDescargarKit {
   background: none repeat scroll 0 0 transparent;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: lighter;
-  height: 30px;
-  margin: 20px auto;
-  text-align: center;
-  text-transform: uppercase;
-  width: 240px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 230px;
 }
 .botonDescargarKit:hover{
   cursor:pointer;
@@ -641,19 +739,25 @@ font-weight: 900;
   text-align: center;
 }
 .creditos-container-inner table {
-  width: 100%;
+    margin: auto;
+    text-align: center;
+    width: 260px;
 }
 .creditos-container-inner table p {
-    font-size: 0.9em;
+    font-family: "bigotesmedium";
+    font-size: 1em;
     font-weight: lighter;
+    letter-spacing: 2px;
     line-height: 40px;
     margin: 0;
     text-shadow: 1px -1px #000;
 }
 .creditos-container-inner table p b {
-  font-weight: 900;
-  line-height: 25px;
-  text-shadow: 1px -1px #000;
+  font-family: "bigotesmedium_condensed";
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-shadow: 1px -1px #000;
 }
 
 /* Seccion Creditos */ 
@@ -737,5 +841,29 @@ font-weight: 900;
          url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'bigotesbold_condensed';
+    src: url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot');
+    src: url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff2') format('woff2'),
+         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff') format('woff'),
+         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.ttf') format('truetype'),
+         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.svg#bigotesbold_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bigotesmedium_condensed';
+    src: url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot');
+    src: url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff2') format('woff2'),
+         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff') format('woff'),
+         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.ttf') format('truetype'),
+         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.svg#bigotesmedium_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 /* End Font Styles */
