@@ -685,56 +685,56 @@ font-weight: 900;
 
 @font-face {
   font-family: 'bigotesbold';
-    src: url('font/webfont/Bigotes-Bold-webfont.eot');
-    src: url('font/webfont/Bigotes-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont/Bigotes-Bold-webfont.woff2') format('woff2'),
-         url('font/webfont/Bigotes-Bold-webfont.woff') format('woff'),
-         url('font/webfont/Bigotes-Bold-webfont.ttf') format('truetype'),
-         url('font/webfont/Bigotes-Bold-webfont.svg#bigotesbold') format('svg');
+    src: url('fonts/webfont/Bigotes-Bold-webfont.eot');
+    src: url('fonts/webfont/Bigotes-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont/Bigotes-Bold-webfont.woff2') format('woff2'),
+         url('fonts/webfont/Bigotes-Bold-webfont.woff') format('woff'),
+         url('fonts/webfont/Bigotes-Bold-webfont.ttf') format('truetype'),
+         url('fonts/webfont/Bigotes-Bold-webfont.svg#bigotesbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: 'bigotesdemibold';
-    src: url('font/webfont/Bigotes-DemiBold-webfont.eot');
-    src: url('font/webfont/Bigotes-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont/Bigotes-DemiBold-webfont.woff2') format('woff2'),
-         url('font/webfont/Bigotes-DemiBold-webfont.woff') format('woff'),
-         url('font/webfont/Bigotes-DemiBold-webfont.ttf') format('truetype'),
-         url('font/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold') format('svg');
+    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot');
+    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont/Bigotes-DemiBold-webfont.woff2') format('woff2'),
+         url('fonts/webfont/Bigotes-DemiBold-webfont.woff') format('woff'),
+         url('fonts/webfont/Bigotes-DemiBold-webfont.ttf') format('truetype'),
+         url('fonts/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: 'bigotesheavy';
-    src: url('font/webfont/Bigotes-Heavy-webfont.eot');
-    src: url('font/webfont/Bigotes-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont/Bigotes-Heavy-webfont.woff2') format('woff2'),
-         url('font/webfont/Bigotes-Heavy-webfont.woff') format('woff'),
-         url('font/webfont/Bigotes-Heavy-webfont.ttf') format('truetype'),
-         url('font/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy') format('svg');
+    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot');
+    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont/Bigotes-Heavy-webfont.woff2') format('woff2'),
+         url('fonts/webfont/Bigotes-Heavy-webfont.woff') format('woff'),
+         url('fonts/webfont/Bigotes-Heavy-webfont.ttf') format('truetype'),
+         url('fonts/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: 'bigotesmedium';
-    src: url('font/webfont/Bigotes-Medium-webfont.eot');
-    src: url('font/webfont/Bigotes-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont/Bigotes-Medium-webfont.woff2') format('woff2'),
-         url('font/webfont/Bigotes-Medium-webfont.woff') format('woff'),
-         url('font/webfont/Bigotes-Medium-webfont.ttf') format('truetype'),
-         url('font/webfont/Bigotes-Medium-webfont.svg#bigotesmedium') format('svg');
+    src: url('fonts/webfont/Bigotes-Medium-webfont.eot');
+    src: url('fonts/webfont/Bigotes-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont/Bigotes-Medium-webfont.woff2') format('woff2'),
+         url('fonts/webfont/Bigotes-Medium-webfont.woff') format('woff'),
+         url('fonts/webfont/Bigotes-Medium-webfont.ttf') format('truetype'),
+         url('fonts/webfont/Bigotes-Medium-webfont.svg#bigotesmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: 'bigotes_corsivaitalic';
-    src: url('font/webfont-curs/BigotesCorsiva-Italic-webfont.eot');
-    src: url('font/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.woff2') format('woff2'),
-         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.woff') format('woff'),
-         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.ttf') format('truetype'),
-         url('font/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
+    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot');
+    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff2') format('woff2'),
+         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff') format('woff'),
+         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.ttf') format('truetype'),
+         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }

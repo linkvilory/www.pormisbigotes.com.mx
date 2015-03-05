@@ -214,21 +214,53 @@
   height: 20px;
 }
 /* Conocelos */ 
+
+/*
+ * Galerias
+ */
+ .seccionGaleriaEstaticaParteUno {
+    background-image: url("images/bg/seccionCuatro.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+ .seccionGaleriaEstaticaParteDos {
+    background-image: url("images/bg/seccionSeis.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+.seccionGaleriaEstaticaParteTres {
+    background-image: url("images/bg/seccionSiete.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 400px;
+    width: 100%;
+} 
+/* Galerias */
 /*
  * Galeria Slider
  */
-.galeria-container-inner {
-	height: 150px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 300px;
-}
-.galeria-container-inner .buttonGaleria {
-	left: -150px;
-    position: relative;
-    top: -75px;
-    width: 300px;
+ .seccionGaleria {
+    background-image: url("images/bg/seccionOcho.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    display: table;
+    height: 400px;
+    width: 100%;
+} 
+.seccionGaleria .buttonGaleria {
+    cursor: pointer;
+    margin: 125px auto 0;
 }
  /* Galeria Slider */
 
