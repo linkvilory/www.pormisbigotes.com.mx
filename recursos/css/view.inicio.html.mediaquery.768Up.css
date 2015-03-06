@@ -225,6 +225,11 @@
 } 
 /* Primera */ 
 /*
+ * Noticias
+ */
+
+/* Noticias */ 
+/*
  * Conocelos
  */
 .sceneConocelos {
@@ -283,9 +288,9 @@
  */
  .seccionGaleria {
     background-image: url("images/bg/seccionOcho.jpg");
-    background-position: center center;
+    background-position: center top;
     background-repeat: repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     display: table;
     height: 400px;
     width: 100%;
@@ -346,39 +351,39 @@
   cursor: pointer;
 }
 .seccionDetras .img100, .seccionDetrasMore .img100{
-  width: 100%;
+  width: 100%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img90, .seccionDetrasMore .img90{
-  width: 90%;
+  width: 90%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img80, .seccionDetrasMore .img80{
-  width: 80%;
+  width: 80%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img70, .seccionDetrasMore .img70{
-  width: 70%;
+  width: 70%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img60, .seccionDetrasMore .img60{
-  width: 60%;
+  width: 60%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img50, .seccionDetrasMore .img50{
-  width: 50%;
+  width: 50%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img40, .seccionDetrasMore .img40{
-  width: 40%;
+  width: 40%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img30, .seccionDetrasMore .img30{
-  width: 30%;
+  width: 30%!important;
   margin: 5px 2px;
 }
 .seccionDetras .img20, .seccionDetrasMore .img20{
-  width: 20%;
+  width: 20%!important;
   margin: 5px 2px;
 }
 .imgGalDos{
@@ -398,6 +403,21 @@
   padding-top: 20px !important;
 }
 .imgGalSeis{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalNueve{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalDiez{
+  margin-left: auto !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+.imgGalOnce{
   margin-left: auto !important;
   padding-bottom: 20px !important;
   padding-top: 20px !important;

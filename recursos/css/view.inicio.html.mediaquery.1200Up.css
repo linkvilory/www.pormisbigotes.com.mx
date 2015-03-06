@@ -95,15 +95,15 @@
      * Sinopsis
      */
     .seccionSinopsis {
-        background-image:url(images/bg/seccionTres.jpg);
-        background-position:center center;
-        background-repeat:repeat;
-        background-size:100% auto;
-        display:table;
-        height:600px;
-        max-height:600px;
-        min-height:600px;
-        width:100%
+        background-image: url("images/bg/seccionTres.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+background-size: 100% auto;
+    display: table;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
     }
 
     .sinopsis-container {
@@ -735,36 +735,36 @@
     /* Conocelos */
     /* Galerias Estaticas */
     .seccionGaleriaEstaticaParteUno {
-        background-image:url(images/bg/seccionCuatro.jpg);
-        background-position:top center;
-        background-repeat:repeat;
-        background-size:100% auto;
-        height:700px;
-        max-height:700px;
-        min-height:700px;
-        width:100%
+        background-image: url("images/bg/seccionCuatro.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
     }
 
     .seccionGaleriaEstaticaParteDos {
         background-image:url(images/bg/seccionSeis.jpg);
-        background-position:center top;
-        background-repeat:repeat;
-        background-size:100% auto;
-        height:700px;
-        max-height:700px;
-        min-height:700px;
-        width:100%
+        background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
     }
 
     .seccionGaleriaEstaticaParteTres {
         background-image:url(images/bg/seccionSiete.jpg);
-        background-position:center top;
-        background-repeat:repeat;
-        background-size:100% auto;
-        height:700px;
-        max-height:700px;
-        min-height:700px;
-        width:100%
+        background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
     }
 
     /* Galerias Estaticas*/
@@ -789,6 +789,62 @@
     }
 
     /* Galeria */
+    /*
+     * Detras camaras
+     */
+    .img-responsive.img100.imgGalUno {
+    margin: 5px auto !important;
+    max-width: 990px !important;
+}
+.img-responsive.img100.imgGalUno {
+    margin: 5px auto !important;
+    max-width: 990px !important;
+}
+.img-responsive.img80.imgGalTres {
+    margin: 5px auto !important;
+    max-width: 380px !important;
+}
+.img-responsive.img80.imgGalCuatro {
+    margin: 5px auto !important;
+    max-width: 480px !important;
+}
+.img-responsive.img70.imgGalCinco {
+    margin: 5px auto !important;
+    max-width: 420px !important;
+}
+.img-responsive.img80.imgGalSeis {
+    margin: 5px auto !important;
+    max-width: 490px !important;
+}
+.img-responsive.img100.imgGalSiete {
+    margin: 5px auto;
+    max-width: 900px !important;
+}
+.img-responsive.img90.imgGalOcho {
+    margin: 5px auto !important;
+    max-width: 780px !important;
+}
+.img-responsive.img80.imgGalNueve {
+    margin: 5px auto !important;
+    max-width: 990px !important;
+}
+.img-responsive.img70.imgGalDiez {
+    margin: 5px auto !important;
+    max-width: 440px !important;
+}
+.img-responsive.img80.imgGalOnce {
+    margin: 5px auto !important;
+    max-width: 380px !important;
+}
+.img-responsive.img100.imgGalDoce {
+    margin: 5px auto !important;
+    max-width: 900px !important;
+}
+.img-responsive.img90.imgGalTrece {
+    margin: 5px auto !important;
+    max-width: 480px !important;
+}
+     /* Detras camaras */
     /*
      * Premios
      */
@@ -845,8 +901,8 @@
     }
 
     .creditos-container-inner {
-        margin-top:100px
-    }
+    margin-top: 40px;
+}
 
     .creditos-container-inner > table {
         text-align:center
