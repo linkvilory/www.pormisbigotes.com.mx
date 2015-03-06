@@ -1,6 +1,5 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-
 /*
  * Seccion Logo
  */
@@ -13,176 +12,194 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    height: 100px;
-	width: 200px!important;
-}
+    width: 200px !important
+    }
+
 .logo-container {
     margin: auto;
     left: -100px;
-	position: relative;
-	max-width: 200px!important;
-}
+    position: relative;
+    max-width: 200px !important
+    }
 
-/* End Logo */ 
-
+/* End Logo */
 /*
  * Menu
  */
 .menu {
-    width: 220px;
-}
+    width: 220px
+    }
+
 .menu-container {
     color: #fff;
     height: 75%;
     margin: 70px 5% 0;
-    overflow:hidden;
-}
+    overflow: hidden
+    }
+
 .menu-container ul .enlace.trailer {
     list-style: outside none none;
-    padding: 50px 0;
-}
-/* End Menu */
+    padding: 50px 0
+    }
 
+/* End Menu */
 /*
  * Toolbar
  */
 .toolbar {
-  	display: block;
+    display: block;
     height: 100px;
     padding: 22px 0 0;
     position: fixed;
     right: 0;
     top: 0;
     width: 240px;
-    z-index: 25;
-}
+    z-index: 25
+    }
+
 .toolbar-container {
-  width: 100%;
-  height: 100%;
-}
+    width: 100%;
+    height: 100%
+    }
+
 .toolbar-container .globo, .toolbar-container-facebook .globo, .toolbar-container-twitter .globo {
-  float: left;
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-}
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    color: #fff
+    }
+
 .toolbar-container-facebook {
     position: absolute;
     top: 80px;
     left: -25px;
-    display:none;
-}
+    display: none
+    }
+
 .toolbar-container-twitter {
     position: absolute;
     top: 80px;
     left: 33px;
-    display:none;
-}
+    display: none
+    }
+
 .globo.facebookL {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 300px 0;
-  color: #fff;
-  display: block;
-  height: 44px;
-  width: 42px;
-  cursor:pointer;
-}
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 300px 0;
+    color: #fff;
+    display: block;
+    height: 44px;
+    width: 42px;
+    cursor: pointer
+    }
+
 .globo.twitterL {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 228px 0;
-  color: #fff;
-  display: block;
-  height: 44px;
-  width: 42px;
-  cursor:pointer;
-}
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 228px 0;
+    color: #fff;
+    display: block;
+    height: 44px;
+    width: 42px;
+    cursor: pointer
+    }
+
 .globo.instagramL {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 158px 0;
-  color: #fff;
-  display: block;
-  height: 44px;
-  width: 42px;
-  cursor:pointer;
-}
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 158px 0;
+    color: #fff;
+    display: block;
+    height: 44px;
+    width: 42px;
+    cursor: pointer
+    }
+
 .globo.youtubeL {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 87px 0;
-  color: #fff;
-  display: block;
-  height: 44px;
-  width: 42px;
-  cursor:pointer;
-}
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 87px 0;
+    color: #fff;
+    display: block;
+    height: 44px;
+    width: 42px;
+    cursor: pointer
+    }
+
 .globo.facebook-l {
-  background-image: url("images/sprites/follow-share.png");
+    background-image: url(images/sprites/follow-share.png);
     background-position: 185px 0;
     color: #fff;
     display: block;
     height: 40px;
     width: 37px;
-    cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .globo.facebook-s {
-  background-image: url("images/sprites/follow-share.png");
+    background-image: url(images/sprites/follow-share.png);
     background-position: 185px 45px;
     color: #fff;
     display: block;
     height: 40px;
     width: 37px;
-    cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .globo.twitter-l {
-  background-image: url("images/sprites/follow-share.png");
+    background-image: url(images/sprites/follow-share.png);
     background-position: 185px -59px;
     color: #fff;
     display: block;
     height: 40px;
     width: 37px;
-    cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .globo.twitter-s {
-  background-image: url("images/sprites/follow-share.png");
+    background-image: url(images/sprites/follow-share.png);
     background-position: 185px 45px;
     color: #fff;
     display: block;
     height: 40px;
     width: 37px;
-    cursor:pointer;
-}
-/* End Toolbar */
+    cursor: pointer
+    }
 
+/* End Toolbar */
 /*
  * Seccion de Contenedor de Youtube
  */
 .container-fluid.fullscreen {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	display: none;
-	top: 0;
-	z-index: 99;
-	background:#000;
-}
-.logoYoutube{
-	height: 10%;
-} 
-.logoYoutube img{
-	max-width: 300px;
-	min-width: 200px;
-}
-.youtube {
-	height: 70%;
-}
-.youtubeClose {
-	height: 10%;
-}
-.youtubeExplorar{
-	height: 10%;
-}
-/* End Seccion de Contenedor de Youtube */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    z-index: 99;
+    background: #000
+    }
 
+.logoYoutube {
+    height: 10%
+    }
+
+.logoYoutube img {
+    max-width: 300px;
+    min-width: 200px
+    }
+
+.youtube {
+    height: 70%
+    }
+
+.youtubeClose {
+    height: 10%
+    }
+
+.youtubeExplorar {
+    height: 10%
+    }
+
+/* End Seccion de Contenedor de Youtube */
 /*
  * Parte del contenedor de Conocelos
  */
@@ -190,19 +207,22 @@
     font-family: "bigotesbold";
     font-size: 2em;
     letter-spacing: 3px;
-    text-align: center;
-}
+    text-align: center
+    }
+
 .infoDetalle img {
     margin: auto;
     max-width: 300px;
-    width: 200px;
-}
+    width: 200px
+    }
+
 .infoDetalle p {
     font-family: "bigotesmedium";
     font-size: 1.5em;
     letter-spacing: 2px;
-    text-align: center;
-} 
+    text-align: center
+    }
+
 /* Parte del contendor de Conocelos */
 /* SECIONES */
 /*
@@ -211,8 +231,9 @@
 .bienvenida-container-inner {
     margin-top: 80px;
     position: absolute !important;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .bienvenida-container-inner > h1 {
     font-family: "bigotesbold";
     font-size: 3em;
@@ -221,121 +242,140 @@
     margin: auto;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-} 
-/* Primera */ 
+    text-shadow: 1px -1px #000
+    }
+
+/* Primera */
 /*
  * Noticias
  */
-
-/* Noticias */ 
+/* Noticias */
 /*
  * Conocelos
  */
 .sceneConocelos {
-    display:none;
-}
-.sceneConocelosTablet{
-  display:block;
-}
-.sceneConocelosMobile{
-  display:none;
-}
-.sceneConocelosTablet img{
-  margin: auto;
+    display: none
+    }
+
+.sceneConocelosTablet {
+    display: block
+    }
+
+.sceneConocelosMobile {
+    display: none
+    }
+
+.sceneConocelosTablet img {
+    margin: auto;
     display: block;
     max-width: 184px;
-    width: 100%;
-} 
-.sceneConocelosTablet .separador{
-  height: 20px;
-}
-/* Conocelos */ 
+    width: 100%
+    }
 
+.sceneConocelosTablet .separador {
+    height: 20px
+    }
+
+/* Conocelos */
 /*
  * Galerias
  */
- .seccionGaleriaEstaticaParteUno {
-    background-image: url("images/bg/seccionCuatro.jpg");
+.seccionGaleriaEstaticaParteUno {
+    background-image: url(images/bg/seccionCuatro.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     display: table;
     height: 400px;
-    width: 100%;
-}
- .seccionGaleriaEstaticaParteDos {
-    background-image: url("images/bg/seccionSeis.jpg");
+    width: 100%
+    }
+
+.seccionGaleriaEstaticaParteDos {
+    background-image: url(images/bg/seccionSeis.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     display: table;
     height: 400px;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .seccionGaleriaEstaticaParteTres {
-    background-image: url("images/bg/seccionSiete.jpg");
+    background-image: url(images/bg/seccionSiete.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     display: table;
     height: 400px;
-    width: 100%;
-} 
+    width: 100%
+    }
+
 /* Galerias */
 /*
  * Galeria Slider
  */
- .seccionGaleria {
-    background-image: url("images/bg/seccionOcho.jpg");
+.seccionGaleria {
+    background-image: url(images/bg/seccionOcho.jpg);
     background-position: center top;
     background-repeat: repeat;
+    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     display: table;
     height: 400px;
-    width: 100%;
-} 
+    width: 100%
+    }
+
 .seccionGaleria .buttonGaleria {
     cursor: pointer;
-    margin: 125px auto 0;
-}
- /* Galeria Slider */
+    margin: 125px auto 0
+    }
 
+/* Galeria Slider */
 /*
  * Detras Camaras
  */
 .seccionDetras {
-  background-image: url("images/bg/seccionOnce.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-  display: table;
-}
-.seccionDetras> h1 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-top: 50px;
-  padding: 5px 0;
-  text-align: center;
-  text-shadow: 1px -1px #000;
-}
+    background-image: url(images/bg/seccionOnce.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 100%;
+    display: table
+    }
+
+.seccionDetras > h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000
+    }
+
 .bloqueImagen img {
     width: 100% !important;
-    margin: 5px 2px !important;
-}
+    margin: 5px 2px !important
+    }
 
 .seccionDetrasMore {
-  background-image: url("images/bg/seccionOnce.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-  display: none;
-}
+    background-image: url(images/bg/seccionOnce.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 100%;
+    display: none
+    }
+
 .botonMas {
-  	background: none repeat scroll 0 0 red;
+    background: none repeat scroll 0 0 red;
     border: 0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #fff;
     font-size: 1em;
@@ -345,124 +385,149 @@
     margin: 20px auto;
     text-align: center;
     text-transform: uppercase;
-    width: 126px;
-}
-.botonMas:hover{
-  cursor: pointer;
-}
-.seccionDetras .img100, .seccionDetrasMore .img100{
-  width: 100%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img90, .seccionDetrasMore .img90{
-  width: 90%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img80, .seccionDetrasMore .img80{
-  width: 80%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img70, .seccionDetrasMore .img70{
-  width: 70%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img60, .seccionDetrasMore .img60{
-  width: 60%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img50, .seccionDetrasMore .img50{
-  width: 50%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img40, .seccionDetrasMore .img40{
-  width: 40%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img30, .seccionDetrasMore .img30{
-  width: 30%!important;
-  margin: 5px 2px;
-}
-.seccionDetras .img20, .seccionDetrasMore .img20{
-  width: 20%!important;
-  margin: 5px 2px;
-}
-.imgGalDos{
-  margin-top: 45px!important;
-}
-.imgGalTres{
-  margin-top: 20px!important;
-}
-.imgGalCuatro{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-.imgGalCinco{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-.imgGalSeis{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-.imgGalNueve{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-.imgGalDiez{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-.imgGalOnce{
-  margin-left: auto !important;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-}
-/* Detras Camaras */
+    width: 126px
+    }
 
+.botonMas:hover {
+    cursor: pointer
+    }
+
+.seccionDetras .img100, .seccionDetrasMore .img100 {
+    width: 100% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img90, .seccionDetrasMore .img90 {
+    width: 90% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img80, .seccionDetrasMore .img80 {
+    width: 80% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img70, .seccionDetrasMore .img70 {
+    width: 70% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img60, .seccionDetrasMore .img60 {
+    width: 60% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img50, .seccionDetrasMore .img50 {
+    width: 50% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img40, .seccionDetrasMore .img40 {
+    width: 40% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img30, .seccionDetrasMore .img30 {
+    width: 30% !important;
+    margin: 5px 2px
+    }
+
+.seccionDetras .img20, .seccionDetrasMore .img20 {
+    width: 20% !important;
+    margin: 5px 2px
+    }
+
+.imgGalDos {
+    margin-top: 45px !important
+    }
+
+.imgGalTres {
+    margin-top: 20px !important
+    }
+
+.imgGalCuatro {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+.imgGalCinco {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+.imgGalSeis {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+.imgGalNueve {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+.imgGalDiez {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+.imgGalOnce {
+    margin-left: auto !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+    }
+
+/* Detras Camaras */
 /*
  * Premios
  */
 .premios-container .campana-container {
-    display: block;
-}
-/* Premios */
+    display: block
+    }
 
+/* Premios */
 /*
  * Seccion Creditos
  */
-
 .seccionCreditos {
-  background-image: url("images/bg/seccionTrece.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-}
-.creditosDesktop{
-	display: block;
-}
-.creditosMobile{
-	display: none;
-}
+    background-image: url(images/bg/seccionTrece.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 100%
+    }
+
+.creditosDesktop {
+    display: block
+    }
+
+.creditosMobile {
+    display: none
+    }
+
 .seccionCreditos img {
-  margin: auto;
-}
+    margin: auto
+    }
+
 .creditos-container {
-  position: relative;
-}
+    position: relative
+    }
+
 .creditos-container-inner > table {
-  text-align: center;
-}
+    text-align: center
+    }
+
 .creditos-container-inner table {
     margin: auto;
     text-align: center;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .creditos-container-inner table p {
     font-family: "bigotesmedium";
     font-size: 1em;
@@ -470,25 +535,26 @@
     letter-spacing: 2px;
     line-height: 25px;
     margin: 0;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
+
 .creditos-container-inner table p b {
-  font-family: "bigotesmedium_condensed";
+    font-family: "bigotesmedium_condensed";
     font-weight: 900;
     letter-spacing: 2px;
     line-height: 25px;
-    text-shadow: 1px -1px #000;
-}
-/* Seccion Creditos */ 
+    text-shadow: 1px -1px #000
+    }
 
-	/* Patrocinadores */
+/* Seccion Creditos */
+/* Patrocinadores */
 .patrocinadores-container img {
     margin: auto;
-    max-height: auto!important;
-    height: auto!important;
-    max-width: 100%;
-}
-	/*End Patrocinadores */
+    max-height: auto !important;
+    height: auto !important;
+    max-width: 100%
+    }
 
+/*End Patrocinadores */
 
 }

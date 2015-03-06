@@ -1,31 +1,74 @@
 /*
- * Hoja de estilo para la página inicio inicio.html
+ * Hoja de estilo para la pna inicio inicio.html
  */
-
-/* Se creó un css para la página inicio para evitar cargar más estilos de los que se utiliza y mejorar el performance de la página */ 
-/* El estilo por default es para un dispositivo móvil así que los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
-
+/* Se cre css para la pna inicio para evitar cargar mestilos de los que se utiliza y mejorar el performance de la pna */
+/* El estilo por default es para un dispositivo m asue los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
 /*
  * HTML y Body
  */
-
 html, body {
-	line-height: 1;
-	height: 100%;
-	position: relative;
-}
+    line-height: 1;
+    height: 100%;
+    position: relative
+    }
 
 body {
-	background-repeat: no-repeat;
-	color: #fff;
-	margin: 0;
-	padding: 0;
-	font-family: 'bigotesmedium';
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "bigotesmedium"
+    }
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important
+    }
+/*
+ * Seccion Preloader
+ */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(images/bg/verde.jpg);
+    z-index: 99999;
 }
-.row{
-	margin:0px!important;
-	padding:0px!important;
+#preloader .logopre {
+    height: 100px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -50px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+    z-index: 1;
 }
+#preloader .cargando {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    height: 10px;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 100px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+    z-index: 1;
+}
+#preloader .cargando div {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 10px;
+    left: -100%;
+    position: absolute;
+    width: 400px;
+} 
+/* Seccion Preloader */ 
 /*
  * Seccion del Logo 
  */
@@ -35,28 +78,32 @@ body {
     margin: 0 auto;
     position: fixed;
     width: 100%;
-    z-index: 10;
-}
+    z-index: 10
+    }
+
 .logo-container {
     margin-left: auto;
-    max-width: 150px !important;
-}
-.logo span {
-	color: #fff;
-	text-align: center;
-	line-height: 50px;
-	font-size: 20px;
-	width: 100%;
-	display: inline-block;
-}
-/* End Seccion del Logo */
+    max-width: 150px !important
+    }
 
+.logo span {
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
+    display: inline-block
+    }
+
+/* End Seccion del Logo */
 /*
  * Boton Menu
  */
 .botonMenu {
     background: none repeat scroll 0 0 red;
     border: 0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -70,8 +117,9 @@ body {
     text-transform: uppercase;
     top: 12px;
     width: 60px;
-    z-index: 20;
-}
+    z-index: 20
+    }
+
 .menu {
     display: block;
     height: 100%;
@@ -80,214 +128,241 @@ body {
     width: 50%;
     left: -50%;
     z-index: 15;
-    background: -moz-linear-gradient(left,  rgba(0,0,0,0.87) 25%, rgba(0,0,0,0.75) 48%, rgba(0,0,0,0.52) 69%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(25%,rgba(0,0,0,0.87)), color-stop(48%,rgba(0,0,0,0.75)), color-stop(69%,rgba(0,0,0,0.52)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(0,0,0,0.87) 25%,rgba(0,0,0,0.75) 48%,rgba(0,0,0,0.52) 69%,rgba(0,0,0,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.87) 25%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.52) 69%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(0, 0, 0, 0.87)), color-stop(48%, rgba(0, 0, 0, 0.75)), color-stop(69%, rgba(0, 0, 0, 0.52)), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4  */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.87) 25%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.52) 69%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10 ,Safari5.1  */
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.87) 25%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.52) 69%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10  */
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.87) 25%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.52) 69%, rgba(0, 0, 0, 0) 100%);
+    /* IE10  */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.87) 25%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.52) 69%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+    /* IE6-9 */
+    }
 
-}
 .menu-container {
     color: #fff;
     margin: 70px 5% 0;
-    display: table;
-}
+    display: table
+    }
+
 .menu-container ul {
-    padding: 0 10px;
-}
+    padding: 0 10px
+    }
+
 .menu-container ul .enlace.trailer {
-  padding: 5px 0;
-  list-style: outside none none;
-}
+    padding: 5px 0;
+    list-style: outside none none
+    }
+
 .menu-container ul .enlace {
     list-style: outside none none;
-    padding: 5px 0;
-}
+    padding: 5px 0
+    }
+
 .menu-container ul .enlace a {
     color: #fff;
     cursor: pointer;
     font-size: 0.8em;
     text-decoration: none;
     text-shadow: 1px -1px #000;
-    text-transform: uppercase;
-}
+    text-transform: uppercase
+    }
+
 .menu-container ul .enlace a:hover, .menu-container ul .enlace a:active, .menu-container ul .enlace a:focus {
-  color: #fff;
-}
+    color: #fff
+    }
+
 .facebookMenu {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 300px 0;
-  color: #fff;
-  display: block;
-  float: left;
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 300px 0;
+    color: #fff;
+    display: block;
+    float: left;
     height: 44px;
     width: 42px;
     margin: 0 5px 5px 0;
-  cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .twitterMenu {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 228px 0;
-  color: #fff;
-  display: block;
-  float: left;
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 228px 0;
+    color: #fff;
+    display: block;
+    float: left;
     height: 44px;
     width: 42px;
     margin: 0 5px 5px 0;
-  cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .instagramMenu {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 158px 0;
-  color: #fff;
-  display: block;
-  float: left;
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 158px 0;
+    color: #fff;
+    display: block;
+    float: left;
     height: 44px;
     width: 42px;
     margin: 0 5px 5px 0;
-  cursor:pointer;
-}
+    cursor: pointer
+    }
+
 .youtubeMenu {
-  background-image: url("images/sprites/icons-btns.png");
-  background-position: 87px 0;
-  color: #fff;
-  display: block;
-  float: left;
+    background-image: url(images/sprites/icons-btns.png);
+    background-position: 87px 0;
+    color: #fff;
+    display: block;
+    float: left;
     height: 44px;
     width: 42px;
     margin: 0 5px 5px 0;
-  cursor:pointer;
-}
+    cursor: pointer
+    }
+
 /* End Menu */
-
-
 /*
  * Parte del contenedor de Youtube
  */
+.container-fluid.fullscreen {
+    display: none
+    }
 
 .container-fluid.fullscreen {
-	display: none;
-}
-.container-fluid.fullscreen {
-	position: fixed;
+    position: fixed;
     width: 100%;
     height: 100%;
     display: none;
     top: 0;
     z-index: 99;
-    background:#000;
-}
-/* End Contenedor de Youtube */
+    background: #000
+    }
 
+/* End Contenedor de Youtube */
 /*
  * Seccion de Youtube
  */
+.logoYoutube {
+    height: 10%
+    }
 
-.logoYoutube{
-	height: 10%;
-} 
-.logoYoutube img{
-	max-width: 150px;
-	min-width: 100px;
-	margin:auto;
-}
+.logoYoutube img {
+    max-width: 150px;
+    min-width: 100px;
+    margin: auto
+    }
+
 .youtube {
-	background: none repeat scroll 0 0 #000;
-	height: 70%;
-	top: 0;
-	z-index: 9999;
-}
-.youtubeClose {
-	height: 10%;
-}
-.youtubeClose .cerrarBoton {
-	color: #fff;
-	cursor: pointer;
-	height: 46px;
-	position: absolute;
-	right: 0;
-	top: 100%;
-	width: 45px;
-	z-index: 99999;
-}
-.youtubeExplorar{
-	height: 10%;
-}
-.youtubeExplorar .explorarSitioBoton {
-	background: none repeat scroll 0 0 red;
-	border: 0 none;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: bold;
-	height: 30px;
-	line-height: 32px;
-	margin: auto;
-	text-align: center;
-	text-transform: uppercase;
-	width: 170px;
-	z-index: 99;
-}
-/* Seccion de Youtube */
+    background: none repeat scroll 0 0 #000;
+    height: 70%;
+    top: 0;
+    z-index: 9999
+    }
 
+.youtubeClose {
+    height: 10%
+    }
+
+.youtubeClose .cerrarBoton {
+    color: #fff;
+    cursor: pointer;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 45px;
+    z-index: 99999
+    }
+
+.youtubeExplorar {
+    height: 10%
+    }
+
+.youtubeExplorar .explorarSitioBoton {
+    background: none repeat scroll 0 0 red;
+    border: 0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 32px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 170px;
+    z-index: 99
+    }
+
+/* Seccion de Youtube */
 /*
  * Parte del contenedor de Descripcion de Conocelos
  */
+.container-fluid.fullscreen.info {
+    display: none
+    }
 
 .container-fluid.fullscreen.info {
-	display: none;
-}
-.container-fluid.fullscreen.info {
-	position: fixed;
+    position: fixed;
     width: 100%;
     height: 100%;
     display: none;
     top: 0;
     z-index: 99;
-    background:#000;
-}
+    background: #000
+    }
 
-.infoConocelos{
-	height: 10%;
-} 
-.infoConocelos img{
-	max-width: 150px;
-	min-width: 100px;
-	margin:auto;
-}
+.infoConocelos {
+    height: 10%
+    }
+
+.infoConocelos img {
+    max-width: 150px;
+    min-width: 100px;
+    margin: auto
+    }
 
 .infoDetalle {
     height: 80%;
-    overflow-y: scroll;
-}
+    overflow-y: scroll
+    }
 
 .infoDetalle > h1 {
     font-family: "bigotesbold";
     font-size: 1.5em;
     letter-spacing: 3px;
-    text-align: center;
-}
+    text-align: center
+    }
+
 .infoDetalle img {
     margin: auto;
     max-width: 300px;
-    width: 150px;
-}
+    width: 150px
+    }
+
 .infoDetalle p {
     font-family: "bigotesmedium";
     font-size: 0.8em;
     letter-spacing: 2px;
-    text-align: center;
-}
+    text-align: center
+    }
 
-.regresarConocelos{
-	height: 10%;
-}
+.regresarConocelos {
+    height: 10%
+    }
+
 .regresarConocelos .cerrarInfoBoton {
-	background: none repeat scroll 0 0 red;
+    background: none repeat scroll 0 0 red;
     border: 0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -299,44 +374,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     text-align: center;
     text-transform: uppercase;
     width: 110px;
-    z-index: 99;
-}
+    z-index: 99
+    }
 
 /* End Contenedor de Descripcion de Conocelos */
-
 /*
  * Toolbar
  */
 .toolbar {
-	display: none;
-}
+    display: none
+    }
+
 /* End Toolbar */
 /*
  * Primera
  */
 .seccionBienvenida {
-  background-image: url("images/bg/seccionUno.jpg");
+    background-image: url(images/bg/seccionUno.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
     display: table;
     height: 500px;
-    width: 100%;
-}
+    width: 100%
+    }
 
 .bienvenida-container {
-    position: relative;
-}
+    position: relative
+    }
 
 .bienvenida-container-inner {
     margin-top: 100px;
     position: absolute !important;
-    width: 100%;
-}
+    width: 100%
+    }
 
 .seccionBienvenida img {
-  margin: auto;
-}
+    margin: auto
+    }
 
 .bienvenida-container-inner > h1 {
     font-family: "bigotesbold";
@@ -346,22 +422,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin: auto;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
-/* Primera */ 
+    text-shadow: 1px -1px #000
+    }
+
+/* Primera */
 /*
  * Noticias
  */
 .seccionNoticias {
-  background-image: url("images/bg/seccionDos.jpg");
+    background-image: url(images/bg/seccionDos.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
     display: table;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .seccionNoticias .cortina {
-    background-image: url("images/bg/cortina.png");
+    background-image: url(images/bg/cortina.png);
     width: 100%;
     height: 60px;
     display: table;
@@ -369,28 +448,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     background-position: top center;
     position: absolute;
     z-index: 9999;
-    margin-top: -40px;
-}
-.seccionNoticias .noticias-container{
-  margin: 0 0 20px;
+    margin-top: -40px
+    }
+
+.seccionNoticias .noticias-container {
+    margin: 0 0 20px;
     padding: 0;
-    text-align: center;
-}
+    text-align: center
+    }
+
 .noticias-container .col-xs-12.col-sm-4.col-md-4.col-lg-4 {
     margin: 0;
-    padding: 0;
-}
+    padding: 0
+    }
+
 .seccionNoticias .noticias-container iframe {
     background: #fff;
-    border-radius: 5px!important;
-    margin: auto!important;
-    max-width: 250px !important;
-}
-.seccionNoticias .instagram-media{
-  border-radius: 5px!important;
-    margin: auto!important;
-    max-width: 250px !important;
-}
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
+    margin: auto !important;
+    max-width: 250px !important
+    }
+
+.seccionNoticias .instagram-media {
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
+    margin: auto !important;
+    max-width: 250px !important
+    }
+
 .noticias-container > h1 {
     font-family: "bigotesbold";
     font-size: 2em;
@@ -398,31 +486,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     letter-spacing: 3px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
+
 .noticias-container table {
-  width: 100%;
-  text-align: center;
-}
+    width: 100%;
+    text-align: center
+    }
 
-/* Noticias */ 
-
+/* Noticias */
 /*
  * Sinopsis
  */
 .seccionSinopsis {
-  background-image: url("images/bg/seccionTres.jpg");
+    background-image: url(images/bg/seccionTres.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
     display: table;
-    width: 100%;
-}
+    width: 100%
+    }
 
 .sinopsis-container {
     margin: 0 0 20px 0;
-  text-align: center;
-}
+    text-align: center
+    }
+
 .sinopsis-container > h1 {
     font-family: "bigotesbold";
     font-size: 2em;
@@ -430,58 +520,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     letter-spacing: 3px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
 
 .sinopsis-container p {
-  font-family: "bigotesmedium";
+    font-family: "bigotesmedium";
     font-size: 1em;
     font-weight: lighter;
     letter-spacing: 2px;
     line-height: 1.5em;
     text-align: center;
     text-shadow: 1px -1px #000;
-    margin: 0;
-}
+    margin: 0
+    }
 
 .sinopsis-container p b {
-  font-size: 2em;
+    font-size: 2em;
     font-weight: 900;
-    line-height: 1.2em;
-} 
+    line-height: 1.2em
+    }
+
 /* Sinopsis */
 /*
  * Conocelos
  */
 .seccionConocelos {
-  background-image: url("images/bg/verde.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: auto;
-  width: 100%;
-  display: table;
-}
-.sceneConocelosTablet{
-        display:none;
-    } 
-    .sceneConocelosMobile{
-  display:block;
-}
-.sceneConocelosMobile img{
-  margin: auto;
+    background-image: url(images/bg/verde.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
+    width: 100%;
+    display: table
+    }
+
+.sceneConocelosTablet {
+    display: none
+    }
+
+.sceneConocelosMobile {
+    display: block
+    }
+
+.sceneConocelosMobile img {
+    margin: auto;
     display: block;
     max-width: 184px;
-    width: 100%;
-} 
+    width: 100%
+    }
+
 .sceneConocelosMobile img:hover {
-    cursor:pointer;
-}
-.sceneConocelosMobile .separador{
-  height: 20px;
-}
-.sceneConocelos{
-	display: none;
-}
+    cursor: pointer
+    }
+
+.sceneConocelosMobile .separador {
+    height: 20px
+    }
+
+.sceneConocelos {
+    display: none
+    }
+
 .seccionConocelos > h1 {
     font-family: "bigotesbold";
     font-size: 2em;
@@ -490,12 +589,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
 
 .bubbleInfo {
     background: none repeat scroll 0 0 transparent;
     border: 2px solid #fff;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
     border-radius: 30px;
     color: #fff;
     cursor: pointer;
@@ -503,85 +604,95 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     line-height: 1.25em;
     text-align: center;
     width: 40px;
-    font-size: 2em;
-}
+    font-size: 2em
+    }
 
 .seccionConocelosMore {
-  background-image: url("images/bg/verde.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: auto;
-  width: 100%;
-  display:none;
-} 
-/* Conocelos */ 
+    background-image: url(images/bg/verde.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
+    width: 100%;
+    display: none
+    }
+
+/* Conocelos */
 /*
  * Galerias Estaticas
  */
 .seccionGaleriaEstaticaParteUno {
-  background-image: url("images/bg/seccionCuatro.jpg");
-  background-position: center center;
-    background-repeat: repeat;
-    background-size: auto 100%;
-    width: 100%;
-    display: table;
-    height: 300px;
-}
-
-.seccionGaleriaEstaticaParteDos {
-  background-image: url("images/bg/seccionSeis.jpg");
-  background-position: center center;
-    background-repeat: repeat;
-    background-size: auto 100%;
-    width: 100%;
-    display: table;
-    height: 300px;
-}
-
-.seccionGaleriaEstaticaParteTres {
-    background-image: url("images/bg/seccionSiete.jpg");
+    background-image: url(images/bg/seccionCuatro.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
     width: 100%;
     display: table;
-    height: 300px;
-}
+    height: 300px
+    }
+
+.seccionGaleriaEstaticaParteDos {
+    background-image: url(images/bg/seccionSeis.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px
+    }
+
+.seccionGaleriaEstaticaParteTres {
+    background-image: url(images/bg/seccionSiete.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    width: 100%;
+    display: table;
+    height: 300px
+    }
 
 /* Galerias Estaticas */
 /*
  * Galeria Slider
  */
 .seccionGaleria {
-  background-image: url("images/bg/seccionOcho.jpg");
-  background-position: center center;
+    background-image: url(images/bg/seccionOcho.jpg);
+    background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
     width: 100%;
     display: table;
-    height: 300px;
-}
-.seccionGaleria .col-sm-12.col-md-12{
-	margin: 0px!important;
-	padding: 0px!important;
-}
+    height: 300px
+    }
+
+.seccionGaleria .col-sm-12.col-md-12 {
+    margin: 0 !important;
+    padding: 0 !important
+    }
+
 .seccionGaleria .buttonGaleria {
     margin: 75px auto 0;
-    cursor: pointer;
-}
- /* Galeria Slider */
+    cursor: pointer
+    }
 
+/* Galeria Slider */
 /*
  * Detras Camaras
  */
 .seccionDetras {
-  background-image: url("images/bg/seccionOnce.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-  display: table;
-}
+    background-image: url(images/bg/seccionOnce.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 100%;
+    display: table
+    }
+
 .seccionDetras > h1 {
     font-family: "bigotesbold";
     font-size: 2em;
@@ -590,24 +701,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
-    letter-spacing: 3px;
-}
+    letter-spacing: 3px
+    }
+
 .bloqueImagen img {
     width: 100% !important;
-    margin: 5px 2px !important;
-}
+    margin: 5px 2px !important
+    }
 
 .seccionDetrasMore {
-  background-image: url("images/bg/seccionOnce.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
-  width: 100%;
-  display: none;
-}
+    background-image: url(images/bg/seccionOnce.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 100%;
+    display: none
+    }
+
 .botonMas {
-  	background: none repeat scroll 0 0 red;
+    background: none repeat scroll 0 0 red;
     border: 0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #fff;
     font-size: 1em;
@@ -617,45 +733,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin: 20px auto;
     text-align: center;
     text-transform: uppercase;
-    width: 126px;
-}
-.botonMas:hover{
-  cursor: pointer;
-}
-/* Detras Camaras */
+    width: 126px
+    }
 
+.botonMas:hover {
+    cursor: pointer
+    }
+
+/* Detras Camaras */
 /* 
  * Premios
  */
 .seccionPremios {
-  background-image: url("images/bg/seccionDoce.jpg");
+    background-image: url(images/bg/seccionDoce.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .premios-container {
-  margin: auto;
-  padding: 20px 0 0;
-  text-align: center;
-}
+    margin: auto;
+    padding: 20px 0 0;
+    text-align: center
+    }
+
 .premios-container .campana-container {
-  display: none;
-}
+    display: none
+    }
+
 .premios-container .campana {
-  background-image: url("images/sprites/big-btns.png");
-  background-position: -89px -500px;
-  display: block;
-  height: 165px;
-  width: 150px;
-  margin: auto;
-}
+    background-image: url(images/sprites/big-btns.png);
+    background-position: -89px -500px;
+    display: block;
+    height: 165px;
+    width: 150px;
+    margin: auto
+    }
+
 .premios-container table {
-  width: 100%;
-}
+    width: 100%
+    }
+
 .premios-container table td {
-  vertical-align: middle;
-}
+    vertical-align: middle
+    }
+
 .premios-container h1 {
     font-family: "bigotesbold";
     font-size: 1.9em;
@@ -664,8 +788,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
+
 .premios-container h4 {
     font-family: "bigotes_corsivaitalic";
     font-size: 1.8em;
@@ -674,12 +799,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
+
 .botonVerNota {
     background: none repeat scroll 0 0 white;
     border: 1px solid #000048;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
+    -moz-box-shadow: 0 1px #000;
+    -webkit-box-shadow: 0 1px #000;
     box-shadow: 0 1px #000;
     color: #000048;
     font-size: 14px;
@@ -688,15 +818,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin: 20px auto 0;
     text-align: center;
     text-transform: uppercase;
-    width: 100px;
-}
-.botonVerNota:hover{
-  cursor:pointer;
-}
+    width: 100px
+    }
+
+.botonVerNota:hover {
+    cursor: pointer
+    }
+
 .botonDescargarKit {
-  background: none repeat scroll 0 0 transparent;
+    background: none repeat scroll 0 0 transparent;
     border: 1px solid #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
+    -moz-box-shadow: 0 1px #000;
+    -webkit-box-shadow: 0 1px #000;
     box-shadow: 0 1px #000;
     color: #fff;
     font-size: 14px;
@@ -705,45 +841,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin: 20px auto;
     text-align: center;
     text-transform: uppercase;
-    width: 230px;
-}
-.botonDescargarKit:hover{
-  cursor:pointer;
-}
-/* Premios */
+    width: 230px
+    }
 
+.botonDescargarKit:hover {
+    cursor: pointer
+    }
+
+/* Premios */
 /*
  * Seccion Creditos
  */
-
 .seccionCreditos {
-  background-image: url("images/bg/seccionTrece.jpg");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: auto 100%;
-  width: 100%;
-}
-.creditosDesktop{
-	display: none;
-}
-.creditosMobile{
-	display: block;
-}
+    background-image: url(images/bg/seccionTrece.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    width: 100%
+    }
+
+.creditosDesktop {
+    display: none
+    }
+
+.creditosMobile {
+    display: block
+    }
+
 .seccionCreditos img {
-  margin: auto;
-}
+    margin: auto
+    }
+
 .creditos-container-inner {
     margin: 20px 0;
-  position: relative;
-}
+    position: relative
+    }
+
 .creditos-container-inner > table {
-  text-align: center;
-}
+    text-align: center
+    }
+
 .creditos-container-inner table {
     margin: auto;
     text-align: center;
-    width: 260px;
-}
+    width: 260px
+    }
+
 .creditos-container-inner table p {
     font-family: "bigotesmedium";
     font-size: 1em;
@@ -751,120 +895,96 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     letter-spacing: 2px;
     line-height: 40px;
     margin: 0;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
+
 .creditos-container-inner table p b {
-  font-family: "bigotesmedium_condensed";
+    font-family: "bigotesmedium_condensed";
     font-weight: 900;
     letter-spacing: 2px;
     line-height: 25px;
-    text-shadow: 1px -1px #000;
-}
+    text-shadow: 1px -1px #000
+    }
 
-/* Seccion Creditos */ 
-
+/* Seccion Creditos */
 /*
  * Seccion Patrocinadores
  */
 .patrocinadores {
-  	background-image: url("images/bg/footer.jpg");
+    background-image: url(images/bg/footer.jpg);
     background-position: center center;
     background-repeat: repeat;
+    -webkit-background-size: auto auto;
     background-size: auto auto;
     display: table;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .patrocinadores-container img {
     margin: auto;
     max-height: 100%;
     height: 50px;
-    max-width: auto!important;
-}
+    max-width: auto !important
+    }
+
 /* Patrocinadores */
-
-
-
 /*
  * Font Style
  */
+@font-face {
+    font-family: "bigotesbold";
+    src: url(fonts/webfont/Bigotes-Bold-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Bold-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Bold-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Bold-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Bold-webfont.svg#bigotesbold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
 
 @font-face {
-  font-family: 'bigotesbold';
-    src: url('fonts/webfont/Bigotes-Bold-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Bold-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Bold-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Bold-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Bold-webfont.svg#bigotesbold') format('svg');
+    font-family: "bigotesdemibold";
+    src: url(fonts/webfont/Bigotes-DemiBold-webfont.eot);
+    src: url(fonts/webfont/Bigotes-DemiBold-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-DemiBold-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-DemiBold-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-DemiBold-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold) format("svg");
     font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'bigotesdemibold';
-    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot');
-    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'bigotesheavy';
-    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'bigotesmedium';
-    src: url('fonts/webfont/Bigotes-Medium-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Medium-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Medium-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Medium-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Medium-webfont.svg#bigotesmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'bigotes_corsivaitalic';
-    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot');
-    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff2') format('woff2'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff') format('woff'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.ttf') format('truetype'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'bigotesbold_condensed';
-    src: url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot');
-    src: url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff2') format('woff2'),
-         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff') format('woff'),
-         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.ttf') format('truetype'),
-         url('fonts/webfont-cond/Bigotes-BoldCondensed-webfont.svg#bigotesbold_condensed') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-style: normal
+    }
 
-}
 @font-face {
-    font-family: 'bigotesmedium_condensed';
-    src: url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot');
-    src: url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff2') format('woff2'),
-         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff') format('woff'),
-         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.ttf') format('truetype'),
-         url('fonts/webfont-cond/Bigotes-MediumCondensed-webfont.svg#bigotesmedium_condensed') format('svg');
+    font-family: "bigotesheavy";
+    src: url(fonts/webfont/Bigotes-Heavy-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Heavy-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Heavy-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Heavy-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Heavy-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy) format("svg");
     font-weight: normal;
-    font-style: normal;
+    font-style: normal
+    }
 
-}
+@font-face {
+    font-family: "bigotesmedium";
+    src: url(fonts/webfont/Bigotes-Medium-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Medium-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Medium-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Medium-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Medium-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Medium-webfont.svg#bigotesmedium) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "bigotes_corsivaitalic";
+    src: url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot);
+    src: url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff2) format("woff2"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff) format("woff"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.ttf) format("truetype"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "bigotesbold_condensed";
+    src: url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot);
+    src: url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff2) format("woff2"), url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.woff) format("woff"), url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.ttf) format("truetype"), url(fonts/webfont-cond/Bigotes-BoldCondensed-webfont.svg#bigotesbold_condensed) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "bigotesmedium_condensed";
+    src: url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot);
+    src: url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff2) format("woff2"), url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.woff) format("woff"), url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.ttf) format("truetype"), url(fonts/webfont-cond/Bigotes-MediumCondensed-webfont.svg#bigotesmedium_condensed) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
 /* End Font Styles */

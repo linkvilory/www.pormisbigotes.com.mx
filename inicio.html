@@ -23,6 +23,13 @@
 	</head>
 	<body>
 
+	<!-- Preloader -->
+    <div id="preloader" class="preloader" style="">
+        <div class="logopre"><img class="img-responsive" src="recursos/images/logo-por-mis-bigotes.png"/></div>
+        <div class="cargando"><div style=""></div></div>
+    </div>  
+    <!-- End Preloader -->
+
 	<!-- Pagina Principal del sitio www.pormisbigotes.com.mx -->	
 
 	<div class="logo">
@@ -887,6 +894,24 @@
 		<script src="./recursos/js/responsiveslides.min.js"></script>
 		<script src="./recursos/js/jquery.parallax.min.js"></script>
 		<script src="./recursos/js/main.js"></script>
+		<script src="./recursos/js/jquery.html5Loader.min.js"></script>
+		<script type="text/javascript">
+    
+		    $.html5Loader({
+		        filesToLoad: 'recursos/files.json', // this could be a JSON or simply a javascript object
+		        onBeforeLoad: function () {},
+		        onComplete: function () {
+		            console.log('fin');
+		            $('#preloader').hide();
+		        },
+		        onElementLoaded: function ( obj, elm) { },
+		        onUpdate: function ( percentage ) {
+		            var nuevo = percentage-100;
+		            $('#preloader').find('.cargando').find('div').animate({'left':nuevo + '%'});
+		        }
+		    });
+
+    	</script>
 	<!-- End archivos Js -->
 
 	</body>
