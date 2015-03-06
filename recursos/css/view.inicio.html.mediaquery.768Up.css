@@ -29,14 +29,7 @@
  * Menu
  */
 .menu {
-    background: none repeat scroll 0 0 #000;
-    display: block;
-    height: 100%;
-    opacity: 0.75;
-    position: fixed;
-    top: 0;
     width: 220px;
-    z-index: 15;
 }
 .menu-container {
     color: #fff;
@@ -190,8 +183,47 @@
 }
 /* End Seccion de Contenedor de Youtube */
 
+/*
+ * Parte del contenedor de Conocelos
+ */
+.infoDetalle > h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.infoDetalle img {
+    margin: auto;
+    max-width: 300px;
+    width: 200px;
+}
+.infoDetalle p {
+    font-family: "bigotesmedium";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: center;
+} 
+/* Parte del contendor de Conocelos */
 /* SECIONES */
-
+/*
+ * Primera
+ */
+.bienvenida-container-inner {
+    margin-top: 80px;
+    position: absolute !important;
+    width: 100%;
+}
+.bienvenida-container-inner > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: auto;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
+/* Primera */ 
 /*
  * Conocelos
  */
@@ -253,7 +285,7 @@
     background-image: url("images/bg/seccionOcho.jpg");
     background-position: center center;
     background-repeat: repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     display: table;
     height: 400px;
     width: 100%;
@@ -407,21 +439,26 @@
   text-align: center;
 }
 .creditos-container-inner table {
-  width: 100%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
 }
 .creditos-container-inner table p {
-  font-size: 0.8em;
-  font-weight: lighter;
-  line-height: 25px;
-  text-shadow: 1px -1px #000;
-  margin: 0px;
+    font-family: "bigotesmedium";
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 0;
+    text-shadow: 1px -1px #000;
 }
 .creditos-container-inner table p b {
-  font-weight: 900;
-  line-height: 25px;
-  text-shadow: 1px -1px #000;
+  font-family: "bigotesmedium_condensed";
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-shadow: 1px -1px #000;
 }
-
 /* Seccion Creditos */ 
 
 	/* Patrocinadores */

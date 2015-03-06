@@ -339,6 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .bienvenida-container-inner > h1 {
+    font-family: "bigotesbold";
     font-size: 1.6em;
     font-weight: 900;
     letter-spacing: 3px;

@@ -269,8 +269,8 @@ body {
  * Seccion de Trailer y Explorar
  */
 .containerDefault .trailer {
-	background-position: left center;
-    background-size: 100% auto;
+	background-position: center center;
+    background-size: 100% 100%;
     float: left;
     height: 50%;
     opacity: 0.5;
