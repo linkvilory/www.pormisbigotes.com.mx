@@ -16,6 +16,129 @@
     }
 
 /* End Logo */
+.botonMenu {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    left: 25px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    top: 25px;
+    width: 80px;
+    z-index: 20;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonMas {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin-left: 50%;
+    margin-top: -60px;
+    letter-spacing: 1px;
+}
+.botonMasGal  {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+}
+.regresarConocelos .cerrarInfoBoton {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    z-index: 99;
+    letter-spacing: 1px;
+}
+.botonVerNota {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #000048;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #000048;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 115px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonDescargarKit {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 270px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+/*
+ * Menu
+ */
+ .menu-container ul {
+    padding: 0 15px;
+}
+.menu-container ul .enlace.trailer {
+    list-style: outside none none;
+    padding: 70px 0;
+}
+.menu-container ul .enlace {
+    list-style: outside none none;
+    padding: 10px 0;
+} 
+.menu-container ul .enlace a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Menu */ 
 /*
  * Seccion de Contenedor de Youtube
  */
@@ -51,20 +174,56 @@
     }
 
 /* End Seccion de Contenedor de Youtube */
+/*
+ * Info
+ */
+.infoConocelos img {
+    margin: auto;
+    max-width: 300px;
+}
+.infoConocelos{
+    height: auto;
+}
+.infoDetalle {
+    height: auto;
+    overflow-y: hidden;
+} 
+.infoDetalle img {
+    margin: 60px auto;
+    max-width: 300px;
+    width: 200px;
+}
+.regresarConocelos{
+    height: auto;
+}
+.infoDetalle > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.infoDetalle p {
+    font-family: "bigotesmedium";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* Info */ 
 /* SECIONES */
 /*
  * Bienvenida
  */
 .seccionBienvenida {
-    height: 500px;
-    width: 100%
-    }
+    height: 700px;
+    width: 100%;
+}
 
 .bienvenida-container-inner {
-    margin-top: 110px;
+    margin-top: 150px;
     position: absolute !important;
-    width: 100%
-    }
+    width: 100%;
+}
 
 /* Bienvenida */
 /*
@@ -76,13 +235,38 @@
     padding: 0;
     text-align: center
     }
-
+.noticias-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 /* Noticias */
 /*
  * Sinopsis
  */
-
+.sinopsis-container p {
+    font-family: "bigotesmedium";
+    font-size: 1.4em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 /* Sinopsis */
+/*
+ * Galerias estaticas
+ */
+.seccionGaleriaEstaticaParteUno, .seccionGaleriaEstaticaParteDos, .seccionGaleriaEstaticaParteTres {
+    height: 90%;
+    width: 100%;
+} 
+/* Galerias estaticas */ 
 /*
  * Premios
  */
@@ -94,6 +278,16 @@
 /*
      * Conocelos
      */
+.seccionConocelos > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}     
 .sceneConocelosTablet {
     display: none
     }
@@ -186,14 +380,14 @@
     }
 
 .conoceloContainerUno .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -111px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 30px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 25px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDos {
     height: 394px;
@@ -222,14 +416,14 @@
     }
 
 .conoceloContainerDos .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -228px;
     background-repeat: no-repeat;
     height: 50px;
     margin-left: 0;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerTres {
     height: 1217px;
@@ -258,14 +452,14 @@
     }
 
 .conoceloContainerTres .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 50px;
     margin-left: 120px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCuatro {
     height: 603px;
@@ -294,14 +488,14 @@
     }
 
 .conoceloContainerCuatro .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -170px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 125px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 105px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCinco {
     height: 679px;
@@ -330,14 +524,14 @@
     }
 
 .conoceloContainerCinco .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -56px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 105px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 90px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerSeis {
     height: 1226px;
@@ -366,14 +560,14 @@
     }
 
 .conoceloContainerSeis .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -283px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 190px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 175px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerSiete {
     height: 790px;
@@ -402,14 +596,14 @@
     }
 
 .conoceloContainerSiete .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -398px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 85px;
-    margin-top: 0;
-    width: 210px
-    }
+    margin-left: 75px;
+    margin-top: -15px;
+    width: 210px;
+}
 
 .conoceloContainerOcho {
     height: 1044px;
@@ -438,14 +632,14 @@
     }
 
 .conoceloContainerOcho .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -340px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 105px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 95px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerNueve {
     height: 896px;
@@ -474,14 +668,14 @@
     }
 
 .conoceloContainerNueve .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px 0;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 240px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 225px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDiez {
     height: 870px;
@@ -510,14 +704,14 @@
     }
 
 .conoceloContainerDiez .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -55px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 70px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 60px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerOnce {
     height: 724px;
@@ -546,14 +740,14 @@
     }
 
 .conoceloContainerOnce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -169px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 85px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 80px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDoce {
     height: 958px;
@@ -582,14 +776,14 @@
     }
 
 .conoceloContainerDoce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -120px -454px;
     background-repeat: no-repeat;
     height: 50px;
     margin-left: 195px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerTrece {
     height: 648px;
@@ -618,14 +812,14 @@
     }
 
 .conoceloContainerTrece .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -112px;
     background-repeat: no-repeat;
     height: 50px;
     margin-left: 40px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCatorce {
     height: 561px;
@@ -654,14 +848,14 @@
     }
 
 .conoceloContainerCatorce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -226px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 50px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 70px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerQuince {
     height: 548px;
@@ -690,14 +884,14 @@
     }
 
 .conoceloContainerQuince .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -284px;
     background-repeat: no-repeat;
     height: 50px;
     margin-left: 20px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDiezyseis {
     height: 493px;
@@ -726,14 +920,14 @@
     }
 
 .conoceloContainerDiezyseis .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -212px -338px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 135px;
-    margin-top: -40px;
-    width: 229px
-    }
+    margin-left: 140px;
+    margin-top: -55px;
+    width: 229px;
+}
 
 .conoceloContainerDiezysiete {
     height: 647px;
@@ -762,16 +956,54 @@
     }
 
 .conoceloContainerDiezysiete .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -212px -398px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 215px;
-    margin-top: -40px;
-    width: 229px
-    }
-
+    margin-left: 240px;
+    margin-top: -55px;
+    width: 229px;
+}
 /* Conocelos */
+/*
+ * Detras
+ */
+.seccionDetras > h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    font-size: 3em;
+    letter-spacing: 3px;
+} 
+/* Detras */ 
+/*
+ * Premios
+ */
+.premios-container h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    letter-spacing: 3px;
+} 
+.premios-container h4 {
+    font-family: "bigotes_corsivaitalic";
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+/* Premios */ 
 /*
  * Seccion Creditos
  */

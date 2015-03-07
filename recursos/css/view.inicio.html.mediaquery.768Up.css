@@ -165,6 +165,127 @@
     }
 
 /* End Toolbar */
+.botonMenu {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    left: 25px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    top: 25px;
+    width: 80px;
+    z-index: 20;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonMas {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin: 20px auto;
+}
+.botonMasGal  {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+}
+.regresarConocelos .cerrarInfoBoton {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    z-index: 99;
+    letter-spacing: 1px;
+}
+.botonVerNota {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #000048;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #000048;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 115px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonDescargarKit {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 270px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+/*
+ * Menu
+ */
+ .menu-container ul {
+    padding: 0 15px;
+}
+.menu-container ul .enlace.trailer {
+    list-style: outside none none;
+    padding: 70px 0;
+}
+.menu-container ul .enlace {
+    list-style: outside none none;
+    padding: 10px 0;
+} 
+.menu-container ul .enlace a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Menu */ 
 /*
  * Seccion de Contenedor de Youtube
  */
@@ -201,55 +322,115 @@
 
 /* End Seccion de Contenedor de Youtube */
 /*
- * Parte del contenedor de Conocelos
+ * Info
  */
+.infoConocelos img {
+    margin: auto;
+    max-width: 200px;
+}
+.infoConocelos{
+    height: auto;
+}
+.infoDetalle {
+    height: auto;
+    overflow-y: hidden;
+} 
+.infoDetalle img {
+    margin: 60px auto;
+    max-width: 300px;
+    width: 200px;
+}
+.regresarConocelos{
+    height: auto;
+}
 .infoDetalle > h1 {
     font-family: "bigotesbold";
-    font-size: 2em;
-    letter-spacing: 3px;
-    text-align: center
-    }
-
-.infoDetalle img {
-    margin: auto;
-    max-width: 300px;
-    width: 200px
-    }
-
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .infoDetalle p {
     font-family: "bigotesmedium";
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    text-align: center
-    }
-
-/* Parte del contendor de Conocelos */
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* Info */ 
 /* SECIONES */
 /*
  * Primera
  */
-.bienvenida-container-inner {
-    margin-top: 80px;
-    position: absolute !important;
-    width: 100%
-    }
+/*
+ * Bienvenida
+ */
+.seccionBienvenida {
+    height: 700px;
+    width: 100%;
+}
 
+.bienvenida-container-inner {
+    margin-top: 140px;
+    position: absolute !important;
+    width: 100%;
+}
 .bienvenida-container-inner > h1 {
     font-family: "bigotesbold";
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 900;
     letter-spacing: 3px;
     margin: auto;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000
-    }
+    text-shadow: 1px -1px #000;
+}
+/* Bienvenida */
 
 /* Primera */
 /*
  * Noticias
  */
+ .noticias-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 2.8em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 /* Noticias */
+/*
+ * Sinopsis
+ */
+ .sinopsis-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 2.8em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+.sinopsis-container p {
+    font-family: "bigotesmedium";
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+} 
+/* Sinopsis */ 
+/*
+ * Galerias estaticas
+ */
+.seccionGaleriaEstaticaParteUno, .seccionGaleriaEstaticaParteDos, .seccionGaleriaEstaticaParteTres {
+    height: 90%;
+    width: 100%;
+} 
+/* Galerias estaticas */ 
 /*
  * Conocelos
  */
@@ -269,7 +450,8 @@
     margin: auto;
     display: block;
     max-width: 184px;
-    width: 100%
+    width: 100%;
+    cursor: pointer;
     }
 
 .sceneConocelosTablet .separador {
@@ -277,25 +459,6 @@
     }
 
 /* Conocelos */
-/*
- * Galerias
- */
-.seccionGaleriaEstaticaParteUno {
-    height: 400px;
-    width: 100%
-    }
-
-.seccionGaleriaEstaticaParteDos {
-    height: 400px;
-    width: 100%
-    }
-
-.seccionGaleriaEstaticaParteTres {
-    height: 400px;
-    width: 100%
-    }
-
-/* Galerias */
 /*
  * Galeria Slider
  */
@@ -351,23 +514,6 @@
     background-size: 100% auto;
     width: 100%;
     display: none
-    }
-
-.botonMas {
-    background: none repeat scroll 0 0 red;
-    border: 0 none;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1em;
-    font-weight: bold;
-    height: 30px;
-    line-height: 2em;
-    margin: 20px auto;
-    text-align: center;
-    text-transform: uppercase;
-    width: 126px
     }
 
 .botonMas:hover {
@@ -470,7 +616,26 @@
 .premios-container .campana-container {
     display: block
     }
-
+.premios-container h1 {
+    font-family: "bigotesbold";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}    
+.premios-container h4 {
+    font-family: "bigotes_corsivaitalic";
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 /* Premios */
 /*
  * Seccion Creditos

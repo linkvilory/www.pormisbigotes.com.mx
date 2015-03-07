@@ -65,7 +65,7 @@ body {
 .titulo {
     display: block;
     font-family: "bigotesbold" !important;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 900;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -77,7 +77,7 @@ body {
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: lighter;
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -95,9 +95,10 @@ body {
     border-radius: 5px;
     color: #002601;
     font-family: "bigotesmedium" !important;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: lighter;
-    height: 30px;
+    height: 35px;
+    letter-spacing: 1px;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -118,10 +119,10 @@ body {
     border-radius: 5px;
     color: #fff;
     font-family: "bigotesmedium" !important;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bold;
-    height: 30px;
-    letter-spacing: 2px;
+    height: 35px;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
     width: 100px;
@@ -251,7 +252,29 @@ body {
 }
 
 /* End Logo */ 
-
+.titulo {
+    display: block;
+    font-family: "bigotesbold" !important;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    width: 100%;
+}
+.preguntas {
+    display: block;
+    font-family: "bigotesdemibold";
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    width: 100%;
+}
 /*
  * Seccion Formulario
  */
@@ -293,7 +316,29 @@ body {
     max-width: 300px!important;
 } 
 /* End Logo */ 
-
+.titulo {
+    display: block;
+    font-family: "bigotesbold" !important;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    width: 100%;
+}
+.preguntas {
+    display: block;
+    font-family: "bigotesdemibold";
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    width: 100%;
+}
 /*
  * Seccion Formulario
  */
@@ -349,6 +394,29 @@ body {
 }
 .botonEntrar{
     max-width: 150px;
+}
+.titulo {
+    display: block;
+    font-family: "bigotesbold" !important;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    width: 100%;
+}
+.preguntas {
+    display: block;
+    font-family: "bigotesdemibold";
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    width: 100%;
 }
 
 }
