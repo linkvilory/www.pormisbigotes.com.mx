@@ -393,8 +393,8 @@ body {
     background-image: url(images/bg/seccionUno.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: table;
     height: 500px;
     width: 100%
@@ -433,8 +433,8 @@ body {
     background-image: url(images/bg/seccionDos.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: table;
     width: 100%
     }
@@ -502,8 +502,8 @@ body {
     background-image: url(images/bg/seccionTres.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: table;
     width: 100%
     }
@@ -625,8 +625,8 @@ body {
     background-image: url(images/bg/seccionCuatro.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     width: 100%;
     display: table;
     height: 300px
@@ -636,8 +636,8 @@ body {
     background-image: url(images/bg/seccionSeis.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     width: 100%;
     display: table;
     height: 300px
@@ -647,8 +647,8 @@ body {
     background-image: url(images/bg/seccionSiete.jpg);
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     width: 100%;
     display: table;
     height: 300px

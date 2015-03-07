@@ -56,12 +56,6 @@
  * Bienvenida
  */
 .seccionBienvenida {
-    background-image: url(images/bg/seccionUno.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
     height: 500px;
     width: 100%
     }
@@ -76,16 +70,6 @@
 /*
  * Noticias
  */
-.seccionNoticias {
-    background-image: url(images/bg/seccionDos.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
-    width: 100%
-    }
-
 .seccionNoticias .noticias-container {
     margin-bottom: 20px;
     margin-left: 8.33333%;
@@ -97,15 +81,6 @@
 /*
  * Sinopsis
  */
-.seccionSinopsis {
-    background-image: url(images/bg/seccionTres.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
-    width: 100%
-    }
 
 /* Sinopsis */
 /*

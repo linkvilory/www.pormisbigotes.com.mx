@@ -113,10 +113,10 @@ $(function(){
   invertY: true,
   limitX: false,
   limitY: false,
-  scalarX: 20,
-  scalarY: 20,
-  frictionX: 1,
-  frictionY: 1,
+  scalarX: 0,
+  scalarY: 0,
+  frictionX: 0,
+  frictionY: 0,
   originX: 0.5,
   originY: 0.5
 	});

@@ -13,7 +13,129 @@
     position: relative;
     max-width: 300px !important
     }
-
+.botonMenu {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    left: 25px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    top: 25px;
+    width: 80px;
+    z-index: 20;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonMas {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin-left: 50%;
+    margin-top: -60px;
+    letter-spacing: 1px;
+}
+.botonMasGal  {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+}
+.regresarConocelos .cerrarInfoBoton {
+    background: none repeat scroll 0 0 #f8000c;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    z-index: 99;
+    letter-spacing: 1px;
+}
+.botonVerNota {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #000048;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #000048;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 115px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.botonDescargarKit {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    height: 35px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 270px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+/*
+ * Menu
+ */
+ .menu-container ul {
+    padding: 0 15px;
+}
+.menu-container ul .enlace.trailer {
+    list-style: outside none none;
+    padding: 70px 0;
+}
+.menu-container ul .enlace {
+    list-style: outside none none;
+    padding: 10px 0;
+} 
+.menu-container ul .enlace a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Menu */ 
 /* End Logo */
 /*
      * Seccion de Contenedor de Youtube
@@ -48,92 +170,163 @@
 .youtubeExplorar {
     height: 15%
     }
-
+/*
+ * Toolbar
+ */
+.toolbar {
+    display: block;
+    height: 100px;
+    padding: 22px 0 0;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 240px;
+    z-index: 25;
+} 
+/* Toolbar */ 
+/*
+ * Info
+ */
+.infoConocelos img {
+    margin: auto;
+}
+.infoConocelos{
+    height: auto;
+}
+.infoDetalle {
+    height: auto;
+    overflow-y: hidden;
+} 
+.infoDetalle img {
+    margin: 60px auto;
+    max-width: 300px;
+    width: 200px;
+}
+.regresarConocelos{
+    height: auto;
+}
+.infoDetalle > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.infoDetalle p {
+    font-family: "bigotesmedium";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* Info */ 
 /* End Seccion de Contenedor de Youtube */
 /* SECIONES */
 /*
      * Primera
      */
 .seccionBienvenida {
-    background-image: url(images/bg/seccionUno.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    height: 700px;
-    max-height: 700px;
-    min-height: 700px;
-    width: 100%
+    height: 860px;
+    width: 100%;
     }
 
 .bienvenida-container-inner {
-    margin-top: 140px
-    }
+    margin-top: 180px;
+}
+.bienvenida-container-inner > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: auto;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 
 /* Primera */
 /*
      * Noticias
      */
 .seccionNoticias {
-    background-image: url(images/bg/seccionDos.jpg);
-    background-position: center top;
-    background-repeat: repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    display: table;
     height: 600px;
-    max-height: 600px;
-    min-height: 600px;
     width: 100%
     }
-
+.seccionNoticias .cortina {
+    background-image: url("images/bg/cortina.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+    display: table;
+    height: 60px;
+    margin-top: -40px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 .seccionNoticias .noticias-container {
     padding: 0;
     text-align: center;
     margin-bottom: 20px
     }
-
+.noticias-container > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 30px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
+.seccionNoticias .noticias-container iframe {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px !important;
+    margin: auto !important;
+    max-width: 70% !important;
+}
 /* Noticias */
 /*
      * Sinopsis
      */
 .seccionSinopsis {
-    background-image: url(images/bg/seccionTres.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
     height: 600px;
-    max-height: 600px;
-    min-height: 600px;
-    width: 100%
-    }
+    width: 100%;
+}
 
 .sinopsis-container {
     margin-top: 40px
     }
 
 .sinopsis-container > h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 900;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000
-    }
+    text-shadow: 1px -1px #000;
+    letter-spacing: 3px;
+}
 
 .sinopsis-container p {
     font-size: 1.4em;
     font-weight: lighter;
-    line-height: 40px;
+    line-height: 35px;
+    margin: 0;
     text-align: center;
     text-shadow: 1px -1px #000;
-    margin: 0
-    }
+    letter-spacing: 1px;
+}
 
 /*
      * Conocelos
      */
+     .seccionConocelos > h1 {
+    font-family: "bigotesbold";
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 .sceneConocelosTablet {
     display: none
     }
@@ -226,14 +419,14 @@
     }
 
 .conoceloContainerUno .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -111px;
     background-repeat: no-repeat;
     height: 50px;
+    margin-left: 38px;
+    margin-top: -55px;
     width: 210px;
-    margin-left: 70px;
-    margin-top: -40px
-    }
+}
 
 .conoceloContainerDos {
     height: 394px;
@@ -262,14 +455,14 @@
     }
 
 .conoceloContainerDos .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -228px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 10px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 0;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerTres {
     height: 1217px;
@@ -298,14 +491,14 @@
     }
 
 .conoceloContainerTres .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 150px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 149px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCuatro {
     height: 603px;
@@ -334,14 +527,14 @@
     }
 
 .conoceloContainerCuatro .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -170px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 150px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 130px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCinco {
     height: 679px;
@@ -370,14 +563,14 @@
     }
 
 .conoceloContainerCinco .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -56px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 150px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 115px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerSeis {
     height: 1226px;
@@ -406,14 +599,14 @@
     }
 
 .conoceloContainerSeis .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -283px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 245px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 195px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerSiete {
     height: 790px;
@@ -442,14 +635,14 @@
     }
 
 .conoceloContainerSiete .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -398px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 135px;
-    margin-top: 0;
-    width: 210px
-    }
+    margin-left: 100px;
+    margin-top: -15px;
+    width: 210px;
+}
 
 .conoceloContainerOcho {
     height: 1044px;
@@ -478,14 +671,14 @@
     }
 
 .conoceloContainerOcho .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: 0 -340px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 135px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 120px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerNueve {
     height: 896px;
@@ -514,14 +707,14 @@
     }
 
 .conoceloContainerNueve .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px 0;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 285px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 250px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDiez {
     height: 870px;
@@ -550,14 +743,14 @@
     }
 
 .conoceloContainerDiez .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -55px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 85px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 75px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerOnce {
     height: 724px;
@@ -586,14 +779,14 @@
     }
 
 .conoceloContainerOnce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -169px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 120px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 95px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDoce {
     height: 958px;
@@ -622,14 +815,14 @@
     }
 
 .conoceloContainerDoce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -120px -454px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 265px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 220px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerTrece {
     height: 648px;
@@ -658,14 +851,14 @@
     }
 
 .conoceloContainerTrece .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -112px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 120px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 65px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerCatorce {
     height: 561px;
@@ -694,14 +887,14 @@
     }
 
 .conoceloContainerCatorce .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -226px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 120px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 90px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerQuince {
     height: 548px;
@@ -730,14 +923,14 @@
     }
 
 .conoceloContainerQuince .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -225px -284px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 65px;
-    margin-top: -40px;
-    width: 210px
-    }
+    margin-left: 40px;
+    margin-top: -55px;
+    width: 210px;
+}
 
 .conoceloContainerDiezyseis {
     height: 493px;
@@ -766,14 +959,14 @@
     }
 
 .conoceloContainerDiezyseis .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -212px -338px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 218px;
-    margin-top: -40px;
-    width: 229px
-    }
+    margin-left: 170px;
+    margin-top: -55px;
+    width: 229px;
+}
 
 .conoceloContainerDiezysiete {
     height: 647px;
@@ -802,51 +995,20 @@
     }
 
 .conoceloContainerDiezysiete .pEncabezado {
-    background-image: url(images/sprites/nombres.png);
+    background-image: url("images/sprites/nombres.png");
     background-position: -212px -398px;
     background-repeat: no-repeat;
     height: 50px;
-    margin-left: 290px;
-    margin-top: -40px;
-    width: 229px
-    }
+    margin-left: 265px;
+    margin-top: -55px;
+    width: 229px;
+}
 
 /* Conocelos */
 /* Galerias Estaticas */
-.seccionGaleriaEstaticaParteUno {
-    background-image: url(images/bg/seccionCuatro.jpg);
-    background-position: center top;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    height: 700px;
-    max-height: 700px;
-    min-height: 700px;
-    width: 100%
-    }
-
-.seccionGaleriaEstaticaParteDos {
-    background-image: url(images/bg/seccionSeis.jpg);
-    background-position: center top;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    height: 700px;
-    max-height: 700px;
-    min-height: 700px;
-    width: 100%
-    }
-
-.seccionGaleriaEstaticaParteTres {
-    background-image: url(images/bg/seccionSiete.jpg);
-    background-position: center top;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    height: 700px;
-    max-height: 700px;
-    min-height: 700px;
-    width: 100%
+.seccionGaleriaEstaticaParteUno, .seccionGaleriaEstaticaParteDos, .seccionGaleriaEstaticaParteTres {
+    height: 90%;
+    width: 100%;
     }
 
 /* Galerias Estaticas*/
@@ -854,20 +1016,19 @@
      * Galeria
      */
 .seccionGaleria {
-    background-image: url(images/bg/seccionOcho.jpg);
+    background-image: url("images/bg/seccionOcho.jpg");
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-size: cover;
     display: table;
     height: 600px;
-    max-height: 600px;
-    min-height: 600px;
-    width: 100%
-    }
-
-.seccionGaleria-container .buttonGaleria {
+    width: 100%;
+}
+.seccionGaleria-container > div {
     margin-top: 225px;
+}
+.seccionGaleria-container .buttonGaleria {
+    margin-top: auto;
     cursor: pointer
     }
 
@@ -875,6 +1036,15 @@
 /*
      * Detras camaras
      */
+.seccionDetras > h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    letter-spacing: 3px;
+}     
 .img-responsive.img100.imgGalUno {
     margin: 5px auto !important;
     max-width: 990px !important
@@ -944,22 +1114,40 @@
 /*
      * Premios
      */
-.seccionPremios {
-    background-image: url(images/bg/seccionDoce.jpg);
+.seccionCreditos {
+    background-image: url("images/bg/seccionTrece.jpg");
     background-position: center center;
     background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-size: cover;
     display: table;
     height: 600px;
-    max-height: 600px;
-    min-height: 600px;
-    width: 100%
-    }
-
+    width: 100%;
+}
+.premios-container h1 {
+    font-family: "bigotesbold";
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+    text-transform: uppercase;
+}
+.premios-container h4 {
+    font-family: "bigotes_corsivaitalic";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px -1px #000;
+}
 .premios-container {
-    margin-top: 100px
-    }
+    margin-top: 40px;
+    margin-bottom: 40PX;
+}
 
 .premios-container .campana-container {
     display: block

@@ -281,34 +281,16 @@
  * Galerias
  */
 .seccionGaleriaEstaticaParteUno {
-    background-image: url(images/bg/seccionCuatro.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
     height: 400px;
     width: 100%
     }
 
 .seccionGaleriaEstaticaParteDos {
-    background-image: url(images/bg/seccionSeis.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
     height: 400px;
     width: 100%
     }
 
 .seccionGaleriaEstaticaParteTres {
-    background-image: url(images/bg/seccionSiete.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    display: table;
     height: 400px;
     width: 100%
     }
