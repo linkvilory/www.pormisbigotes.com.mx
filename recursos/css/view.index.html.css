@@ -142,26 +142,25 @@ body {
     opacity: 0.5;
     width: 100%;
 }
-.containerDefault .trailer:hover {
-	background-image: url('images/gif/gif.gif');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 1;
-}
+
 .containerDefault .trailer > div {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	cursor: pointer;
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 .containerDefault .trailer-container {
-	top: 50%;
-	height: 50px;
-	left: 50%;
-	position: relative;
-	width: 100%;
+    height: 50px;
+    left: 25%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+video {
+    height: 100%;
+    width: 200%;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -75px;
@@ -276,26 +275,21 @@ body {
     opacity: 0.5;
     width: 100%;
 }
-.containerDefault .trailer:hover {
-	background-image: url('images/gif/gif.gif');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 1;
-}
+
 .containerDefault .trailer > div {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	cursor: pointer;
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 .containerDefault .trailer-container {
-	top: 50%;
-	height: 50px;
-	left: 50%;
-	position: relative;
-	width: 100%;
+    height: 50px;
+    left: 25%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -125px;
@@ -397,26 +391,21 @@ body {
     opacity: 0.5;
     width: 50%;
 }
-.containerDefault .trailer:hover {
-	background-image: url('images/gif/gif.gif');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 1;
-}
+
 .containerDefault .trailer > div {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	cursor: pointer;
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 .containerDefault .trailer-container {
-	top: 50%;
-	height: 50px;
-	left: 50%;
-	position: relative;
-	width: 100%;
+    height: 50px;
+    left: 25%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -150px;
@@ -516,26 +505,21 @@ body {
 	float: left;
 	opacity: 0.5;
 }
-.containerDefault .trailer:hover {
-	background-image: url('images/gif/gif.gif');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 1;
-}
+
 .containerDefault .trailer > div {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	cursor: pointer;
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 .containerDefault .trailer-container {
-	top: 50%;
-	height: 50px;
-	left: 50%;
-	position: relative;
-	width: 100%;
+    height: 50px;
+    left: 25%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -150px;
