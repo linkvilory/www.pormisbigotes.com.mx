@@ -32,7 +32,6 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
   vertical-align: baseline;
 }
 audio:not([controls]) {

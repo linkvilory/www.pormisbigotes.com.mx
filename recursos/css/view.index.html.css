@@ -135,11 +135,9 @@ body {
 	position: fixed;
 }
 .containerDefault .trailer {
-	background-image: url("images/bg/trailer.jpg");
-    background-position: left top;
-    background-size: auto 100%;
+	background: #000;
     height: 50%;
-    opacity: 0.5;
+    opacity: 1;
     width: 100%;
 }
 
@@ -153,14 +151,16 @@ body {
 }
 .containerDefault .trailer-container {
     height: 50px;
-    left: 25%;
+    left: 50%;
     position: absolute;
+    top: 25%;
     width: 100%;
-    top: 50%;
 }
 video {
     height: 100%;
-    width: 200%;
+    margin-left: -25%;
+    width: 150%;
+    display: block;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -75px;
@@ -178,7 +178,7 @@ video {
 	float: left;
 	height: 50%;
 	width: 100%;
-	opacity: 0.3;
+	opacity: 1;
 	cursor: pointer;
 }
 .containerDefault .explorar:hover {
@@ -268,12 +268,11 @@ video {
  * Seccion de Trailer y Explorar
  */
 .containerDefault .trailer {
-	background-position: center center;
-    background-size: 100% 100%;
+	background:#000;
     float: left;
     height: 50%;
-    opacity: 0.5;
     width: 100%;
+    opacity: 1;
 }
 
 .containerDefault .trailer > div {
@@ -286,10 +285,10 @@ video {
 }
 .containerDefault .trailer-container {
     height: 50px;
-    left: 25%;
+    left: 50%;
     position: absolute;
+    top: 25%;
     width: 100%;
-    top: 50%;
 }
 .containerDefault .trailer .buttonTrailer {
     left: -125px;
@@ -300,6 +299,12 @@ video {
 .containerDefault .trailer .buttonTrailer img {
 	margin: auto;
 }
+video {
+    height: 100%;
+    margin-left: -25%;
+    width: 150%;
+    display: block;
+}
 .containerDefault .explorar {
 	background-image: url("images/bg/verde.jpg");
 	background-position: center center;
@@ -307,8 +312,8 @@ video {
 	float: left;
 	height: 50%;
 	width: 100%;
-	opacity: 0.3;
 	cursor: pointer;
+	opacity: 1;
 }
 .containerDefault .explorar:hover {
 	opacity: 1;
@@ -384,8 +389,6 @@ video {
  * Seccion de Trailer y Explorar
  */
 .containerDefault .trailer {
-	background-position: left center;
-    background-size: 180% 100%;
     float: left;
     height: 100%;
     opacity: 0.5;
@@ -415,6 +418,12 @@ video {
 }
 .containerDefault .trailer .buttonTrailer img {
 	margin: auto;
+}
+video {
+    height: 100%;
+    margin-left: -25%;
+    width: 150%;
+    display: none;
 }
 .containerDefault .explorar {
 	background-image: url("images/bg/verde.jpg");
@@ -500,6 +509,7 @@ video {
  * Seccion de Trailer y Explorar
  */
 .containerDefault .trailer {
+	background-image: url(images/bg/trailer.jpg);
 	width: 50%;
 	height: 100%;
 	float: left;
@@ -529,6 +539,12 @@ video {
 }
 .containerDefault .trailer .buttonTrailer img {
 	margin: auto;
+}
+video {
+    height: 100%;
+    margin-left: -25%;
+    width: 150%;
+    display: none;
 }
 .containerDefault .explorar {
 	background-image: url("images/bg/verde.jpg");

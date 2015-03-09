@@ -141,6 +141,10 @@ body {
 /*
  * Omitir boton
  */
+ .omitir-container {
+    bottom: 0;
+    position: absolute!important;
+}
 .omitir{
     color: #fff;
     display: inline-block;
@@ -381,7 +385,8 @@ body {
  * Seccion Formulario
  */
 .enviarFormulario {
-    margin-top: 150px;
+    margin-top: 160px;
+
 }
 
 .width33 {
@@ -394,6 +399,7 @@ body {
 }
 .botonEntrar{
     max-width: 150px;
+    margin-top: 30px;
 }
 .titulo {
     display: block;
@@ -401,7 +407,7 @@ body {
     font-size: 3em;
     font-weight: 900;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
     text-shadow: 1px -1px #000;
     text-transform: uppercase;
@@ -410,7 +416,7 @@ body {
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: lighter;
     letter-spacing: 2px;
     margin-bottom: 15px;
