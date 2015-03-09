@@ -905,7 +905,9 @@
 		        },
 		        onElementLoaded: function ( obj, elm) { },
 		        onUpdate: function ( percentage ) {
+		        	console.log("Porcentaje: " + percentage);
 		            var nuevo = percentage-100;
+		            console.log("Left: " + nuevo);
 		            $('#preloader').find('.cargando').find('div').animate({'left':nuevo + '%'});
 		        }
 		    });

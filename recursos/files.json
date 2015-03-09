@@ -2,27 +2,27 @@
   "files": [{
     "source": "recursos/images/footer/charanga.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 26.749
   }, {
     "source": "recursos/images/footer/conaculta.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 5.963
   }, {
     "source": "recursos/images/footer/fud.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 8.168
   }, {
     "source": "recursos/images/footer/idecine.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 6.965
   }, {
     "source": "recursos/images/footer/imc.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 6.369
   }, {
     "source": "recursos/images/footer/sigma.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 8.388
   }, {
     "source": "recursos/images/galeria/1.jpg",
     "type": "IMAGE",
@@ -30,419 +30,435 @@
   }, {
     "source": "recursos/images/galeria/2.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 58.440
   }, {
     "source": "recursos/images/galeria/3.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 32.629
   }, {
     "source": "recursos/images/galeria/4.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 151.742
   }, {
     "source": "recursos/images/galeria/5.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 50.589
   }, {
     "source": "recursos/images/galeria/6.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 46.751
   }, {
     "source": "recursos/images/galeria/7.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 120.652
   }, {
     "source": "recursos/images/galeria/8.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 66.713
   }, {
     "source": "recursos/images/galeria/9.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 374.486
   }, {
     "source": "recursos/images/galeria/10.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 92.327
   }, {
     "source": "recursos/images/galeria/11.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 72.353
   }, {
     "source": "recursos/images/galeria/12.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 347.338
   }, {
     "source": "recursos/images/galeria/13.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 130.385
   }, {
     "source": "recursos/images/galeria/slider/1.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 176.300
   }, {
     "source": "recursos/images/galeria/slider/2.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 189.760
   }, {
     "source": "recursos/images/galeria/slider/3.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 185.699
   }, {
     "source": "recursos/images/galeria/slider/4.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 226.835
   }, {
     "source": "recursos/images/galeria/slider/5.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 191.703
   }, {
     "source": "recursos/images/galeria/slider/6.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 178.388
   }, {
     "source": "recursos/images/galeria/slider/7.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 237.085
   }, {
     "source": "recursos/images/galeria/slider/8.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 169.625
   }, {
     "source": "recursos/images/galeria/slider/9.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 262.308
   }, {
     "source": "recursos/images/galeria/slider/10.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 191.733
   }, {
     "source": "recursos/images/galeria/slider/11.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 229.753
   }, {
     "source": "recursos/images/galeria/slider/12.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 296.141
   }, {
     "source": "recursos/images/personajes/alicia.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 652.064
   }, {
     "source": "recursos/images/personajes/alicia-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 25.414
   }, {
     "source": "recursos/images/personajes/aquiles.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 1196.665
   }, {
     "source": "recursos/images/personajes/aquiles-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 30.292
   }, {
     "source": "recursos/images/personajes/benito.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 558.770
   }, {
     "source": "recursos/images/personajes/benito-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 22.539
   }, {
     "source": "recursos/images/personajes/dagoberto.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 728.806
   }, {
     "source": "recursos/images/personajes/dagoberto-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 31.426
   }, {
     "source": "recursos/images/personajes/don-bacilio.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 524.018
   }, {
     "source": "recursos/images/personajes/don-bacilio-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 17.100
   }, {
     "source": "recursos/images/personajes/lucy.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 340.558
   }, {
     "source": "recursos/images/personajes/lucy-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 12.922
   }, {
     "source": "recursos/images/personajes/lula.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 292.383
   }, {
     "source": "recursos/images/personajes/lula-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 13.641
   }, {
     "source": "recursos/images/personajes/marcelino.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 271.924
   }, {
     "source": "recursos/images/personajes/marcelino-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 10.711
   }, {
     "source": "recursos/images/personajes/narciso.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 440.370
   }, {
     "source": "recursos/images/personajes/narciso-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 19.405
   }, {
     "source": "recursos/images/personajes/nina-lentes.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 352.742
   }, {
     "source": "recursos/images/personajes/nina-lentes-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 16.702
   }, {
     "source": "recursos/images/personajes/nino-fut.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 325.929
   }, {
     "source": "recursos/images/personajes/nino-fut-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 14.098
   }, {
     "source": "recursos/images/personajes/nino-traje.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 182.872
   }, {
     "source": "recursos/images/personajes/nino-traje-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 9.611
   }, {
     "source": "recursos/images/personajes/pepe.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 621.120
   }, {
     "source": "recursos/images/personajes/pepe-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 35.004
   }, {
     "source": "recursos/images/personajes/sabino.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 542.499
   }, {
     "source": "recursos/images/personajes/sabino-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 26.014
   }, {
     "source": "recursos/images/personajes/timoteo.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 511.367
   }, {
     "source": "recursos/images/personajes/timoteo-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 21.340
   }, {
     "source": "recursos/images/personajes/tio-fabian.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 919.604
   }, {
     "source": "recursos/images/personajes/tio-fabian-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 28.758
   }, {
     "source": "recursos/images/personajes/ulises.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 575.548
   }, {
     "source": "recursos/images/personajes/ulises-s.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 24.713 
   }, {
     "source": "recursos/images/personajes/mobile/alicia.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 54.150
   }, {
     "source": "recursos/images/personajes/mobile/aquiles.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 61.604
   }, {
     "source": "recursos/images/personajes/mobile/benito.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 54.456
   }, {
     "source": "recursos/images/personajes/mobile/dagoberto.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 52.658
   }, {
     "source": "recursos/images/personajes/mobile/don-bacilio.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 51.097
   }, {
     "source": "recursos/images/personajes/mobile/lucy.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 58.251
   }, {
     "source": "recursos/images/personajes/mobile/lula.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 46.601
   }, {
     "source": "recursos/images/personajes/mobile/marcelino.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 45.859
   }, {
     "source": "recursos/images/personajes/mobile/narciso.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 47.306
   }, {
     "source": "recursos/images/personajes/mobile/nina-lentes.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 62.911
   }, {
     "source": "recursos/images/personajes/mobile/nino-1.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 53.866
   }, {
     "source": "recursos/images/personajes/mobile/nino-2.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 50.363
   }, {
     "source": "recursos/images/personajes/mobile/pepe.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 45.191
   }, {
     "source": "recursos/images/personajes/mobile/sabino.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 60.237
   }, {
     "source": "recursos/images/personajes/mobile/timoteo.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 57.718
   }, {
     "source": "recursos/images/personajes/mobile/tio-fabian.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 66.479
   }, {
     "source": "recursos/images/personajes/mobile/ulises.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 44.617
   }, {
-    "source": "recursos/images/personajes/personajesBio/alicia.png",
+    "source": "recursos/images/personajesBio/alicia.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 39.746
   }, {
-    "source": "recursos/images/personajes/personajesBio/aquiles.png",
+    "source": "recursos/images/personajesBio/aquiles.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 43.561
   }, {
-    "source": "recursos/images/personajes/personajesBio/benito.png",
+    "source": "recursos/images/personajesBio/benito.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 40.003
   }, {
-    "source": "recursos/images/personajes/personajesBio/dagoberto.png",
+    "source": "recursos/images/personajesBio/dagoberto.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 35.936
   }, {
-    "source": "recursos/images/personajes/personajesBio/don-bacilio.png",
+    "source": "recursos/images/personajesBio/don-bacilio.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 37.096
   }, {
-    "source": "recursos/images/personajes/personajesBio/lucy.png",
+    "source": "recursos/images/personajesBio/lucy.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 39.275
   }, {
-    "source": "recursos/images/personajes/personajesBio/lula.png",
+    "source": "recursos/images/personajesBio/lula.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 39.802
   }, {
-    "source": "recursos/images/personajes/personajesBio/marcelino.png",
+    "source": "recursos/images/personajesBio/marcelino.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 35.271
   }, {
-    "source": "recursos/images/personajes/personajesBio/narciso.png",
+    "source": "recursos/images/personajesBio/narciso.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 34.561
   }, {
-    "source": "recursos/images/personajes/personajesBio/nina-lentes.png",
+    "source": "recursos/images/personajesBio/nina-lentes.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 47.576
   }, {
-    "source": "recursos/images/personajes/personajesBio/nino-1.png",
+    "source": "recursos/images/personajesBio/nino-1.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 38.386
   }, {
-    "source": "recursos/images/personajes/personajesBio/nino-2.png",
+    "source": "recursos/images/personajesBio/nino-2.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 35.533
   }, {
-    "source": "recursos/images/personajes/personajesBio/pepe.png",
+    "source": "recursos/images/personajesBio/pepe.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 34.000
   }, {
-    "source": "recursos/images/personajes/personajesBio/sabino.png",
+    "source": "recursos/images/personajesBio/sabino.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 47.119
   }, {
-    "source": "recursos/images/personajes/personajesBio/timoteo.png",
+    "source": "recursos/images/personajesBio/timoteo.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 38.478
   }, {
-    "source": "recursos/images/personajes/personajesBio/tio-fabian.png",
+    "source": "recursos/images/personajesBio/tio-fabian.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 42.213
   }, {
-    "source": "recursos/images/personajes/personajesBio/ulises.png",
+    "source": "recursos/images/personajesBio/ulises.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 35.485
   }, {
     "source": "recursos/css/images/bg/cortina.png",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 73.253
   }, {
-    "source": "recursos/css/images/bg/footer.png",
+    "source": "recursos/css/images/bg/footer.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 75.977
   }, {
-    "source": "recursos/css/images/bg/seccionCuatro.png",
+    "source": "recursos/css/images/bg/seccionCuatro.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 211.075
   }, {
-    "source": "recursos/css/images/bg/seccionDoce.png",
+    "source": "recursos/css/images/bg/seccionDoce.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 158.712
   }, {
-    "source": "recursos/css/images/bg/seccionDos.png",
+    "source": "recursos/css/images/bg/seccionDos.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 188.562
   }, {
-    "source": "recursos/css/images/bg/seccionOcho.png",
+    "source": "recursos/css/images/bg/seccionOcho.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 244.402
   }, {
-    "source": "recursos/css/images/bg/seccionOnce.png",
+    "source": "recursos/css/images/bg/seccionOnce.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 168.370
   }, {
-    "source": "recursos/css/images/bg/seccionSeis.png",
+    "source": "recursos/css/images/bg/seccionSeis.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 311.848
   }, {
-    "source": "recursos/css/images/bg/seccionSiete.png",
+    "source": "recursos/css/images/bg/seccionSiete.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 296.888
   }, {
-    "source": "recursos/css/images/bg/seccionTrece.png",
+    "source": "recursos/css/images/bg/seccionTrece.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 207.698
   }, {
-    "source": "recursos/css/images/bg/seccionTres.png",
+    "source": "recursos/css/images/bg/seccionTres.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 215.176
   }, {
-    "source": "recursos/css/images/bg/seccionUno.png",
+    "source": "recursos/css/images/bg/seccionUno.jpg",
     "type": "IMAGE",
-    "size": 196.589
+    "size": 429.752
+  }, {
+    "source": "recursos/css/images/sprites/arrows.png",
+    "type": "IMAGE",
+    "size": 5.529
+  }, {
+    "source": "recursos/css/images/sprites/follow-share.png",
+    "type": "IMAGE",
+    "size": 5.406
+  }, {
+    "source": "recursos/css/images/sprites/icons-btns.png",
+    "type": "IMAGE",
+    "size": 28.525
+  }, {
+    "source": "recursos/css/images/sprites/nombres.png",
+    "type": "IMAGE",
+    "size": 32.416
   }]
 
 }

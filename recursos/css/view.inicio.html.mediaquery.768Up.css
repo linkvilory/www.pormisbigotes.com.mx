@@ -390,7 +390,19 @@
 /*
  * Noticias
  */
- .noticias-container > h1 {
+.seccionNoticias .cortina {
+    background-image: url("images/bg/cortina.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: cover;
+    display: table;
+    height: 160px;
+    margin-top: -20px;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+} 
+.noticias-container > h1 {
     font-family: "bigotesbold";
     font-size: 2.8em;
     font-weight: 900;
@@ -398,6 +410,7 @@
     padding: 5px 0;
     text-align: center;
     text-shadow: 1px -1px #000;
+    margin-top: 120px;
 }
 /* Noticias */
 /*
