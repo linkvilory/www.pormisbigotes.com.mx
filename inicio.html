@@ -853,10 +853,9 @@
         <div class="col-md-1 youtubeClose"><img class="cerrarBoton" id=
         "closeYoutubePlayer" src="recursos/images/close.png"></div>
 
-        <div class="col-md-8 col-md-offset-2 youtube">
-            <iframe frameborder="0" height="90%" id="ytplayer" name="ytplayer"
-            src="http://www.youtube.com/embed/F-th5y59AH8" width=
-            "100%"></iframe>
+        <div id="youtube" class="col-md-8 col-md-offset-2 youtube">
+            <div id="youtubeApiContainer">
+            </div>
         </div>
 
         <div class="col-md-8 col-md-offset-2 youtubeExplorar hidden">
@@ -894,6 +893,8 @@
 		<script src="./recursos/js/jquery.parallax.min.js"></script>
 		<script src="./recursos/js/main.js"></script>
 		<script src="./recursos/js/jquery.html5Loader.min.js"></script>
+		<script type="text/javascript" src="./recursos/js/swfobject.js"></script>
+
 		<script type="text/javascript">
     
 		    $.html5Loader({

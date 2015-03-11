@@ -19,10 +19,16 @@ $(function(){
 
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen.you2be").hide();
+		$("#myyoutubeplayer").get(0).stopVideo();
 	});
 	$("#showYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen.you2be").show();
+		var params = { allowScriptAccess: "always" };
+	    var atts = { id: "myyoutubeplayer" };
+	    swfobject.embedSWF("http://www.youtube.com/v/F-th5y59AH8?enablejsapi=1&playerapiid=ytplayer&version=3",
+	                       "youtubeApiContainer", "100%", "100%", "8", null, null, params, atts);
 	});
+
 
 	/*
 	 * Toogle Menu
@@ -168,3 +174,7 @@ $(function(){
 	});
 
 });
+
+function onYouTubePlayerReady(playerId) {
+	$("#myyoutubeplayer").get(0).playVideo();
+}

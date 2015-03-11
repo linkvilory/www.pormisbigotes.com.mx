@@ -5,9 +5,15 @@ $(function(){
 	});
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").hide();
+		$("#myyoutubeplayer").get(0).stopVideo();
+		
 	});
 	$("#showYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").show();
+		var params = { allowScriptAccess: "always" };
+	    var atts = { id: "myyoutubeplayer" };
+	    swfobject.embedSWF("http://www.youtube.com/v/F-th5y59AH8?enablejsapi=1&playerapiid=ytplayer&version=3",
+	                       "youtubeApiContainer", "100%", "90%", "8", null, null, params, atts);
 	});
 	$("#showYoutubePlayer").hover(function (){
 		$("#showYoutubePlayer video").show();
@@ -32,3 +38,7 @@ $(function(){
 	});
 
 });
+
+function onYouTubePlayerReady(playerId) {
+	$("#myyoutubeplayer").get(0).playVideo();
+}

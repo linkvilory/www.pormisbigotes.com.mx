@@ -11,6 +11,7 @@
     <!-- Carga de archivos Js -->
     <script src="./recursos/js/jquery-1.11.2.min.js"></script>
     <script src="./recursos/js/jquery-ui.min.js"></script>
+
     <!-- End archivos js -->
 </head>
 
@@ -48,10 +49,9 @@
         <div class="col-md-1 youtubeClose"><img class="cerrarBoton" id=
         "closeYoutubePlayer" src="recursos/images/close.png"></div>
 
-        <div class="col-md-8 col-md-offset-2 youtube">
-            <iframe frameborder="0" height="90%" id="ytplayer" name="ytplayer"
-            src="http://www.youtube.com/embed/F-th5y59AH8" width=
-            "100%"></iframe>
+        <div id="youtube" class="col-md-8 col-md-offset-2 youtube">
+            <div id="youtubeApiContainer">
+            </div>
         </div>
 
         <div class="col-md-8 col-md-offset-2 youtubeExplorar">
@@ -62,6 +62,7 @@
     <!-- End Google Analytics -->
     <!-- Carga de archivos Js -->
     <script src="./recursos/js/bootstrap.min.js"></script> <script src="./recursos/js/init.js"></script>
+    <script type="text/javascript" src="./recursos/js/swfobject.js"></script>
     <!-- End archivos Js -->
 </body>
 </html>
