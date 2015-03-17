@@ -1,4 +1,0 @@
-/* Small devices glitch Corrector between tablets and mobile */
-@media (min-width: 500px) { 
-.seccionGaleriaEstaticaParteUno{background-image:url(images/bg/seccionCuatro.jpg);background-position:center center;background-repeat:repeat;background-size:auto 100%;display:table;height:400px;width:100%}.seccionGaleriaEstaticaParteDos{background-image:url(images/bg/seccionSeis.jpg);background-position:center center;background-repeat:repeat;background-size:auto 100%;display:table;height:400px;width:100%}.seccionGaleriaEstaticaParteTres{background-image:url(images/bg/seccionSiete.jpg);background-position:center center;background-repeat:repeat;background-size:auto 100%;display:table;height:400px;width:100%}.seccionGaleria{background-image:url(images/bg/seccionOcho.jpg);background-position:center center;background-repeat:repeat;background-size:100% auto;display:table;height:300px;width:100%}
-}

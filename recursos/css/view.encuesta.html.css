@@ -1,32 +1,37 @@
 /*
- * Hoja de estilo para la página de encuesta encuesta.html
+ * Hoja de estilo para la pna de encuesta encuesta.html
  */
-
-/* Se creó un css para la página de encuesta para evitar cargar más estilos de los que se utiliza y mejorar el performance de la página */ 
-/* El estilo por default es para un dispositivo móvil así que los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
-
+/* Se cre css para la pna de encuesta para evitar cargar mestilos de los que se utiliza y mejorar el performance de la pna */
+/* El estilo por default es para un dispositivo m asue los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
 /*
  * HTML y Body
  */
-
 html, body {
     line-height: 1;
     height: 100%;
-    position: relative;
-}
+    position: relative
+    }
 
 body {
     background-repeat: no-repeat;
     color: #fff;
     margin: 0;
     padding: 0;
-    font-family: 'bigotesmedium';
+    font-family: "bigotesmedium"
+    }
+.container-fluid {
+    min-height: 100%;
+    position: relative;
+    -moz-box-shadow: inset 0 0 250px #011d0b;
+    -webkit-box-shadow: inset 0 0 250px #011d0b;
+    box-shadow: inset 0 0 250px #011d0b;
 }
-.greenBg{
-    background-image: url("images/bg/verde.jpg");
+.greenBg {
+    background-image: url(images/bg/verde.jpg);
     background-position: center center;
-    background-repeat: repeat;
-}
+    background-repeat: repeat
+    }
+
 /*
  * Seccion del Logo 
  */
@@ -36,32 +41,36 @@ body {
     margin: 0 auto;
     position: fixed;
     width: 100%;
-    z-index: 10;
-}
+    z-index: 10
+    }
+
 .logo-container {
     margin: auto;
-    max-width: 150px !important;
-}
-.logo span {
-	color: #fff;
-	text-align: center;
-	line-height: 50px;
-	font-size: 20px;
-	width: 100%;
-	display: inline-block;
-}
-/* End Seccion del Logo */
+    max-width: 150px !important
+    }
 
+.logo span {
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
+    display: inline-block
+    }
+
+/* End Seccion del Logo */
 /*
  * Seccion Formulario
  */
 .enviarFormulario {
-    margin-top: 90px;
-}
+    margin-top: 90px
+    }
+
 #enviarFormulario table {
     color: #fff;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .titulo {
     display: block;
     font-family: "bigotesbold" !important;
@@ -72,8 +81,9 @@ body {
     text-align: center;
     text-shadow: 1px -1px #000;
     text-transform: uppercase;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
@@ -83,15 +93,19 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-shadow: 1px -1px #000;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .alinearCentro {
-  text-align: center;
-  width: 33.3333%;
-}
+    text-align: center;
+    width: 33.3333%
+    }
+
 .grupoUno, .grupoDos, .grupoTres {
     background: none repeat scroll 0 0 #fff;
     border: 1px solid #002601;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #002601;
     font-family: "bigotesmedium" !important;
@@ -100,52 +114,72 @@ body {
     height: 35px;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .width25 {
     padding: 0 2px;
-    width: 25%;
-}
-.width50{
-    width: 50%;
-}
+    width: 25%
+    }
+
+.width50 {
+    width: 50%
+    }
+
 .grupoUno.selected, .grupoDos.selected, .grupoTres.selected {
-  background: none repeat scroll 0 0 #09481c;
-  color: #fff;
-}
+    background: none repeat scroll 0 0 #09481c;
+    color: #fff
+    }
+
 .botonEntrar {
-    background: none repeat scroll 0 0 #f8000c;
+    font-family: 'bigotesmedium';
     border: 0 none;
-    border-radius: 5px;
     color: #fff;
-    font-family: "bigotesmedium" !important;
     font-size: 15px;
-    font-weight: bold;
-    height: 35px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding: 8px 0;
     text-align: center;
     text-transform: uppercase;
-    width: 100px;
+    width: 112px;
+    z-index: 99;
+    margin-top: 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* border radius */
+    background-color: #fb0707;
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE2OSA0MiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTcwNTA1IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzk3MDUwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmIwNzA3IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiNmYjA3MDciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iI2ZkNjU2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZkNjU2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTY5IiBoZWlnaHQ9IjQyIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+background-image: -moz-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: -o-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: -webkit-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+    transition: all 0.2s linear;
 }
-.loading{
-    display:none;
+
+.botonEntrar:hover {
+    transform: scale(1.06);
 }
-.loading img{
+
+.loading {
+    display: none
+    }
+
+.loading img {
     background: none repeat scroll 0 0 #fff;
     display: block;
     margin: auto;
-    text-align: center;
-}
-/* End Seccion Formulario */
+    text-align: center
+    }
 
+/* End Seccion Formulario */
 /*
  * Omitir boton
  */
- .omitir-container {
+.omitir-container {
     bottom: 0;
-    position: absolute!important;
-}
-.omitir{
+    position: relative !important
+    }
+
+.omitir {
     color: #fff;
     display: inline-block;
     font-family: "bigotesmedium" !important;
@@ -155,78 +189,60 @@ body {
     text-align: right;
     text-decoration: none;
     text-shadow: 1px -1px #000;
-    width: 100%;
-}
+    width: 100%
+    }
 
 .omitir:hover, .omitir:focus, .omitir:active {
-  color: #fff;
-  text-decoration: none;
-}
-/* End Omitir boton */
+    color: #fff;
+    text-decoration: none
+    }
 
+/* End Omitir boton */
 /*
  * Font Style
  */
+@font-face {
+    font-family: "bigotesbold";
+    src: url(fonts/webfont/Bigotes-Bold-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Bold-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Bold-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Bold-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Bold-webfont.svg#bigotesbold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
 
 @font-face {
-  font-family: 'bigotesbold';
-    src: url('fonts/webfont/Bigotes-Bold-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Bold-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Bold-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Bold-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Bold-webfont.svg#bigotesbold') format('svg');
+    font-family: "bigotesdemibold";
+    src: url(fonts/webfont/Bigotes-DemiBold-webfont.eot);
+    src: url(fonts/webfont/Bigotes-DemiBold-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-DemiBold-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-DemiBold-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-DemiBold-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold) format("svg");
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal
+    }
+
 @font-face {
-  font-family: 'bigotesdemibold';
-    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot');
-    src: url('fonts/webfont/Bigotes-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-DemiBold-webfont.svg#bigotesdemibold') format('svg');
+    font-family: "bigotesheavy";
+    src: url(fonts/webfont/Bigotes-Heavy-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Heavy-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Heavy-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Heavy-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Heavy-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy) format("svg");
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal
+    }
+
 @font-face {
-  font-family: 'bigotesheavy';
-    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Heavy-webfont.svg#bigotesheavy') format('svg');
+    font-family: "bigotesmedium";
+    src: url(fonts/webfont/Bigotes-Medium-webfont.eot);
+    src: url(fonts/webfont/Bigotes-Medium-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont/Bigotes-Medium-webfont.woff2) format("woff2"), url(fonts/webfont/Bigotes-Medium-webfont.woff) format("woff"), url(fonts/webfont/Bigotes-Medium-webfont.ttf) format("truetype"), url(fonts/webfont/Bigotes-Medium-webfont.svg#bigotesmedium) format("svg");
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal
+    }
+
 @font-face {
-  font-family: 'bigotesmedium';
-    src: url('fonts/webfont/Bigotes-Medium-webfont.eot');
-    src: url('fonts/webfont/Bigotes-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont/Bigotes-Medium-webfont.woff2') format('woff2'),
-         url('fonts/webfont/Bigotes-Medium-webfont.woff') format('woff'),
-         url('fonts/webfont/Bigotes-Medium-webfont.ttf') format('truetype'),
-         url('fonts/webfont/Bigotes-Medium-webfont.svg#bigotesmedium') format('svg');
+    font-family: "bigotes_corsivaitalic";
+    src: url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot);
+    src: url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff2) format("woff2"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff) format("woff"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.ttf) format("truetype"), url(fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic) format("svg");
     font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'bigotes_corsivaitalic';
-    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot');
-    src: url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff2') format('woff2'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.woff') format('woff'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.ttf') format('truetype'),
-         url('fonts/webfont-curs/BigotesCorsiva-Italic-webfont.svg#bigotes_corsivaitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal
+    }
+
 /* End Font Styles */
-
 /* Parte para los mediaqueries */
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -245,17 +261,17 @@ body {
     position: fixed;
     width: 100%;
     z-index: 10;
-    height: 100px;
-    width: 200px!important;
-}
+    width: 200px !important
+    }
+
 .logo-container {
     margin: auto;
     left: -100px;
     position: relative;
-    max-width: 200px!important;
-}
+    max-width: 200px !important
+    }
 
-/* End Logo */ 
+/* End Logo */
 .titulo {
     display: block;
     font-family: "bigotesbold" !important;
@@ -266,8 +282,9 @@ body {
     text-align: center;
     text-shadow: 1px -1px #000;
     text-transform: uppercase;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
@@ -277,30 +294,35 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-shadow: 1px -1px #000;
-    width: 100%;
-}
+    width: 100%
+    }
+
 /*
  * Seccion Formulario
  */
 .enviarFormulario {
-    margin-top: 120px;
-}
+    margin-top: 120px
+    }
 
 .width25 {
     padding: 0 20px;
-    width: 25%;
-}
+    width: 25%
+    }
+
 .width33 {
     padding: 0 20px;
     text-align: center;
-    width: 33.333% !important;
-}
+    width: 33.333% !important
+    }
+
 .grupoUno.smallerButton, .grupoDos.smallerButton, .grupoTres.smallerButton {
-    max-width: 100px;
-}
-.botonEntrar{
-    max-width: 150px;
-}
+    max-width: 100px
+    }
+
+.botonEntrar {
+    margin-top: 30px;
+    max-width: 150px
+    }
 
 }
 
@@ -312,14 +334,16 @@ body {
  */
 .logo {
     height: 100px;
-    width: 300px!important;
-}
+    width: 300px !important
+    }
+
 .logo-container {
     left: -150px;
     position: relative;
-    max-width: 300px!important;
-} 
-/* End Logo */ 
+    max-width: 300px !important
+    }
+
+/* End Logo */
 .titulo {
     display: block;
     font-family: "bigotesbold" !important;
@@ -330,8 +354,9 @@ body {
     text-align: center;
     text-shadow: 1px -1px #000;
     text-transform: uppercase;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
@@ -341,26 +366,38 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-shadow: 1px -1px #000;
-    width: 100%;
-}
+    width: 100%
+    }
+
 /*
  * Seccion Formulario
  */
 .enviarFormulario {
-    margin-top: 150px;
-}
+    margin-top: 150px
+    }
 
 .width33 {
     padding: 0 20px;
     text-align: center;
-    width: 33.333% !important;
-}
+    width: 33.333% !important
+    }
+
 .grupoUno.smallerButton, .grupoDos.smallerButton, .grupoTres.smallerButton {
-    max-width: 100px;
-}
-.botonEntrar{
-    max-width: 150px;
-}
+    max-width: 100px
+    }
+
+.botonEntrar {
+    margin-top: 30px;
+    max-width: 150px
+    }
+/*
+ * Omitir boton
+ */
+.omitir-container {
+    bottom: 0;
+    position: absolute !important
+    }
+/* End Omitir boton */
 
 }
 
@@ -372,35 +409,38 @@ body {
  */
 .logo {
     height: 100px;
-    width: 300px!important;
-}
+    width: 300px !important
+    }
+
 .logo-container {
     left: -150px;
     position: relative;
-    max-width: 300px!important;
-} 
-/* End Logo */ 
+    max-width: 300px !important
+    }
 
+/* End Logo */
 /*
  * Seccion Formulario
  */
 .enviarFormulario {
-    margin-top: 160px;
-
-}
+    margin-top: 160px
+    }
 
 .width33 {
     padding: 0 20px;
     text-align: center;
-    width: 33.333% !important;
-}
+    width: 33.333% !important
+    }
+
 .grupoUno.smallerButton, .grupoDos.smallerButton, .grupoTres.smallerButton {
-    max-width: 100px;
-}
-.botonEntrar{
+    max-width: 100px
+    }
+
+.botonEntrar {
     max-width: 150px;
-    margin-top: 30px;
-}
+    margin-top: 30px
+    }
+
 .titulo {
     display: block;
     font-family: "bigotesbold" !important;
@@ -411,8 +451,9 @@ body {
     text-align: center;
     text-shadow: 1px -1px #000;
     text-transform: uppercase;
-    width: 100%;
-}
+    width: 100%
+    }
+
 .preguntas {
     display: block;
     font-family: "bigotesdemibold";
@@ -422,7 +463,14 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-shadow: 1px -1px #000;
-    width: 100%;
-}
-
+    width: 100%
+    }
+/*
+ * Omitir boton
+ */
+.omitir-container {
+    bottom: 0;
+    position: absolute !important
+    }
+/* End Omitir boton */
 }

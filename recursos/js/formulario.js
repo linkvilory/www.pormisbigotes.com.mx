@@ -53,7 +53,7 @@
 			$(".formAjax").show();
 			$(".loading").hide();
 			alert( "Gracias por sus comentarios!");
-			window.location = "./inicio.html";
+			window.location = "./inicio.php";
 		});
 		
 	});

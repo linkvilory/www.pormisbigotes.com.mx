@@ -123,7 +123,7 @@
 .galeria_nav {
     background: url("images/sprites/arrows.png") no-repeat scroll left 50% transparent;
     bottom: 0;
-    left: 0;
+    left: 20px;
     overflow: hidden;
     position: absolute;
     text-indent: -9999px;
@@ -135,5 +135,5 @@
 .galeria_nav.next {
   background-position: right 50%;
   left: auto;
-  right: 0;
+  right: 20px;
 }

@@ -1,0 +1,237 @@
+/*
+ * Hoja de estilo para la pna principal index.html
+ */
+/* Se cre css para la pna principal para evitar cargar mestilos de los que se utiliza y mejorar el performance de la pna */
+/* El estilo por default es para un dispositivo m asue los mediaqueries sirven para darle formato a los dispositivos mas grandes tales como tabletas y computadoras de escritorio */
+/*
+ * HTML y Body
+ */
+html, body {
+    line-height: 1;
+    height: 100%;
+    position: relative
+    }
+
+body {
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "bigotesmedium"
+    }
+
+/*
+ * Parte del contenedor de Youtube
+ */
+.container-fluid.fullscreen {
+    display: none
+    }
+
+.container-fluid.fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    z-index: 99;
+    background: #000
+    }
+
+/* End Contenedor de Youtube */
+/*
+ * Seccion de Youtube
+ */
+.logoYoutube {
+    height: 10%
+    }
+
+.logoYoutube img {
+    max-width: 150px;
+    min-width: 100px;
+    margin: auto
+    }
+
+.youtube {
+    background: none repeat scroll 0 0 #000;
+    height: 70%;
+    top: 0;
+    z-index: 9999
+    }
+
+.youtubeClose {
+    height: 10%
+    }
+
+.youtubeClose .cerrarBoton {
+    color: #fff;
+    cursor: pointer;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 45px;
+    z-index: 99999
+    }
+
+.youtubeExplorar {
+    height: 10%
+    }
+
+.youtubeExplorar .explorarSitioBoton {
+    border: 0 none;
+    font-family: 'bigotesmedium';
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: auto;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 222px;
+    z-index: 99;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* border radius */
+    background-color: #fb0707;
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE2OSA0MiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTcwNTA1IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzk3MDUwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmIwNzA3IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiNmYjA3MDciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iI2ZkNjU2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZkNjU2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTY5IiBoZWlnaHQ9IjQyIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+background-image: -moz-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: -o-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: -webkit-linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%, #fb0707 85.01%, #fd6565 97%, #fd6565 100%);
+    transition: all 0.2s linear;
+    }
+    
+    .youtubeExplorar .explorarSitioBoton:hover {
+        transform: scale(1.06);
+    }
+
+/* Seccion de Youtube */
+/*
+ * Seccion del Logo 
+ */
+.logo {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10
+    }
+
+.logo-container {
+    margin: auto;
+    max-width: 150px !important
+    }
+
+.logo span {
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
+    display: inline-block
+    }
+
+/* End Seccion del Logo */
+/*
+ * Seccion de Trailer y Explorar
+ */
+.greenBg {
+    background-image: url(../images/bg/verde.jpg);
+    background-repeat: repeat;
+    background-position: center
+    }
+
+.containerDefault {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #333;
+    position: fixed
+    }
+
+.containerDefault .trailer {
+    background: #000;
+    height: 50%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    width: 100%
+    }
+
+.containerDefault .trailer > div {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%
+    }
+
+.containerDefault .trailer-container {
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    width: 100%
+    }
+
+video {
+    height: 100%;
+    width: 100%;
+    display: block
+    }
+#youtubeApiContainer{
+    width:100%;
+    height:100%;
+}
+.containerDefault .trailer .buttonTrailer {
+    left: -75px;
+    position: relative;
+    top: -40px;
+    width: 150px
+    }
+
+.containerDefault .trailer .buttonTrailer img {
+    margin: auto
+    }
+
+.containerDefault .explorar {
+    background-image: url(../images/bg/verde.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    float: left;
+    height: 50%;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    cursor: pointer
+    }
+
+.containerDefault .explorar:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1
+    }
+
+.containerDefault .explorar-container {
+    top: 50%;
+    height: 50px;
+    left: 50%;
+    position: relative;
+    width: 100%
+    }
+
+.containerDefault .explorar .buttonExplorar {
+    left: -75px;
+    position: relative;
+    top: -40px;
+    width: 150px
+    }
+
+.containerDefault .explorar .buttonExplorar img {
+    margin: auto
+    }
