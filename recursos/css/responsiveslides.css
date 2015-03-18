@@ -1,127 +1,135 @@
 .premios {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0
+    }
 
 .premios li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0
+    }
 
 .premios li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
+    position: relative;
+    display: block;
+    float: left
+    }
 
 .premios img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-}
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0
+    }
 
 .premios_tabs.premios1_tabs {
-  height: 25px;
+    height: 25px;
     margin: 25px auto 0;
     padding: 0;
     text-align: center;
-    width: 160px;
-}
+    width: 160px
+    }
 
 .premios_tabs.premios1_tabs li {
-  display: inline;
+    display: inline;
     float: none;
-    margin-right: 25px;
-}
+    margin-right: 25px
+    }
 
 .premios_here a {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 1)!important;
-}
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 1) !important
+    }
 
 .premios_tabs.premios1_tabs a {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
-  border-radius: 15px;
-  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
-  display: inline-block;
-  height: 15px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 15px;
-}
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    -webkit-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    display: inline-block;
+    height: 15px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 15px
+    }
 
 .galeria {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0
+    }
 
 .galeria li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0
+    }
 
 .galeria li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
+    position: relative;
+    display: block;
+    float: left
+    }
 
 .galeria img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-}
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0
+    }
 
 .galeria_tabs.galeria1_tabs {
-  height: 40px;
-  margin: 15px auto 0;
-  text-align: center;
-  width: 110px;
-  padding: 0;
-}
+    height: 40px;
+    margin: 15px auto 0;
+    text-align: center;
+    width: 110px;
+    padding: 0
+    }
 
 .galeria_tabs.galeria1_tabs li {
-  display: inline;
-  float: none;
-  margin-right: 15px;
-}
+    display: inline;
+    float: none;
+    margin-right: 15px
+    }
 
 .galeria_here a {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 1)!important;
-}
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 1) !important
+    }
 
 .galeria_tabs.galeria1_tabs a {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
-  border-radius: 15px;
-  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
-  display: inline-block;
-  height: 15px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 15px;
-}
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    -webkit-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1) inset;
+    display: inline-block;
+    height: 15px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 15px
+    }
 
 .galeria_nav {
-    background: url("images/sprites/arrows.png") no-repeat scroll left 50% transparent;
+    background: url(images/sprites/arrows.png) no-repeat scroll left 50% transparent;
     bottom: 0;
     left: 20px;
     overflow: hidden;
@@ -129,11 +137,11 @@
     text-indent: -9999px;
     top: 0;
     width: 60px;
-    z-index: 3;
-}
+    z-index: 3
+    }
 
 .galeria_nav.next {
-  background-position: right 50%;
-  left: auto;
-  right: 20px;
-}
+    background-position: right 50%;
+    left: auto;
+    right: 20px
+    }
