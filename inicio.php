@@ -33,7 +33,6 @@ if( $detect->isTablet() ){
 
 		<!-- Carga de archivos Js -->
 			<script src="./recursos/js/jquery-1.11.2.min.js"></script>
-			<script src="./recursos/js/jquery-ui.min.js"></script>
 		<!-- End archivos js -->
 
 	</head>
@@ -849,12 +848,12 @@ if( $detect->isTablet() ){
 
 		</div>
 		<div id="toolbar-container-facebook" class="toolbar-container-facebook">
-			<div class="globo facebook-l"></div>
-			<div class="globo facebook-s"></div>
+			<div id="facebook-l" class="globo facebook-l"></div>
+			<div id="facebook-s" class="globo facebook-s"></div>
 		</div>
 		<div id="toolbar-container-twitter" class="toolbar-container-twitter">
-			<div class="globo twitter-l"></div>
-			<div class="globo twitter-s"></div>
+			<div id="twitter-l" class="globo twitter-l"></div>
+			<div id="twitter-s" class="globo twitter-s"></div>
 		</div>
 
 	</div>

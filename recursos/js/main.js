@@ -8,13 +8,27 @@ $(function(){
 		$("#toolbar-container-twitter").toggleClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
 	});
+	$("#facebook-l").click(function(){
+		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
+	});
+	$("#facebook-s").click(function(){
+		window.open('http://www.facebook.com/sharer.php?s=100&p[title]=Por%20mis%20bigotes&p[summary]=No%20te%20pierdas%20la%20producci%C3%B3n%20m%C3%A1s%20bigotuda%20del%20cine.%20%C2%A1Pronto%20en%20cines!&p[url]=http://pormisbigotes.com.mx&p[images][0]=YOUR_IMAGE_TO_SHARE_OBJECT','_blank');
+	});
+	$("#twitter-l").click(function(){
+		window.open('https://twitter.com/PorBigotes?lang=es','_blank');
+	});
+	$("#twitter-s").click(function(){
+		window.open('https://twitter.com/home?status=%C2%A1El%20club%20de%20los%2010mil%20bigotes%20est%C3%A1%20en%20twitter,%20s%C3%ADguenos!%20http://pormisbigotes.com.mx','_blank');
+	});
 	$("#instagramL").click(function(){
 		$("#toolbar-container-twitter").removeClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
+		window.open('http://instagram.com/pormisbigotes','_blank');
 	});
 	$("#youtubeL").click(function(){
 		$("#toolbar-container-twitter").removeClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
+		window.open('https://www.youtube.com/channel/UClkA6SOENB8_narRtxIIntg','_blank');
 	});
 
 	$("#closeYoutubePlayer").click(function (){
