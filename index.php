@@ -30,7 +30,6 @@ if( $detect->isTablet() ){
     <!-- End archivos Css-->
     <!-- Carga de archivos Js -->
     <script src="./recursos/js/jquery-1.11.2.min.js"></script>
-    <script src="./recursos/js/jquery-ui.min.js"></script>
 
     <!-- End archivos js -->
 </head>

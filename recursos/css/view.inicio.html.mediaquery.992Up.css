@@ -248,6 +248,8 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
 .seccionBienvenida {
     height: 700px;
     width: 100%
+    background-repeat: repeat;
+    background-size: 100% auto;
     }
 
 .bienvenida-container-inner {

@@ -42,7 +42,7 @@ $(function(){
 		$(".containerDefault .explorar").css({
 			"background": "",
 			"background-image": "url(recursos/css/images/bg/verde.jpg)",
-			"background-size": "cover",
+			"background-size": "auto",
 			"opacity": "0.5"
 		});
 		$("#showYoutubePlayer").click(function (){
