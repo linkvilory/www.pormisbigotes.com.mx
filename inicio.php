@@ -20,8 +20,9 @@ if( $detect->isTablet() ){
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-		<title>www.pormisbigotes.com.mx</title>
-
+		<title>Por mis bigotes - Sitio Oficial</title>
+		<meta content="Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho. No te pierdas la producción más bigotuda del cine.¡Pronto en cines!" name="description">
+		<meta content="Pelicula, Mexicana, Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho,ULISES Santiago Torres,TIO FABIÁN Jesús Ochoa,DAGOBERTO Eduardo España,DON BACILIO Fernando Becerril,NARCISO Osvaldo de León,ALICIA Gabriela Arroyo,SABINO Lenny Zundel,TIMOTEO Dario Ripoll,AQUILES José Montini,BENITO Germán Gutiérrez,LULA Fernanda Juárez,MARCELINO Armando Said Flores,ENTRENADOR Armando Hernández,PEPE GUAPO Marco Valdés,PROFESOR Roberto Blandón,ENTRENADOR RIVAL Luis Fernando Peña." name="keywords">
 		<!-- Carga de archivos Css -->
 			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.mediaquery.768Up.css"/>
@@ -74,7 +75,7 @@ if( $detect->isTablet() ){
 					<a href="#seccionPremios"><span>Prensa</span></a>
 				</li>
 				<li class="enlace">
-					<a href="#seccionPremios"><span>Dercargas</span></a>
+					<a href="#seccionPremios"><span>Descargas</span></a>
 				</li>
 				<li class="enlace">
 					<a href="#seccionCreditos"><span>Ficha Tecnica</span></a>
@@ -114,7 +115,7 @@ if( $detect->isTablet() ){
     				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/wNGRlRiqME/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">Una foto publicada por Belisario Luna (@belisarioluna_)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-12-05T00:18:54+00:00">4 de Dic de 2014 a la(s) 4:18 PST</time></p></div></blockquote>
+					<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/wfsfQRkZeA/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">Conferencia de prensa, Hermosillo, Son. @osvaldodeleonof  y @darioripoll #pormisbigotes</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Una foto publicada por @pormisbigotes el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-12-12T05:39:08+00:00">11 de Dic de 2014 a la(s) 9:39 PST</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 				</div>
 			</div>
@@ -918,15 +919,18 @@ if( $detect->isTablet() ){
 		        filesToLoad: 'recursos/files.json', // this could be a JSON or simply a javascript object
 		        onBeforeLoad: function () {},
 		        onComplete: function () {
-		            console.log('fin');
+		            //console.log('fin');
 		            $('#preloader').hide();
 		        },
 		        onElementLoaded: function ( obj, elm) { },
 		        onUpdate: function ( percentage ) {
-		        	console.log("Porcentaje: " + percentage);
+		        	//console.log("Porcentaje: " + percentage);
 		            var nuevo = percentage-100;
-		            console.log("Left: " + nuevo);
+		            //console.log("Left: " + nuevo);
 		            $('#preloader').find('.cargando').find('div').animate({'left':nuevo + '%'});
+		            if(nuevo > 90){
+		            	$('#preloader').hide();
+		            }
 		        }
 		    });
 

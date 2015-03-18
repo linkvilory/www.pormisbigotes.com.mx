@@ -186,7 +186,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     color: #fff;
     cursor: pointer;
     font-size: 1.2em;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     text-transform: uppercase;
     letter-spacing: 1px
     }
@@ -293,7 +293,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     height: 860px;
     width: 100%;
     background-repeat: repeat;
-    background-size: 100% auto;
+    background-size: cover;
     }
 
 .bienvenida-container-inner {
@@ -328,7 +328,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     background-size: cover;
     display: table;
     height: 335px;
-    margin-top: -20px;
+    margin-top: -38px;
     position: absolute;
     width: 100%;
     z-index: 2
@@ -378,7 +378,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     font-weight: 900;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     letter-spacing: 3px
     }
 
@@ -388,7 +388,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     line-height: 35px;
     margin: 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     letter-spacing: 1px
     }
 
@@ -1132,7 +1132,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     margin-top: 50px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     letter-spacing: 3px
     }
 
@@ -1212,7 +1212,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     margin-top: 20px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     text-transform: uppercase
     }
 
@@ -1286,7 +1286,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     font-weight: lighter;
     line-height: 25px;
     margin: 0;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     padding: 4px 0
     }
 

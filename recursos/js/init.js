@@ -6,7 +6,7 @@ $(function(){
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen").hide();
 		$("#myyoutubeplayer").get(0).stopVideo();
-		
+		$("#youtubeApiContainer").html("");
 	});
 
 	if(deviceWhat == 1){

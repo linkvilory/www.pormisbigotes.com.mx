@@ -8,6 +8,20 @@ $(function(){
 		$("#toolbar-container-twitter").toggleClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
 	});
+
+	$("#facebookMenu").click(function(){
+		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
+	});
+	$("#twitterMenu").click(function(){
+		window.open('https://twitter.com/PorBigotes?lang=es','_blank');
+	});
+	$("#instagramMenu").click(function(){
+		window.open('http://instagram.com/pormisbigotes','_blank');
+	});
+	$("#youtubeMenu").click(function(){
+		window.open('https://www.youtube.com/channel/UClkA6SOENB8_narRtxIIntg','_blank');
+	});
+
 	$("#facebook-l").click(function(){
 		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
 	});
@@ -34,6 +48,7 @@ $(function(){
 	$("#closeYoutubePlayer").click(function (){
 		$(".container-fluid.fullscreen.you2be").hide();
 		$("#myyoutubeplayer").get(0).stopVideo();
+		$("#youtubeApiContainer").html("");
 	});
 	if(deviceWhat == 1){
 			$("#showYoutubePlayer").click(function (){
@@ -139,10 +154,10 @@ $(function(){
   invertY: true,
   limitX: false,
   limitY: false,
-  scalarX: 0,
-  scalarY: 0,
-  frictionX: 0,
-  frictionY: 0,
+  scalarX: 15,
+  scalarY: 15,
+  frictionX: 1,
+  frictionY: 1,
   originX: 0.5,
   originY: 0.5
 	});

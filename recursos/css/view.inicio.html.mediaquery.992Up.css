@@ -157,7 +157,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     color: #fff;
     cursor: pointer;
     font-size: 1.2em;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     text-transform: uppercase;
     letter-spacing: 1px
     }
@@ -249,7 +249,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     height: 700px;
     width: 100%
     background-repeat: repeat;
-    background-size: 100% auto;
+    background-size: cover;
     }
 
 .bienvenida-container-inner {
@@ -277,7 +277,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     background-size: cover;
     display: table;
     height: 200px;
-    margin-top: -20px;
+    margin-top: -22px;
     position: absolute;
     width: 100%;
     z-index: 4
@@ -290,7 +290,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     letter-spacing: 3px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     margin-top: 120px
     }
 
@@ -314,7 +314,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
  * Galerias estaticas
  */
 .seccionGaleriaEstaticaParteUno, .seccionGaleriaEstaticaParteDos, .seccionGaleriaEstaticaParteTres {
-    height: 90%;
+    height: 70%;
     width: 100%
     }
 
@@ -1030,7 +1030,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     margin-top: 50px;
     padding: 5px 0;
     text-align: center;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     font-size: 3em;
     letter-spacing: 3px
     }
@@ -1104,7 +1104,7 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     font-size: 0.8em;
     font-weight: lighter;
     line-height: 25px;
-    text-shadow: 1px -1px #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,.9);
     margin: 0
     }
 
