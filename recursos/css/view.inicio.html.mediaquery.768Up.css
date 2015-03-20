@@ -368,7 +368,11 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
 .youtubeExplorar {
     height: 10%
     }
-
+#youtube > div {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 /* End Seccion de Contenedor de Youtube */
 /*
  * Info

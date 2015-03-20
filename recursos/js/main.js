@@ -26,7 +26,7 @@ $(function(){
 		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
 	});
 	$("#facebook-s").click(function(){
-		window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpormisbigotes.com.mx','_blank');
+		window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpormisbigotes.com.mx%2Fsite-prueba%2F','_blank');
 	});
 	$("#twitter-l").click(function(){
 		window.open('https://twitter.com/PorBigotes?lang=es','_blank');

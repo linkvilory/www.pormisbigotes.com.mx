@@ -436,7 +436,11 @@ background-image: linear-gradient(bottom, #970505 0%, #970505 3%, #fb0707 49.51%
     width: 170px;
     z-index: 99
     }
-
+#youtube > div {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 /* Seccion de Youtube */
 /*
  * Parte del contenedor de Descripcion de Conocelos
