@@ -10,26 +10,26 @@ $(function(){
 	});
 
 	$("#facebookMenu").click(function(){
-		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
+		window.open('https://www.facebook.com/videocine.distribucion?fref=ts','_blank');
 	});
 	$("#twitterMenu").click(function(){
-		window.open('https://twitter.com/PorBigotes?lang=es','_blank');
+		window.open('https://twitter.com/videocine','_blank');
 	});
 	$("#instagramMenu").click(function(){
-		window.open('http://instagram.com/pormisbigotes','_blank');
+		window.open('https://instagram.com/videocine/','_blank');
 	});
 	$("#youtubeMenu").click(function(){
-		window.open('https://www.youtube.com/channel/UClkA6SOENB8_narRtxIIntg','_blank');
+		window.open('https://www.youtube.com/user/videocine1','_blank');
 	});
 
 	$("#facebook-l").click(function(){
-		window.open('https://www.facebook.com/porbigotes?ref=hl','_blank');
+		window.open('https://www.facebook.com/videocine.distribucion?fref=ts','_blank');
 	});
 	$("#facebook-s").click(function(){
-		window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpormisbigotes.com.mx%2Fsite-prueba%2F','_blank');
+		window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpormisbigotes.com.mx%2F','_blank');
 	});
 	$("#twitter-l").click(function(){
-		window.open('https://twitter.com/PorBigotes?lang=es','_blank');
+		window.open('https://twitter.com/videocine','_blank');
 	});
 	$("#twitter-s").click(function(){
 		window.open('https://twitter.com/home?status=%C2%A1El%20club%20de%20los%2010mil%20bigotes%20est%C3%A1%20en%20twitter,%20s%C3%ADguenos!%20http://pormisbigotes.com.mx','_blank');
@@ -37,12 +37,12 @@ $(function(){
 	$("#instagramL").click(function(){
 		$("#toolbar-container-twitter").removeClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
-		window.open('http://instagram.com/pormisbigotes','_blank');
+		window.open('https://instagram.com/videocine/','_blank');
 	});
 	$("#youtubeL").click(function(){
 		$("#toolbar-container-twitter").removeClass("show");
 		$("#toolbar-container-facebook").removeClass("show");
-		window.open('https://www.youtube.com/channel/UClkA6SOENB8_narRtxIIntg','_blank');
+		window.open('https://www.youtube.com/user/videocine1','_blank');
 	});
 
 	$("#closeYoutubePlayer").click(function (){
@@ -53,14 +53,14 @@ $(function(){
 	if(deviceWhat == 1){
 			$("#showYoutubePlayer").click(function (){
 			$(".container-fluid.fullscreen.you2be").show();
-			$("#youtubeApiContainer").html("<iframe width='100%' height='90%' src='//www.youtube.com/embed/F-th5y59AH8?rel=0' frameborder='0' allowfullscreen />");
+			$("#youtubeApiContainer").html("<iframe width='100%' height='90%' src='//www.youtube.com/embed/6JaiJBvINqA?rel=0' frameborder='0' allowfullscreen />");
 		});
 	}else{
 		$("#showYoutubePlayer").click(function (){
 			$(".container-fluid.fullscreen.you2be").show();
 			var params = { allowScriptAccess: "always" };
 		    var atts = { id: "myyoutubeplayer" };
-		    swfobject.embedSWF("http://www.youtube.com/v/F-th5y59AH8?enablejsapi=1&playerapiid=ytplayer&version=3",
+		    swfobject.embedSWF("http://www.youtube.com/v/6JaiJBvINqA?enablejsapi=1&playerapiid=ytplayer&version=3",
 		                       "youtubeApiContainer", "100%", "100%", "8", null, null, params, atts);
 		});
 	}
@@ -76,13 +76,13 @@ $(function(){
 	 	if(leftMenu == "0px"){
 	 		$('#menu').animate({
 		         left: "-50%",
-		    }, 900, function () {
+		    }, 300, function () {
 		        //window.location.hash = target;
 		    });
 	 	}else{
 	 		$('#menu').animate({
 		         left: "0",
-		    }, 900, function () {
+		    }, 300, function () {
 		        //window.location.hash = target;
 		    });
 	 	}

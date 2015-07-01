@@ -40,29 +40,76 @@ if( $detect->isTablet() ){
 	    <meta name="msapplication-TileImage" content="recursos/favicons/mstile-144x144.png">
 	    <meta name="msapplication-config" content="recursos/favicons/browserconfig.xml">
 	    <meta name="theme-color" content="#01452a">
+
 		<meta content="Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho. No te pierdas la producción más bigotuda del cine.¡Pronto en cines!" name="description">
 		<meta content="Pelicula, Mexicana, Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho,ULISES Santiago Torres,TIO FABIÁN Jesús Ochoa,DAGOBERTO Eduardo España,DON BACILIO Fernando Becerril,NARCISO Osvaldo de León,ALICIA Gabriela Arroyo,SABINO Lenny Zundel,TIMOTEO Dario Ripoll,AQUILES José Montini,BENITO Germán Gutiérrez,LULA Fernanda Juárez,MARCELINO Armando Said Flores,ENTRENADOR Armando Hernández,PEPE GUAPO Marco Valdés,PROFESOR Roberto Blandón,ENTRENADOR RIVAL Luis Fernando Peña." name="keywords">
-    	<meta property="og:url" content="http://pormisbigotes.com.mx/site-prueba/" />
+    	<meta property="og:url" content="http://pormisbigotes.com.mx/" />
     	<meta property="og:title" content="Por Mis Bigotes - Sitio Oficial" />
     	<meta property="og:description" content="Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho. No te pierdas la producción más bigotuda del cine.¡Pronto en cines!" />
     	<meta property="og:site_name" content="pormisbigotes" />
-    	<meta property="og:image" content="http://pormisbigotes.com.mx/site-prueba/recursos/images/share.jpg" />
+    	<meta property="og:image" content="http://pormisbigotes.com.mx/recursos/images/share.jpg" />
+
+    	<meta content="summary_large_image" name="twitter:card">
+		<meta content="Por Mis Bigotes - Sitio Oficial" name="twitter:title">
+		<meta content="Por Mis Bigotes, La Aventura de un Muchacho y su Mostacho. No te pierdas la producción más bigotuda del cine.¡Pronto en cines!" name="twitter:description">
+		<meta content="@videocine" name="twitter:site">
+		<meta content="@videocine" name="twitter:creator">
+		<meta content="http://pormisbigotes.com.mx/" name="twitter:domain">
+		<meta content="http://pormisbigotes.com.mx/recursos/images/share.jpg" name="twitter:image:src">
 		<!-- Carga de archivos Css -->
-			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.css"/>
-			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.mediaquery.768Up.css"/>
-			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.mediaquery.992Up.css"/>
-			<link type="text/css" rel="stylesheet" href="./recursos/css/view.inicio.html.mediaquery.1200Up.css"/>
+			<link type="text/css" rel="stylesheet" href="./recursos/css/inicio.html.min.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/bootstrap.css"/>
-			<link type="text/css" rel="stylesheet" href="./recursos/css/responsiveslides.css"/>
+			<link type="text/css" rel="stylesheet" href="./recursos/css/responsiveslides.min.css"/>
 		<!-- End archivos Css-->
 
 		<!-- Carga de archivos Js -->
 			<script src="./recursos/js/jquery-1.11.2.min.js"></script>
+			<script src="./recursos/js/jquery.html5Loader.min.js"></script>
+			<script type="text/javascript">
+    
+			    $.html5Loader({
+			        filesToLoad: 'recursos/files.json', // this could be a JSON or simply a javascript object
+			        onBeforeLoad: function () {},
+			        onComplete: function () {
+			            //console.log('fin');
+			            $('#preloader').hide();
+			        },
+			        onElementLoaded: function ( obj, elm) { },
+			        onUpdate: function ( percentage ) {
+			        	//console.log("Porcentaje: " + percentage);
+			            var nuevo = percentage-100;
+			            //console.log("Left: " + nuevo);
+			            $('#preloader').find('.cargando').find('div').animate({'left':nuevo + '%'});
+			            if(nuevo > 90){
+			            	$('#preloader').hide();
+			            }
+			        }
+			    });
+
+	    	</script>
 		<!-- End archivos js -->
 
 	</head>
 	<body>
+	<!-- Facebook Init -->
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '720965681362308',
+	      xfbml      : true,
+	      version    : 'v2.3'
+	    });
+	  };
 
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- End Facebook Init -->
 	<!-- Preloader -->
     <div id="preloader" class="preloader" style="">
         <div class="logopre"><img class="img-responsive" src="recursos/images/logo-por-mis-bigotes.png"/></div>
@@ -77,7 +124,7 @@ if( $detect->isTablet() ){
 	</div>
 
 	<div id="toogleMenu" class="botonMenu">
-		<span>MENU</span>
+		<span>MENÚ</span>
 	</div>
 
 	<nav id="menu" class="menu">
@@ -87,22 +134,19 @@ if( $detect->isTablet() ){
 					<a id="showYoutubePlayer"><span>Ver Trailer</span></a>
 				</li>
 				<li class="enlace">
-					<a href="#seccionSinopsis"><span>Sinopsis</span></a>
+					<a href="#seccionSinopsis"><span>Sinópsis</span></a>
 				</li>
 				<li class="enlace">
 					<a href="#seccionConocelos"><span>Personajes</span></a>
 				</li>
 				<li class="enlace">
-					<a href="#seccionGaleria"><span>Galeria</span></a>
+					<a href="#seccionGaleria"><span>Galería</span></a>
 				</li>
 				<li class="enlace">
 					<a href="#seccionPremios"><span>Prensa</span></a>
 				</li>
 				<li class="enlace">
-					<a href="#seccionPremios"><span>Descargas</span></a>
-				</li>
-				<li class="enlace">
-					<a href="#seccionCreditos"><span>Ficha Tecnica</span></a>
+					<a href="#seccionCreditos"><span>Ficha Técnica</span></a>
 				</li>
 				<li class="enlace visible-xs-block">
 					<hr>
@@ -121,7 +165,7 @@ if( $detect->isTablet() ){
 
 	<section id="seccionBienvenida" class="seccionBienvenida">
 		<div class="bienvenida-container-inner">
-			<h1>BIENVENIDO AL CLUB DE LOS BIGOTES</h1>
+			<h1>LA AVENTURA DE UN MUCHACHO Y SU MOSTACHO</h1>
 		</div>
 	</section>
 
@@ -132,24 +176,24 @@ if( $detect->isTablet() ){
 
 			<div class="noticiasDesktop">
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-					<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fporbigotes&amp;width=100&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:395px;" allowTransparency="true"></iframe>
+					<div class="fb-page" data-href="https://www.facebook.com/videocine.distribucion?fref=ts" data-height="490" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/videocine.distribucion?fref=ts"><a href="https://www.facebook.com/videocine.distribucion?fref=ts">VIDEOCINE DISTRIBUCIÓN</a></blockquote></div></div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-					<a class="twitter-timeline"  href="https://twitter.com/PorBigotes" data-widget-id="570979363395739648">Tweets por el @PorBigotes.</a>
-    				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<a class="twitter-timeline"  href="https://twitter.com/videocine" data-widget-id="616274791075483648">Tweets por el @videocine.</a>
+            		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/wfsfQRkZeA/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">Conferencia de prensa, Hermosillo, Son. @osvaldodeleonof  y @darioripoll #pormisbigotes</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Una foto publicada por @pormisbigotes el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-12-12T05:39:08+00:00">11 de Dic de 2014 a la(s) 9:39 PST</time></p></div></blockquote>
+					<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/4PU6tjJyRA/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">El saludo de 3 dedos se muestra en Tlatelolco #SinsajoElFinal #Únete</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Una foto publicada por Videocine (@videocine) el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-06-22T17:16:29+00:00">22 de Jun de 2015 a la(s) 10:16 PDT</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 				</div>
 			</div>
-			
 		</div>
+			
 	</section>
 
 	<section id="seccionSinopsis" class="seccionSinopsis">
 		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 sinopsis-container">
-			<h1>SINOPSIS</h1>
+			<h1>SINÓPSIS</h1>
 			<br>
 			<p>AUNQUE SUENE INCREÍBLE,</p>
 			<p>AL PEQUEÑO ULISES DE TAN SÓLO NUEVE AÑOS,</p>
@@ -185,7 +229,7 @@ if( $detect->isTablet() ){
 					<div class="col-xs-12 col-sm-12 separador"></div>
 
 					<div class="col-xs-6 col-sm-6">
-						<img data-header="Lula" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Usa lentes, es muy alegre y dibuja todo el tiempo. Colecciona mil cosas pero lo que la hace especial es su obsesión con la suerte. Todo lo que gira en torno a la suerte despierta en ella una enorme curiosidad ¿Qué determina la buena o la mala suerte? ¿Se trata de algo que hacemos o es una fuerza invisible que nos mueve como a un globo que soltamos al viento? se pregunta Lula mientras sueña con inventar una superstición. Y claro, también desearía ser invisible." class="imageInfo personaje" src="recursos/images/personajes/mobile/lula.png"/>
+						<img data-header="Nati" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Nati tiene un olfato privilegiado para todas las cosas que se pondrán de moda. Ella puede ver antes que nadie las tendencias que se usarán en la nueva temporada, colores, texturas, canciones, películas. Si quieres conocer lo más moderno deberás acercarte a Nati." class="imageInfo personaje" src="recursos/images/personajes/mobile/nati.png"/>
 					</div>
 					<div class="col-xs-6 col-sm-6">
 						<img data-header="Tío Fabían" data-image="recursos/images/personajesBio/tio-fabian.jpg" data-detail="Un personaje alegre de carácter extrovertido. Con su mirada peculiar y su poder de convencimiento es capaz de conmover al más reacio. A pesar de esto, es un tanto solitario y suele alejarse por largos periodos de tiempo. Amante de los autos antiguos tiene una colección de miles de carritos de juguete." class="imageInfo personaje" src="recursos/images/personajes/mobile/tio-fabian.png"/>
@@ -194,7 +238,7 @@ if( $detect->isTablet() ){
 					<div class="col-xs-12 col-sm-12 separador"></div>
 
 					<div class="col-xs-6 col-sm-6">
-						<img data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende perfumes en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura." class="imageInfo personaje" src="recursos/images/personajes/mobile/alicia.png"/>
+						<img data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende dulces en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura." class="imageInfo personaje" src="recursos/images/personajes/mobile/alicia.png"/>
 					</div>
 					<div class="col-xs-6 col-sm-6">
 						<img data-header="Sabino" data-image="recursos/images/personajesBio/sabino.jpg" data-detail="La sabiduría de Sabino sorprende a todo mundo. Sus vastos conocimientos van desde las más oscuras citas literarias hasta los datos científicos más enredados. Él, desde luego, es el encargado de llevar la biblioteca del Club de los 10,000 bigotes,  un sótano con más de doce mil ejemplares que abarcan todas las áreas del saber." class="imageInfo personaje" src="recursos/images/personajes/mobile/sabino.png"/>
@@ -239,7 +283,7 @@ if( $detect->isTablet() ){
 					<div class="col-xs-12 col-sm-12 separador"></div>
 
 					<div class="col-xs-6 col-sm-6">
-						<img data-header="Niño Uno" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-1.png"/>
+						<img data-header="El 'Taquito' Pérez" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Muchas madres durante el embarazo ponen música clásica a sus bebés, pero la mamá de El 'Taquito' Pérez le ponía a su hijo, juegos de futbol pues sólo eso lo calmaba. Su amor por el futbol es innato, aprendió primero a patear un balón que a caminar. Tiene una talento natural con la pelota y es una futura promesa del balompié." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-1.png"/>
 					</div>
 					<div class="col-xs-6 col-sm-6">
 						<img data-header="Niña de lentes" data-image="recursos/images/personajesBio/nina-lentes.jpg" data-detail="Ella tan estudiosa, que a veces ya piensa en la universidad en la que le gustaría estudiar de grande, y eso que apenas tiene ocho años. Por desgracia, ese gusto hacia el estudio no es muy bien visto entre sus compañeros que constantemente la molestan por aplicada." class="imageInfo personaje" src="recursos/images/personajes/mobile/nina-lentes.png"/>
@@ -248,7 +292,7 @@ if( $detect->isTablet() ){
 					<div class="col-xs-12 col-sm-12 separador"></div>
 
 					<div class="col-xs-6 col-sm-6">
-						<img data-header="Niño Dos" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-2.png"/>
+						<img data-header="Niño Comentarista" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Mientras todo el mundo ve al futbol para seguir a su equipo, un jugador favorito o incluso el estilo de un entrenador, comentarista ve los partidos para escuchar a los comentaristas. A él le encantan las narraciones de los partidos, las estudia y desde muy pequeño narra los juegos de sus compañeros." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-2.png"/>
 					</div>
 					<div class="col-xs-6 col-sm-6">
 					</div>
@@ -263,7 +307,7 @@ if( $detect->isTablet() ){
 						<img data-header="Ulises" data-image="recursos/images/personajesBio/ulises.jpg" data-detail="Tiene nueve años, es hijo único y vive solo con su mamá. Le gusta el karate y le fascinan los ninjas, aunque no por sus hazañas, armas o destreza; lo que le atrae de esos misteriosos personajes es su capacidad para esconderse. Y es que el máximo sueño de Ulises es ser invisible ¿por qué? para que nadie lo moleste. A él le encanta pasar desapercibido pues, asegura, las cosas resultan mucho más sencillas cuando la gente simplemente no se fija en ti." class="imageInfo personaje" src="recursos/images/personajes/mobile/ulises.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
-						<img data-header="Lula" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Usa lentes, es muy alegre y dibuja todo el tiempo. Colecciona mil cosas pero lo que la hace especial es su obsesión con la suerte. Todo lo que gira en torno a la suerte despierta en ella una enorme curiosidad ¿Qué determina la buena o la mala suerte? ¿Se trata de algo que hacemos o es una fuerza invisible que nos mueve como a un globo que soltamos al viento? se pregunta Lula mientras sueña con inventar una superstición. Y claro, también desearía ser invisible." class="imageInfo personaje" src="recursos/images/personajes/mobile/lula.png"/>
+						<img data-header="Nati" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Nati tiene un olfato privilegiado para todas las cosas que se pondrán de moda. Ella puede ver antes que nadie las tendencias que se usarán en la nueva temporada, colores, texturas, canciones, películas. Si quieres conocer lo más moderno deberás acercarte a Nati. " class="imageInfo personaje" src="recursos/images/personajes/mobile/nati.png"/>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 separador"></div>
@@ -272,7 +316,7 @@ if( $detect->isTablet() ){
 						<img data-header="Tío Fabían" data-image="recursos/images/personajesBio/tio-fabian.jpg" data-detail="Un personaje alegre de carácter extrovertido. Con su mirada peculiar y su poder de convencimiento es capaz de conmover al más reacio. A pesar de esto, es un tanto solitario y suele alejarse por largos periodos de tiempo. Amante de los autos antiguos tiene una colección de miles de carritos de juguete." class="imageInfo personaje" src="recursos/images/personajes/mobile/tio-fabian.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
-						<img data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende perfumes en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura." class="imageInfo personaje" src="recursos/images/personajes/mobile/alicia.png"/>
+						<img data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende dulces en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura." class="imageInfo personaje" src="recursos/images/personajes/mobile/alicia.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
 						<img data-header="Sabino" data-image="recursos/images/personajesBio/sabino.jpg" data-detail="La sabiduría de Sabino sorprende a todo mundo. Sus vastos conocimientos van desde las más oscuras citas literarias hasta los datos científicos más enredados. Él, desde luego, es el encargado de llevar la biblioteca del Club de los 10,000 bigotes,  un sótano con más de doce mil ejemplares que abarcan todas las áreas del saber." class="imageInfo personaje" src="recursos/images/personajes/mobile/sabino.png"/>
@@ -311,26 +355,27 @@ if( $detect->isTablet() ){
 						<img data-header="Lucy" data-image="recursos/images/personajesBio/lucy.jpg" data-detail="Sin duda la niña más bonita de la escuela. Casi todos los niños están enamorados de ella, abiertamente o en secreto. Su correo electrónico recibe unas cinco declaraciones al día y muchas más los fines de semana. Es también la más popular entre las niñas pues casi todas desean ser su amiga." class="imageInfo personaje" src="recursos/images/personajes/mobile/lucy.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
-						<img data-header="Niña de lentes" data-image="recursos/images/personajesBio/nina-lentes.jpg" data-detail="Ella tan estudiosa, que a veces ya piensa en la universidad en la que le gustaría estudiar de grande, y eso que apenas tiene ocho años. Por desgracia, ese gusto hacia el estudio no es muy bien visto entre sus compañeros que constantemente la molestan por aplicada." class="imageInfo personaje" src="recursos/images/personajes/mobile/nina-lentes.png"/>
+						<img data-header="Niña de lentes" data-image="recursos/images/personajesBio/nina-lentes.jpg" data-detail="Ella es tan estudiosa, que a sus ocho años ya piensa en la universidad en la que le gustaría estudiar cuando sea mayor. Por desgracia, el gusto por el estudio no es muy bien visto por sus compañeros quienes constantemente la molestan por ser aplicada." class="imageInfo personaje" src="recursos/images/personajes/mobile/nina-lentes.png"/>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 separador"></div>
 					
 					<div class="col-xs-4 col-sm-4">
-						<img data-header="Niño Uno" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-1.png"/>
+						<img data-header="El 'Taquito' Pérez" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Muchas madres durante el embarazo ponen música clásica a sus bebés, pero la mamá de El 'Taquito' Pérez le ponía a su hijo, juegos de futbol pues sólo eso lo calmaba. Su amor por el futbol es innato, aprendió primero a patear un balón que a caminar. Tiene una talento natural con la pelota y es una futura promesa del balompié." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-1.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
-						<img data-header="Niño Dos" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro." class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-2.png"/>
+						<img data-header="Niño Comentarista" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Mientras todo el mundo ve al futbol para seguir a su equipo, un jugador favorito o incluso el estilo de un entrenador, comentarista ve los partidos para escuchar a los comentaristas. A él le encantan las narraciones de los partidos, las estudia y desde muy pequeño narra los juegos de sus compañeros. " class="imageInfo personaje" src="recursos/images/personajes/mobile/nino-2.png"/>
 					</div>
 					<div class="col-xs-4 col-sm-4">
 					</div>
 
 				</div>
+				
 				<ul id="sceneConocelos" class="sceneConocelos">
 				<!-- Primera Fila -->
 				  <li class="layer" data-depth="0.10">
 				  	<div class="conoceloContainerUno ">
-				  		<div class="bubbleInfo" data-header="Niño Uno" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro.">+</div>
+				  		<div class="bubbleInfo" data-header="El 'Taquito' Pérez" data-image="recursos/images/personajesBio/nino-1.jpg" data-detail="Muchas madres durante el embarazo ponen música clásica a sus bebés, pero la mamá de El 'Taquito' Pérez le ponía a su hijo, juegos de futbol pues sólo eso lo calmaba. Su amor por el futbol es innato, aprendió primero a patear un balón que a caminar. Tiene una talento natural con la pelota y es una futura promesa del balompié.">+</div>
 				  		<div class="pEncabezado"></div>
 				  		<img class="personaje" src="recursos/images/personajes/nino-fut.png"/>
 				  		<img class="personaje sombra pUno" src="recursos/images/personajes/nino-fut-s.png"/>
@@ -338,7 +383,7 @@ if( $detect->isTablet() ){
 				  </li>
 				  <li class="layer" data-depth="0.10">
 				  	<div class="conoceloContainerDos ">
-				  		<div class="bubbleInfo" data-header="Niño Dos" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Liderados por uno de los bullys más crueles que la escuela recuerde, la pandilla de niños malos recorre los pasillos de la escuela imponiendo su ley implacable y sembrando miedo entre los estudiantes más pequeños. Su sola presencia aterroriza alumnos y a uno que otro maestro.">+</div>
+				  		<div class="bubbleInfo" data-header="Niño Comentarista" data-image="recursos/images/personajesBio/nino-2.jpg" data-detail="Mientras todo el mundo ve al futbol para seguir a su equipo, un jugador favorito o incluso el estilo de un entrenador, comentarista ve los partidos para escuchar a los comentaristas. A él le encantan las narraciones de los partidos, las estudia y desde muy pequeño narra los juegos de sus compañeros.">+</div>
 				  		<div class="pEncabezado"></div>
 				  		<img class="personaje " src="recursos/images/personajes/nino-traje.png"/>
 				  		<img class="personaje sombra pDos" src="recursos/images/personajes/nino-traje-s.png"/>
@@ -406,7 +451,7 @@ if( $detect->isTablet() ){
 				  </li>
 				  <li class="layer" data-depth="0.3">
 				  	<div class="conoceloContainerDiez ">
-				  		<div class="bubbleInfo" data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende perfumes en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura.">+</div>
+				  		<div class="bubbleInfo" data-header="Alicia" data-image="recursos/images/personajesBio/alicia.jpg" data-detail="Es la mamá de Ulises, una mujer muy guapa pero bastante despistada que siempre tiene la cabeza en otra parte. Vende dulces en una tienda departamental y tiene un don especial para envolver regalos, sus habilidades suelen sorprender a los clientes que en muchas ocasiones ni siquiera abren los regalos por no destruir la envoltura.">+</div>
 				  		<div class="pEncabezado"></div>
 				  		<img class="personaje " src="recursos/images/personajes/alicia.png"/>
 				  		<img class="personaje sombra pDiez" src="recursos/images/personajes/alicia-s.png"/>
@@ -431,7 +476,7 @@ if( $detect->isTablet() ){
 				  </li>  
 				  <li class="layer" data-depth="0.35">
 				  	<div class="conoceloContainerTrece ">
-				  		<div class="bubbleInfo" data-header="Lula" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Usa lentes, es muy alegre y dibuja todo el tiempo. Colecciona mil cosas pero lo que la hace especial es su obsesión con la suerte. Todo lo que gira en torno a la suerte despierta en ella una enorme curiosidad ¿Qué determina la buena o la mala suerte? ¿Se trata de algo que hacemos o es una fuerza invisible que nos mueve como a un globo que soltamos al viento? se pregunta Lula mientras sueña con inventar una superstición. Y claro, también desearía ser invisible.">+</div>
+				  		<div class="bubbleInfo" data-header="Nati" data-image="recursos/images/personajesBio/lula.jpg" data-detail="Nati tiene un olfato privilegiado para todas las cosas que se pondrán de moda. Ella puede ver antes que nadie las tendencias que se usarán en la nueva temporada, colores, texturas, canciones, películas. Si quieres conocer lo más moderno deberás acercarte a Nati. ">+</div>
 				  		<div class="pEncabezado"></div>
 				  		<img class="personaje " src="recursos/images/personajes/lula.png"/>
 				  		<img class="personaje sombra pTrece" src="recursos/images/personajes/lula-s.png"/>
@@ -456,7 +501,7 @@ if( $detect->isTablet() ){
 				  </li> 
 				  <li class="layer" data-depth="0.42">
 				  	<div class="conoceloContainerDiezyseis ">
-				  		<div class="bubbleInfo" data-header="Niña de lentes" data-image="recursos/images/personajesBio/nina-lentes.jpg" data-detail="Ella tan estudiosa, que a veces ya piensa en la universidad en la que le gustaría estudiar de grande, y eso que apenas tiene ocho años. Por desgracia, ese gusto hacia el estudio no es muy bien visto entre sus compañeros que constantemente la molestan por aplicada.">+</div>
+				  		<div class="bubbleInfo" data-header="Niña de lentes" data-image="recursos/images/personajesBio/nina-lentes.jpg" data-detail="Ella es tan estudiosa, que a sus ocho años ya piensa en la universidad en la que le gustaría estudiar cuando sea mayor. Por desgracia, el gusto por el estudio no es muy bien visto por sus compañeros quienes constantemente la molestan por ser aplicada.">+</div>
 				  		<div class="pEncabezado"></div>
 				  		<img class="personaje " src="recursos/images/personajes/nina-lentes.png"/>
 				  		<img class="personaje sombra pDiezyseis" src="recursos/images/personajes/nina-lentes-s.png"/>
@@ -473,12 +518,6 @@ if( $detect->isTablet() ){
 				</ul>
 			</div>
 		</div>
-		<div id="masConocelos" class="botonMas">
-			<span>CARGAR MÁS</span>
-		</div>
-	</section>
-	<section id="seccionConocelosMore" class="seccionConocelosMore">
-		
 	</section>
 
 	<section id="seccionGaleriaEstaticaParteDos" class="seccionGaleriaEstaticaParteDos">
@@ -587,6 +626,69 @@ if( $detect->isTablet() ){
 		<div class="row">
 			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 premios-container">
 				<ul id="rslidesPremios" class="premios">
+				<li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>FACIAL HAIR FEST (Main - USA)</h1>
+							  		<h4>Premio Chaplin a Mejor Comedia</h4>
+							  		<input data-link="https://www.facebook.com/FacialHairFest/photos/ms.c.eJw9yckRACAIBMGMLFk5lvwTk8Lj2TOErxmUUBdqDraDbcNzzkir8K0CVrgmzsf3~_bYBqB4TcQ~-~-.bps.a.826307764128521.1073741879.138221732937131/826307790795185/?type=1&theater" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>IMA (INTERNATIONAL MOVIE AWARDS)</h1>
+							  		<h4>Best Film</h4>
+							  		<input data-link="http://internationalmovieawards.com/IMA/2014/winners2014.htm" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>BOSTON INTERNATIONAL KIDS FILM FESTIVAL</h1>
+							  		<h4>Mejor Fotografía</h4>
+							  		<input data-link="http://bikff.org/films/" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
 				  <li>
 				  	<div>
 				  		<table>
@@ -617,6 +719,195 @@ if( $detect->isTablet() ){
 				  					</div>
 				  				</td>
 				  				<td>
+				  					<h1>OVERLOOK (Roma, Italia)</h1>
+							  		<h4>Selección Oficial</h4>
+							  		<input data-link="http://www.filmfestivals.com/festival/overlook_2014_5th_cinemavvenire_film_festival" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>Festival International de Cine en Hermosillo</h1>
+							  		<h4>Premio Del Público a Mejor Largometraje Mexicano</h4>
+							  		<input data-link="http://fich.mx/seleccion-oficial-2014/" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>FILM MAKERS OF THE YEAR</h1>
+							  		<h4>Newcomer Film of the Year & Best Director</h4>
+							  		<input data-link="http://filmmakersoftheyear.com/winners.htm" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>JIFF (INDIA)</h1>
+							  		<h4>Selección Oficial</h4>
+							  		<input data-link="http://www.jiffindia.org/documents/1st%20List%20of%20Nominated%20films-JIFF%202015.pdf" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>MICA FILM FESTIVAL (BRASIL)</h1>
+							  		<h4>Selección Oficial</h4>
+							  		<input data-link="http://www.micafilmfestival.com/#!filmes-%C2%AD%E2%80%902014/caix" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>INTERNATIONAL FILM FESTIVAL (Jakarta, Indonesia)</h1>
+							  		<h4>Best Film 2014</h4>
+							  		<input data-link="http://filmfestivalsalliance.org/winners_list/screening_table/screening_table.htm" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>CINI (FESTIVAL INTERNACIONAL DE CINE PARA NIÑOS) PERU</h1>
+							  		<h4>Premio del Público a Mejor Película</h4>
+							  		<input data-link="http://centrocultural.britanico.edu.pe/" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>PROVIDENCE CHILDREN'S FILM FESTIVAL</h1>
+							  		<h4>Selección Oficial - Premio del Público</h4>
+							  		<input data-link="http://providencechildrensfilmfestival.org/films/?wpv_paged_preload_reach" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
+				  					<h1>SAN DIEGO LATINO FILM FESTIVAL</h1>
+							  		<h4>Mejor Película Familiar</h4>
+							  		<input data-link="http://providencechildrensfilmfestival.org/films/?wpv_paged_preload_reach" class="botonVerNota" type="button" value="VER NOTA"/>
+				  				</td>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				  </li>
+				  <li>
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td class="campana-container">
+				  					<div class="campana">
+				  					</div>
+				  				</td>
+				  				<td>
 				  					<h1>IFCOM Festival, Indonesia</h1>
 							  		<h4>Premio a mejor Actor</h4>
 							  		<input data-link="http://www.internationalfilmcompetition.org/winners.htm" class="botonVerNota" type="button" value="VER NOTA"/>
@@ -628,51 +919,8 @@ if( $detect->isTablet() ){
 				  			</tr>
 				  		</table>
 				  	</div>
-				  </li>
-				  <li>
-				  	<div>
-				  		<table>
-				  			<tr>
-				  				<td class="campana-container">
-				  					<div class="campana">
-				  					</div>
-				  				</td>
-				  				<td>
-				  					<h1>International Movie Awards</h1>
-							  		<h4>Best film</h4>
-							  		<input data-link="http://internationalmovieawards.com/IMA/2014/winners2014.htm" class="botonVerNota" type="button" value="VER NOTA"/>
-				  				</td>
-				  				<td class="campana-container">
-				  					<div class="campana">
-				  					</div>
-				  				</td>
-				  			</tr>
-				  		</table>
-				  	</div>
-				  </li>
-				  <li>
-				  	<div>
-				  		<table>
-				  			<tr>
-				  				<td class="campana-container">
-				  					<div class="campana">
-				  					</div>
-				  				</td>
-				  				<td>
-				  					<h1>Boston International Kids Film Festival</h1>
-							  		<h4>Best International</h4>
-							  		<input data-link="http://bikff.org" class="botonVerNota" type="button" value="VER NOTA"/>
-				  				</td>
-				  				<td class="campana-container">
-				  					<div class="campana">
-				  					</div>
-				  				</td>
-				  			</tr>
-				  		</table>
-				  	</div>
-				  </li>
+				  </li>				  
 				</ul>
-				<input class="botonDescargarKit" type="button" value="DESCARGAR KIT DE PRENSA"/>
 			</div>
 		</div>	
 	</section>
@@ -684,12 +932,12 @@ if( $detect->isTablet() ){
 					<tr>
 						<td>
 							<p>DIRECTOR: <b>MANUEL CARAMÉS</b></p>
-							<p>GUINISTA: <b>JORGE A. ESTRADA</b></p>
+							<p>GUIONISTA: <b>JORGE A. ESTRADA</b></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>ELENCO: <b>SANTIAGO TORRES, JESÚS OCHOA, OSVALDO DE LEÓN, EDUARDO ESPAÑA. FERNANDO BECERRIL, GABRIELA ARROYO, LENNY ZUNDEL, DARIO RIPOLL, JOSÉ MONTINI</b></p>
+							<p>ELENCO: <b>SANTIAGO TORRES (ULISES), JESÚS OCHOA (TÍO FABIÁN), OSVALDO DE LEÓN (NARCISO), EDUARDO ESPAÑA (DAGOBERTO). FERNANDO BECERRIL (DON BACILIO), GABRIELA ARROYO (ALICIA), LENNY ZUNDEL (SABINO), DARÍO RIPOLL (TIMOTEO), JOSÉ MONTINI (AQUILES)</b></p>
 						</td>
 					</tr>
 					<tr>
@@ -697,7 +945,7 @@ if( $detect->isTablet() ){
 							<table>
 								<tr>
 									<td>
-										<p>PRODUCTORES: <b>MANUEL CARAMÉS Y BARNARD STEELE</b></p>
+										<p>PRODUCTORES: <b>MANUEL CARAMÉS, BARNARD STEELE Y GABRIELA ARROYO</b></p>
 									</td>
 									<td>
 										<p><b>GERMÁN GUTIÉRREZ, FERNANDA JUÁREZ, ARMANDO SAID FLORES,</b></p>
@@ -838,25 +1086,29 @@ if( $detect->isTablet() ){
 	</section>
 
 	<footer class="patrocinadores">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 patrocinadores-container">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="recursos/images/footer/idecine.png"/>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 patrocinadores-container">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1 col-lg-offset-2">
+				<img class="img-responsive white" src="recursos/images/footer/videocine.png"/>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="recursos/images/footer/imc.png"/>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="recursos/images/footer/conaculta.png"/>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="recursos/images/footer/fud.png"/>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-				<img class="img-responsive" src="recursos/images/footer/sigma.png"/>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
 				<img class="img-responsive" src="recursos/images/footer/charanga.png"/>
 			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
+				<img class="img-responsive" src="recursos/images/footer/idecine.png"/>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
+				<img class="img-responsive" src="recursos/images/footer/imc.png"/>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
+				<img class="img-responsive" src="recursos/images/footer/conaculta.png"/>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
+				<img class="img-responsive" src="recursos/images/footer/fud.png"/>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-1">
+				<img class="img-responsive" src="recursos/images/footer/sigma.png"/>
+			</div>
+			
 		</div>
 	</footer>
 
@@ -913,7 +1165,7 @@ if( $detect->isTablet() ){
 
         	<h1>Nombre Artista</h1>
         	<img class="img-responsive" src="recursos/images/personajesBio/alicia.jpg"/>
-        	<p>Descripcion</p>
+        	<p>Descripción</p>
             
         </div>
 
@@ -933,32 +1185,8 @@ if( $detect->isTablet() ){
 		<script src="./recursos/js/responsiveslides.min.js"></script>
 		<script src="./recursos/js/jquery.parallax.min.js"></script>
     	<script type="text/javascript">var deviceWhat = <?php echo $boolDetect; ?></script>
-		<script src="./recursos/js/main.js"></script>
-		<script src="./recursos/js/jquery.html5Loader.min.js"></script>
+		<script src="./recursos/js/main.min.js"></script>
 		<script type="text/javascript" src="./recursos/js/swfobject.js"></script>
-
-		<script type="text/javascript">
-    
-		    $.html5Loader({
-		        filesToLoad: 'recursos/files.json', // this could be a JSON or simply a javascript object
-		        onBeforeLoad: function () {},
-		        onComplete: function () {
-		            //console.log('fin');
-		            $('#preloader').hide();
-		        },
-		        onElementLoaded: function ( obj, elm) { },
-		        onUpdate: function ( percentage ) {
-		        	//console.log("Porcentaje: " + percentage);
-		            var nuevo = percentage-100;
-		            //console.log("Left: " + nuevo);
-		            $('#preloader').find('.cargando').find('div').animate({'left':nuevo + '%'});
-		            if(nuevo > 90){
-		            	$('#preloader').hide();
-		            }
-		        }
-		    });
-
-    	</script>
 	<!-- End archivos Js -->
 
 	</body>

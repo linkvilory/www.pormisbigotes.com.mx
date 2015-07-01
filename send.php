@@ -3,17 +3,11 @@
 date_default_timezone_set('America/Mexico_City');
 
 $servername = "localhost";
-$username = "root";
-$password = "root";
+$username = "pormisbi_gotes";
+$password = "tw85775rNDhB";
 
 $handle = mysql_connect($servername, $username, $password);
-$found = mysql_select_db("www.pormisbigotes.com.mx", $handle);
-
-/*
-$respuestaUno = $_GET["respuestaUno"];
-$respuestaDos = $_GET["respuestaDos"];
-$respuestaTres = $_GET["respuestaTres"];
-*/
+$found = mysql_select_db("pormisbi_gotes", $handle);
 
 $respuestaUno = $_POST["respuestaUno"];
 $respuestaDos = $_POST["respuestaDos"];
@@ -32,7 +26,7 @@ if ($found) {
 
 		//echo "Variables asignadas";
 
-		$sqlquery = "INSERT INTO `www.pormisbigotes.com.mx`.`EncuestaClub` (`id`, `respuestaUno`, `respuestaDos`, `respuestaTres`, `fechaHora`) VALUES (NULL, '". $respuestaUno ."', '". $respuestaDos ."', '". $respuestaTres ."', '". $fechaHora ."');";
+		$sqlquery = "INSERT INTO `pormisbi_gotes`.`EncuestaClub` (`id`, `respuestaUno`, `respuestaDos`, `respuestaTres`, `fechaHora`) VALUES (NULL, '". $respuestaUno ."', '". $respuestaDos ."', '". $respuestaTres ."', '". $fechaHora ."');";
 		$resultado = mysql_query($sqlquery);
 			if ($resultado)  
 			{
