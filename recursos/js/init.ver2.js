@@ -25,7 +25,8 @@ $(function(){
 		});
 		$("#showYoutubePlayer").click(function (){
 			$(".container-fluid.fullscreen").show();
-			$("#youtubeApiContainer").html("<iframe width='100%' height='90%' src='//www.youtube.com/embed/6JaiJBvINqA?rel=0' frameborder='0' allowfullscreen />");
+			$("#youtubeApiContainer").html("<iframe width='48%' height='60%' src='//www.youtube.com/embed/6JaiJBvINqA?rel=0' frameborder='0' allowfullscreen />");
+			$("#youtubeApiContainerTwo").html("<iframe width='48%' height='60%' src='//www.youtube.com/embed/fG4xR8AvfXo?rel=0' frameborder='0' allowfullscreen />");
 		});
 	}else{
 
@@ -50,7 +51,9 @@ $(function(){
 			var params = { allowScriptAccess: "always" };
 		    var atts = { id: "myyoutubeplayer" };
 		    swfobject.embedSWF("http://www.youtube.com/v/6JaiJBvINqA?enablejsapi=1&playerapiid=ytplayer&version=3",
-		                       "youtubeApiContainer", "100%", "90%", "8", null, null, params, atts);
+		                       "youtubeApiContainer", "48%", "60%", "8", null, null, params, atts);
+		    swfobject.embedSWF("http://www.youtube.com/v/fG4xR8AvfXo?enablejsapi=1&playerapiid=ytplayer&version=3",
+		                       "youtubeApiContainerTwo", "48%", "60%", "8", null, null, params, atts);
 		});
 		 /* End Init segun dispositivo */
 		$("#showYoutubePlayer").hover(function (){

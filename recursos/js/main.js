@@ -53,15 +53,20 @@ $(function(){
 	if(deviceWhat == 1){
 			$("#showYoutubePlayer").click(function (){
 			$(".container-fluid.fullscreen.you2be").show();
-			$("#youtubeApiContainer").html("<iframe width='100%' height='90%' src='//www.youtube.com/embed/6JaiJBvINqA?rel=0' frameborder='0' allowfullscreen />");
+			$("#youtubeApiContainer").html("<iframe width='48%' height='60%' src='//www.youtube.com/embed/6JaiJBvINqA?rel=0' frameborder='0' allowfullscreen />");
+			$("#youtubeApiContainerTwo").html("<iframe width='48%' height='60%' src='//www.youtube.com/embed/fG4xR8AvfXo?rel=0' frameborder='0' allowfullscreen />");
 		});
 	}else{
 		$("#showYoutubePlayer").click(function (){
 			$(".container-fluid.fullscreen.you2be").show();
 			var params = { allowScriptAccess: "always" };
 		    var atts = { id: "myyoutubeplayer" };
+		    console.log("Se esta creando el primer video");
 		    swfobject.embedSWF("http://www.youtube.com/v/6JaiJBvINqA?enablejsapi=1&playerapiid=ytplayer&version=3",
-		                       "youtubeApiContainer", "100%", "100%", "8", null, null, params, atts);
+		                       "youtubeApiContainer", "48%", "60%", "8", null, null, params, atts);
+		    console.log("Se esta creando el segundo video");
+		    swfobject.embedSWF("http://www.youtube.com/v/fG4xR8AvfXo?enablejsapi=1&playerapiid=ytplayer&version=3",
+		                       "youtubeApiContainerTwo", "48%", "60%", "8", null, null, params, atts);
 		});
 	}
 

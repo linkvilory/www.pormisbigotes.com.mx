@@ -57,7 +57,7 @@ if( $detect->isTablet() ){
 		<meta content="http://pormisbigotes.com.mx/" name="twitter:domain">
 		<meta content="http://pormisbigotes.com.mx/recursos/images/share.jpg" name="twitter:image:src">
 		<!-- Carga de archivos Css -->
-			<link type="text/css" rel="stylesheet" href="./recursos/css/inicio.html.min.css"/>
+			<link type="text/css" rel="stylesheet" href="./recursos/css/inicio.html.min.ver2.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/bootstrap.css"/>
 			<link type="text/css" rel="stylesheet" href="./recursos/css/responsiveslides.min.css"/>
 		<!-- End archivos Css-->
@@ -1147,7 +1147,9 @@ if( $detect->isTablet() ){
         "closeYoutubePlayer" src="recursos/images/close.png"></div>
 
         <div id="youtube" class="col-md-8 col-md-offset-2 youtube">
-            <div id="youtubeApiContainer">
+            <div class="col-md-4" id="youtubeApiContainer">
+            </div>
+            <div class="col-md-4" id="youtubeApiContainerTwo">
             </div>
         </div>
 
@@ -1185,7 +1187,7 @@ if( $detect->isTablet() ){
 		<script src="./recursos/js/responsiveslides.min.js"></script>
 		<script src="./recursos/js/jquery.parallax.min.js"></script>
     	<script type="text/javascript">var deviceWhat = <?php echo $boolDetect; ?></script>
-		<script src="./recursos/js/main.min.js"></script>
+		<script src="./recursos/js/main.min.ver2.js"></script>
 		<script type="text/javascript" src="./recursos/js/swfobject.js"></script>
 	<!-- End archivos Js -->
 
